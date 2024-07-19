@@ -1,0 +1,14 @@
+
+State Machine - |main|mef_adub_limp:comb_14|state
+Name state.D state.C state.B state.A 
+state.A 0 0 0 0 
+state.B 0 0 1 1 
+state.C 0 1 0 1 
+state.D 1 0 0 1 
+
+State Machine - |main|mef_tiporega:comb_13|state
+Name state.D state.C state.B state.A 
+state.A 0 0 0 0 
+state.B 0 0 1 1 
+state.C 0 1 0 1 
+state.D 1 0 0 1 

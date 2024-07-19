@@ -1,0 +1,333 @@
+|main
+Clk => Clk.IN3
+Rst => Rst.IN2
+Us => Us.IN1
+Bs => Bs.IN2
+Vs => Vs.IN2
+A << Asp.DB_MAX_OUTPUT_PORT_TYPE
+G << mef_tiporega:comb_13.port6
+Nv1 << ContB1.DB_MAX_OUTPUT_PORT_TYPE
+Nv0 << Nv0.DB_MAX_OUTPUT_PORT_TYPE
+Adub => wire_Adub.IN1
+Ve << mef_adub_limp:comb_14.port6
+Mist << mef_adub_limp:comb_14.port7
+Limp0 << mef_adub_limp:comb_14.port8
+Limp1 << mef_adub_limp:comb_14.port8
+Sel => Sel.IN2
+SEG_D1 << <GND>
+SEG_D2 << <GND>
+SEG_D3 << <GND>
+SEG_D4 << <GND>
+SEG_A << decode:comb_11.port4
+SEG_B << decode:comb_11.port5
+SEG_C << decode:comb_11.port6
+SEG_D << decode:comb_11.port7
+SEG_E << decode:comb_11.port8
+SEG_F << decode:comb_11.port9
+SEG_G << decode:comb_11.port10
+SEG_P << decode:comb_11.port11
+
+
+|main|DivisorClock:comb_8
+clock => clock.IN1
+clock_Reduzido <= fft:div_4194304.Q
+
+
+|main|DivisorClock:comb_8|fft:div_2
+T => Q~reg0.ENA
+clock => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|DivisorClock:comb_8|fft:div_4
+T => Q~reg0.ENA
+clock => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|DivisorClock:comb_8|fft:div_8
+T => Q~reg0.ENA
+clock => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|DivisorClock:comb_8|fft:div_16
+T => Q~reg0.ENA
+clock => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|DivisorClock:comb_8|fft:div_32
+T => Q~reg0.ENA
+clock => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|DivisorClock:comb_8|fft:div_64
+T => Q~reg0.ENA
+clock => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|DivisorClock:comb_8|fft:div_128
+T => Q~reg0.ENA
+clock => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|DivisorClock:comb_8|fft:div_256
+T => Q~reg0.ENA
+clock => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|DivisorClock:comb_8|fft:div_512
+T => Q~reg0.ENA
+clock => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|DivisorClock:comb_8|fft:div_1024
+T => Q~reg0.ENA
+clock => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|DivisorClock:comb_8|fft:div_2048
+T => Q~reg0.ENA
+clock => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|DivisorClock:comb_8|fft:div_4096
+T => Q~reg0.ENA
+clock => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|DivisorClock:comb_8|fft:div_8192
+T => Q~reg0.ENA
+clock => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|DivisorClock:comb_8|fft:div_16384
+T => Q~reg0.ENA
+clock => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|DivisorClock:comb_8|fft:div_32768
+T => Q~reg0.ENA
+clock => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|DivisorClock:comb_8|fft:div_65536
+T => Q~reg0.ENA
+clock => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|DivisorClock:comb_8|fft:div_131072
+T => Q~reg0.ENA
+clock => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|DivisorClock:comb_8|fft:div_262144
+T => Q~reg0.ENA
+clock => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|DivisorClock:comb_8|fft:div_524288
+T => Q~reg0.ENA
+clock => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|DivisorClock:comb_8|fft:div_1048576
+T => Q~reg0.ENA
+clock => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|DivisorClock:comb_8|fft:div_2097152
+T => Q~reg0.ENA
+clock => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|DivisorClock:comb_8|fft:div_4194304
+T => Q~reg0.ENA
+clock => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|cont_mod16:comb_9
+Y => And1.IN2
+Y => And5.IN2
+Y => And8.IN3
+Y => And9.IN2
+Y => And2.IN2
+Y => And3.IN2
+Y => And4.IN2
+Y => And6.IN2
+Y => And7.IN3
+Y => And10.IN3
+Clk => Clk.IN4
+Q3 <= fft:comb_24.port2
+Q2 <= fft:comb_23.port2
+Q1 <= fft:comb_22.port2
+Q0 <= fft:comb_21.port2
+
+
+|main|cont_mod16:comb_9|fft:comb_21
+T => Q~reg0.ENA
+clock => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|cont_mod16:comb_9|fft:comb_22
+T => Q~reg0.ENA
+clock => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|cont_mod16:comb_9|fft:comb_23
+T => Q~reg0.ENA
+clock => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|cont_mod16:comb_9|fft:comb_24
+T => Q~reg0.ENA
+clock => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|cont_mod4:comb_10
+Y => and0.IN1
+Y => and1.IN1
+Clk => Clk.IN2
+Q1 <= fft:comb_9.port2
+Q0 <= fft:comb_8.port2
+
+
+|main|cont_mod4:comb_10|fft:comb_8
+T => Q~reg0.ENA
+clock => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|cont_mod4:comb_10|fft:comb_9
+T => Q~reg0.ENA
+clock => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|decode:comb_11
+C3 => And1.IN0
+C3 => And9.IN0
+C3 => And10.IN0
+C2 => And0.IN0
+C2 => And2.IN0
+C2 => And11.IN0
+C2 => And4.IN0
+C2 => And6.IN0
+C2 => And1.IN1
+C2 => And3.IN0
+C2 => And8.IN0
+C2 => And9.IN1
+C2 => And10.IN1
+C1 => And11.IN1
+C1 => And3.IN1
+C1 => And4.IN1
+C1 => And7.IN0
+C1 => And8.IN1
+C1 => And0.IN1
+C1 => And1.IN2
+C1 => And2.IN1
+C1 => And6.IN1
+C1 => And10.IN2
+C0 => And1.IN3
+C0 => And2.IN2
+C0 => And4.IN2
+C0 => Or3.IN1
+C0 => And7.IN1
+C0 => And9.IN2
+C0 => And0.IN2
+C0 => And11.IN2
+C0 => And3.IN2
+SEG_A <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+SEG_B <= Or1.DB_MAX_OUTPUT_PORT_TYPE
+SEG_C <= And3.DB_MAX_OUTPUT_PORT_TYPE
+SEG_D <= Or2.DB_MAX_OUTPUT_PORT_TYPE
+SEG_E <= Or3.DB_MAX_OUTPUT_PORT_TYPE
+SEG_F <= Or4.DB_MAX_OUTPUT_PORT_TYPE
+SEG_G <= Or5.DB_MAX_OUTPUT_PORT_TYPE
+SEG_P <= <VCC>
+
+
+|main|Irrigacao:comb_12
+Us => on_Off.IN0
+L => on_Off.IN1
+Bs => ~NO_FANOUT~
+Vs => ~NO_FANOUT~
+REGA <= on_Off.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|mef_tiporega:comb_13
+clk => state~1.DATAIN
+reset => state~3.DATAIN
+REGA => and1.IN0
+REGA => and2.IN0
+REGA => or0.IN1
+Vs => and1.IN1
+Vs => and0.IN0
+Vs => and2.IN1
+Bs => and1.IN2
+Bs => and2.IN2
+Bs => and0.IN1
+Asp <= Asp.DB_MAX_OUTPUT_PORT_TYPE
+Got <= Got.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|mef_adub_limp:comb_14
+clk => state~1.DATAIN
+reset => state~3.DATAIN
+Adub => and2.IN0
+Adub => and3.IN0
+Adub => and0.IN0
+Adub => and1.IN0
+Nv1 => and1.IN1
+Nv1 => and3.IN1
+Nv1 => and4.IN0
+Nv1 => and5.IN0
+Nv1 => Mist.IN0
+Nv1 => or3.IN0
+Nv1 => and7.IN0
+Nv1 => Limp.IN0
+Nv0 => and0.IN1
+Nv0 => and2.IN1
+Nv0 => and4.IN1
+Nv0 => and6.IN0
+Nv0 => or3.IN1
+Nv0 => and7.IN1
+Asp => and0.IN2
+Asp => and1.IN2
+Asp => and2.IN2
+Asp => and3.IN2
+Asp => and5.IN1
+Asp => and6.IN1
+Asp => and7.IN2
+Asp => nextstate.OUTPUTSELECT
+Asp => nextstate.OUTPUTSELECT
+Asp => nextstate.OUTPUTSELECT
+Asp => nextstate.DATAB
+Ve <= Ve.DB_MAX_OUTPUT_PORT_TYPE
+Mist <= Mist.DB_MAX_OUTPUT_PORT_TYPE
+Limp <= Limp.DB_MAX_OUTPUT_PORT_TYPE
+
+
