@@ -1,12 +1,12 @@
 // Declaracao do modulo
-module main (Clk, Rst, Us, Bs, Vs, A, G, Nv1, Nv0, Adub, Ve, Mist, Limp0, Limp1, Sel, SEG_D1, SEG_D2, SEG_D3, SEG_D4, SEG_A, SEG_B, SEG_C, SEG_D, SEG_E, SEG_F, SEG_G, SEG_P);  
+module main (Clk, Rst, Us, Bs, Vs, A, G, Nv1, Nv0, Adub, Ve, Mist, Limp0, Limp1, SEG_D1, SEG_D2, SEG_D3, SEG_D4, SEG_A, SEG_B, SEG_C, SEG_D, SEG_E, SEG_F, SEG_G, SEG_P, T1);  
 
 	// Declaracao de portas
-	input Clk, Rst, Bs, Us, Vs, Adub, Sel;
+	input Clk, Rst, Bs, Us, Vs, Adub, T1;
 	output A, G, Ve, Mist, Limp0, Limp1, Nv1, Nv0, SEG_D1, SEG_D2, SEG_D3, SEG_D4, SEG_A, SEG_B, SEG_C, SEG_D, SEG_E, SEG_F, SEG_G, SEG_P;
 	
 	// Declaracao dos fios intermediarios
-	wire Asp, REGA, wire_Adub, clock_Reduzido, ContA0n, ContB0n;
+	wire T0, wire1, wire2, Asp, REGA, wire_Adub, clock_Reduzido, ContB1n, ContB0n, S, Y;
 	wire ContA0, ContA1, ContA2, ContA3;
 	wire ContB0, ContB1;
 	
@@ -15,21 +15,29 @@ module main (Clk, Rst, Us, Bs, Vs, A, G, Nv1, Nv0, Adub, Ve, Mist, Limp0, Limp1,
 	not not0(wire_Adub, Adub);
 	and and0(Nv1, ContB1, 1);
 	and and1(Nv0, ContB0, 1);
-	//not(ContA0n, ContA0);
-	//not(ContB0n, ContB0);
-	//and(chave_seletora, ContA0n, ContB0n);
 	
 	// Funcionamento do circuito
 	
 	//Divisor de clock
 	
-	DivisorClock (Clk, clock_Reduzido);
+	DivisorClock (Clk, S, clock_Reduzido);
+	
+	//Circuito da chave seletora dos contadores crescente/decrescente
+	
+	not not1(ContB0n, ContB0);
+	not not2(ContB1n, ContB1);
+	nor Nor0(wire1, ContA3, ContA2, ContA1, ContA0, ContB1, ContB0);
+	nor Nor1(wire2, ContA3, ContA2, ContA1, ContA0, ContB1n, ContB0n);
+	or Or0(T0, wire1, wire2);
+	fft chave_seletora (.T(wire1),.clock(clock_Reduzido),.Q(Y));
 	
 	//Contadores do cronometro
 	
-	cont_mod16(Sel, clock_Reduzido, ContA3, ContA2, ContA1, ContA0);
-	cont_mod4(Sel, ContA3, ContB1, ContB0);
-	decode(ContA3, ContA2, ContA1, ContA0, SEG_A, SEG_B, SEG_C, SEG_D, SEG_E, SEG_F, SEG_G, SEG_P);
+	cont_mod16(Y, clock_Reduzido, ContA3,ContA2 , ContA1, ContA0);
+	cont_mod4(Y, ContA3, ContB1, ContB0);
+	
+	//Seletor dos displays
+	Seletor_Imagem(S, ContA3, ContA2, ContA1, ContA0, ContB1, ContB0, SEG_D1, SEG_D2, SEG_D3, SEG_D4, SEG_A, SEG_B, SEG_C, SEG_D, SEG_E, SEG_F, SEG_G, SEG_P);
 	
 	//Definicao do acionamento da REGA
 	Irrigacao(Us, Nv0, Bs, Vs, REGA);
