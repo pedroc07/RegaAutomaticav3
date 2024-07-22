@@ -64,7 +64,7 @@ CHIP  "pbl3"  ASSIGNED TO AN: EPM240T100C5
 Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage : I/O Bank  : User Assignment
 -------------------------------------------------------------------------------------------------------------
 GND*                         : 1         :        :                   :         : 2         :                
-GND*                         : 2         :        :                   :         : 1         :                
+T1                           : 2         : input  : 3.3-V LVTTL       :         : 1         : N              
 GND*                         : 3         :        :                   :         : 1         :                
 GND*                         : 4         :        :                   :         : 1         :                
 GND*                         : 5         :        :                   :         : 1         :                
@@ -104,7 +104,7 @@ GND*                         : 38        :        :                   :         
 SEG_G                        : 39        : output : 3.3-V LVTTL       :         : 1         : Y              
 GND*                         : 40        :        :                   :         : 1         :                
 SEG_C                        : 41        : output : 3.3-V LVTTL       :         : 1         : Y              
-Sel                          : 42        : input  : 3.3-V LVTTL       :         : 1         : Y              
+GND*                         : 42        :        :                   :         : 1         :                
 GND*                         : 43        :        :                   :         : 1         :                
 GND*                         : 44        :        :                   :         : 1         :                
 VCCIO1                       : 45        : power  :                   : 3.3V    : 1         :                

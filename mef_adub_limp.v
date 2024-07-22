@@ -6,7 +6,7 @@ module mef_adub_limp ( input clk ,
 	parameter B = 2'b01 ;
 	parameter C = 2'b10 ;
 	parameter D = 2'b11 ;
-	wire wire0, wire1, wire2, wire3, wire4, wire5, cond0, cond1, cond2, cond3, cond4, cond5, notA, notAdub, notNv1, notNv0;
+	wire wire0, wire1, wire2, wire3, wire4, wire5, cond0, cond1, cond2, cond3, cond4, cond5, cond6, notA, notAdub, notNv1, notNv0;
 	not not0(notA, Asp);
 	not not1(notAdub, Adub);
 	not not2(notNv1, Nv1);
@@ -23,6 +23,7 @@ module mef_adub_limp ( input clk ,
 	or or2(cond3, wire4, wire5);
 	or or3(cond4, notNv1, notNv0);
 	and and7(cond5, notNv0, notNv1, notA);
+	and and8(cond6, notNv1, Nv0);
 	// state register
 	always @ ( posedge clk, posedge reset)
     	if ( reset ) state <= A ;
@@ -52,6 +53,6 @@ module mef_adub_limp ( input clk ,
 	// output logic
 	assign Ve = (cond4 & (state == D)) ;
 	assign Mist = (Nv1 & (state == C));
-	assign Limp = (notNv1 & (state == C)) ;
+	assign Limp = (cond6 & (state == C)) ;
     
 endmodule
