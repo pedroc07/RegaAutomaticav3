@@ -1,5 +1,5 @@
 Analysis & Synthesis report for pbl3
-Mon Jul 22 10:23:59 2024
+Mon Jul 22 14:58:38 2024
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -77,12 +77,12 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                              ;
 +-----------------------------+---------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Mon Jul 22 10:23:59 2024       ;
+; Analysis & Synthesis Status ; Successful - Mon Jul 22 14:58:38 2024       ;
 ; Quartus Prime Version       ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name               ; pbl3                                        ;
 ; Top-level Entity Name       ; main                                        ;
 ; Family                      ; MAX II                                      ;
-; Total logic elements        ; 81                                          ;
+; Total logic elements        ; 79                                          ;
 ; Total pins                  ; 27                                          ;
 ; Total virtual pins          ; 0                                           ;
 ; UFM blocks                  ; 0 / 1 ( 0 % )                               ;
@@ -202,20 +202,20 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+------------------------------------------------------+
 ; Resource                                    ; Usage                                                ;
 +---------------------------------------------+------------------------------------------------------+
-; Total logic elements                        ; 81                                                   ;
-;     -- Combinational with no register       ; 44                                                   ;
+; Total logic elements                        ; 79                                                   ;
+;     -- Combinational with no register       ; 42                                                   ;
 ;     -- Register only                        ; 0                                                    ;
 ;     -- Combinational with a register        ; 37                                                   ;
 ;                                             ;                                                      ;
 ; Logic element usage by number of LUT inputs ;                                                      ;
-;     -- 4 input functions                    ; 29                                                   ;
-;     -- 3 input functions                    ; 13                                                   ;
+;     -- 4 input functions                    ; 32                                                   ;
+;     -- 3 input functions                    ; 8                                                    ;
 ;     -- 2 input functions                    ; 14                                                   ;
 ;     -- 1 input functions                    ; 25                                                   ;
 ;     -- 0 input functions                    ; 0                                                    ;
 ;                                             ;                                                      ;
 ; Logic elements by mode                      ;                                                      ;
-;     -- normal mode                          ; 81                                                   ;
+;     -- normal mode                          ; 79                                                   ;
 ;     -- arithmetic mode                      ; 0                                                    ;
 ;     -- qfbk mode                            ; 0                                                    ;
 ;     -- register cascade mode                ; 0                                                    ;
@@ -224,10 +224,10 @@ https://fpgasoftware.intel.com/eula.
 ;                                             ;                                                      ;
 ; Total registers                             ; 37                                                   ;
 ; I/O pins                                    ; 27                                                   ;
-; Maximum fan-out node                        ; Seletor_Imagem:comb_17|cont_mod4:comb_4|fft:comb_8|Q ;
-; Maximum fan-out                             ; 19                                                   ;
-; Total fan-out                               ; 270                                                  ;
-; Average fan-out                             ; 2.50                                                 ;
+; Maximum fan-out node                        ; Seletor_Imagem:comb_17|cont_mod4:comb_4|fft:comb_9|Q ;
+; Maximum fan-out                             ; 17                                                   ;
+; Total fan-out                               ; 267                                                  ;
+; Average fan-out                             ; 2.52                                                 ;
 +---------------------------------------------+------------------------------------------------------+
 
 
@@ -236,7 +236,7 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+----------------------------------------------------------+----------------+--------------+
 ; Compilation Hierarchy Node  ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name                                      ; Entity Name    ; Library Name ;
 +-----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+----------------------------------------------------------+----------------+--------------+
-; |main                       ; 81 (1)      ; 37           ; 0          ; 27   ; 0            ; 44 (1)       ; 0 (0)             ; 37 (0)           ; 0 (0)           ; 0 (0)      ; |main                                                    ; main           ; work         ;
+; |main                       ; 79 (0)      ; 37           ; 0          ; 27   ; 0            ; 42 (0)       ; 0 (0)             ; 37 (0)           ; 0 (0)           ; 0 (0)      ; |main                                                    ; main           ; work         ;
 ;    |DivisorClock:comb_8|    ; 22 (0)      ; 22           ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 22 (0)           ; 0 (0)           ; 0 (0)      ; |main|DivisorClock:comb_8                                ; DivisorClock   ; work         ;
 ;       |fft:div_1024|        ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|DivisorClock:comb_8|fft:div_1024                   ; fft            ; work         ;
 ;       |fft:div_1048576|     ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|DivisorClock:comb_8|fft:div_1048576                ; fft            ; work         ;
@@ -260,23 +260,23 @@ https://fpgasoftware.intel.com/eula.
 ;       |fft:div_65536|       ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|DivisorClock:comb_8|fft:div_65536                  ; fft            ; work         ;
 ;       |fft:div_8192|        ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|DivisorClock:comb_8|fft:div_8192                   ; fft            ; work         ;
 ;       |fft:div_8|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|DivisorClock:comb_8|fft:div_8                      ; fft            ; work         ;
-;    |Seletor_Imagem:comb_17| ; 31 (22)     ; 2            ; 0          ; 0    ; 0            ; 29 (22)      ; 0 (0)             ; 2 (0)            ; 0 (0)           ; 0 (0)      ; |main|Seletor_Imagem:comb_17                             ; Seletor_Imagem ; work         ;
+;    |Seletor_Imagem:comb_17| ; 29 (21)     ; 2            ; 0          ; 0    ; 0            ; 27 (21)      ; 0 (0)             ; 2 (0)            ; 0 (0)           ; 0 (0)      ; |main|Seletor_Imagem:comb_17                             ; Seletor_Imagem ; work         ;
 ;       |cont_mod4:comb_4|    ; 2 (0)       ; 2            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (0)            ; 0 (0)           ; 0 (0)      ; |main|Seletor_Imagem:comb_17|cont_mod4:comb_4            ; cont_mod4      ; work         ;
 ;          |fft:comb_8|       ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|Seletor_Imagem:comb_17|cont_mod4:comb_4|fft:comb_8 ; fft            ; work         ;
 ;          |fft:comb_9|       ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|Seletor_Imagem:comb_17|cont_mod4:comb_4|fft:comb_9 ; fft            ; work         ;
-;       |decode:comb_7|       ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|Seletor_Imagem:comb_17|decode:comb_7               ; decode         ; work         ;
+;       |decode:comb_7|       ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|Seletor_Imagem:comb_17|decode:comb_7               ; decode         ; work         ;
 ;       |decode:comb_8|       ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|Seletor_Imagem:comb_17|decode:comb_8               ; decode         ; work         ;
 ;       |demux_1x4:comb_3|    ; 4 (4)       ; 0            ; 0          ; 0    ; 0            ; 4 (4)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|Seletor_Imagem:comb_17|demux_1x4:comb_3            ; demux_1x4      ; work         ;
-;    |cont_mod16:comb_15|     ; 9 (4)       ; 4            ; 0          ; 0    ; 0            ; 5 (4)        ; 0 (0)             ; 4 (0)            ; 0 (0)           ; 0 (0)      ; |main|cont_mod16:comb_15                                 ; cont_mod16     ; work         ;
+;    |cont_mod16:comb_15|     ; 9 (3)       ; 4            ; 0          ; 0    ; 0            ; 5 (3)        ; 0 (0)             ; 4 (0)            ; 0 (0)           ; 0 (0)      ; |main|cont_mod16:comb_15                                 ; cont_mod16     ; work         ;
 ;       |fft:comb_21|         ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|cont_mod16:comb_15|fft:comb_21                     ; fft            ; work         ;
-;       |fft:comb_22|         ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|cont_mod16:comb_15|fft:comb_22                     ; fft            ; work         ;
+;       |fft:comb_22|         ; 2 (2)       ; 1            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|cont_mod16:comb_15|fft:comb_22                     ; fft            ; work         ;
 ;       |fft:comb_23|         ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|cont_mod16:comb_15|fft:comb_23                     ; fft            ; work         ;
 ;       |fft:comb_24|         ; 2 (2)       ; 1            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|cont_mod16:comb_15|fft:comb_24                     ; fft            ; work         ;
 ;    |cont_mod4:comb_16|      ; 2 (0)       ; 2            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (0)            ; 0 (0)           ; 0 (0)      ; |main|cont_mod4:comb_16                                  ; cont_mod4      ; work         ;
 ;       |fft:comb_8|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|cont_mod4:comb_16|fft:comb_8                       ; fft            ; work         ;
 ;       |fft:comb_9|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|cont_mod4:comb_16|fft:comb_9                       ; fft            ; work         ;
 ;    |fft:chave_seletora|     ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|fft:chave_seletora                                 ; fft            ; work         ;
-;    |mef_adub_limp:comb_20|  ; 13 (13)     ; 4            ; 0          ; 0    ; 0            ; 9 (9)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |main|mef_adub_limp:comb_20                              ; mef_adub_limp  ; work         ;
+;    |mef_adub_limp:comb_20|  ; 14 (14)     ; 4            ; 0          ; 0    ; 0            ; 10 (10)      ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |main|mef_adub_limp:comb_20                              ; mef_adub_limp  ; work         ;
 ;    |mef_tiporega:comb_19|   ; 2 (2)       ; 2            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (2)            ; 0 (0)           ; 0 (0)      ; |main|mef_tiporega:comb_19                               ; mef_tiporega   ; work         ;
 +-----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+----------------------------------------------------------+----------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
@@ -380,9 +380,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port  ; Type   ; Severity ; Details                                                                             ;
 +-------+--------+----------+-------------------------------------------------------------------------------------+
-; SEG_E ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; SEG_F ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; SEG_G ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 ; SEG_P ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 +-------+--------+----------+-------------------------------------------------------------------------------------+
 
@@ -392,9 +389,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port  ; Type   ; Severity ; Details                                                                             ;
 +-------+--------+----------+-------------------------------------------------------------------------------------+
-; SEG_E ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; SEG_F ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; SEG_G ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 ; SEG_P ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 +-------+--------+----------+-------------------------------------------------------------------------------------+
 
@@ -665,7 +659,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Mon Jul 22 10:23:54 2024
+    Info: Processing started: Mon Jul 22 14:58:33 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off pbl3 -c pbl3
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
@@ -699,9 +693,6 @@ Warning (10236): Verilog HDL Implicit Net warning at main.v(30): created implici
 Warning (10236): Verilog HDL Implicit Net warning at cont_mod4.v(12): created implicit net for "Yn" File: /home/aluno/Downloads/RegaAutomaticav3/cont_mod4.v Line: 12
 Warning (10236): Verilog HDL Implicit Net warning at cont_mod16.v(18): created implicit net for "Yn" File: /home/aluno/Downloads/RegaAutomaticav3/cont_mod16.v Line: 18
 Warning (10236): Verilog HDL Implicit Net warning at cont_mod16.v(20): created implicit net for "Wire0" File: /home/aluno/Downloads/RegaAutomaticav3/cont_mod16.v Line: 20
-Warning (10236): Verilog HDL Implicit Net warning at decode_cxa.v(23): created implicit net for "C2n" File: /home/aluno/Downloads/RegaAutomaticav3/decode_cxa.v Line: 23
-Warning (10236): Verilog HDL Implicit Net warning at decode_cxa.v(23): created implicit net for "C1" File: /home/aluno/Downloads/RegaAutomaticav3/decode_cxa.v Line: 23
-Warning (10236): Verilog HDL Implicit Net warning at decode_cxa.v(23): created implicit net for "C0n" File: /home/aluno/Downloads/RegaAutomaticav3/decode_cxa.v Line: 23
 Critical Warning (10846): Verilog HDL Instantiation warning at main.v(23): instance has no name File: /home/aluno/Downloads/RegaAutomaticav3/main.v Line: 23
 Critical Warning (10846): Verilog HDL Instantiation warning at cont_mod16.v(41): instance has no name File: /home/aluno/Downloads/RegaAutomaticav3/cont_mod16.v Line: 41
 Critical Warning (10846): Verilog HDL Instantiation warning at cont_mod16.v(42): instance has no name File: /home/aluno/Downloads/RegaAutomaticav3/cont_mod16.v Line: 42
@@ -720,7 +711,6 @@ Critical Warning (10846): Verilog HDL Instantiation warning at Seletor_Imagem.v(
 Critical Warning (10846): Verilog HDL Instantiation warning at main.v(42): instance has no name File: /home/aluno/Downloads/RegaAutomaticav3/main.v Line: 42
 Critical Warning (10846): Verilog HDL Instantiation warning at main.v(45): instance has no name File: /home/aluno/Downloads/RegaAutomaticav3/main.v Line: 45
 Critical Warning (10846): Verilog HDL Instantiation warning at main.v(48): instance has no name File: /home/aluno/Downloads/RegaAutomaticav3/main.v Line: 48
-Warning (10037): Verilog HDL or VHDL warning at mef_adub_limp.v(45): conditional expression evaluates to a constant File: /home/aluno/Downloads/RegaAutomaticav3/mef_adub_limp.v Line: 45
 Critical Warning (10846): Verilog HDL Instantiation warning at main.v(49): instance has no name File: /home/aluno/Downloads/RegaAutomaticav3/main.v Line: 49
 Info (12127): Elaborating entity "main" for the top level hierarchy
 Warning (10739): Verilog HDL warning at main.v(16): actual bit length 32 differs from formal bit length 1 File: /home/aluno/Downloads/RegaAutomaticav3/main.v Line: 16
@@ -738,12 +728,10 @@ Info (12128): Elaborating entity "decode" for hierarchy "Seletor_Imagem:comb_17|
 Warning (10739): Verilog HDL warning at decode.v(63): actual bit length 32 differs from formal bit length 1 File: /home/aluno/Downloads/RegaAutomaticav3/decode.v Line: 63
 Info (12128): Elaborating entity "decode_cxa" for hierarchy "Seletor_Imagem:comb_17|decode_cxa:comb_9" File: /home/aluno/Downloads/RegaAutomaticav3/Seletor_Imagem.v Line: 31
 Warning (10739): Verilog HDL warning at decode_cxa.v(19): actual bit length 32 differs from formal bit length 1 File: /home/aluno/Downloads/RegaAutomaticav3/decode_cxa.v Line: 19
+Warning (10739): Verilog HDL warning at decode_cxa.v(23): actual bit length 32 differs from formal bit length 1 File: /home/aluno/Downloads/RegaAutomaticav3/decode_cxa.v Line: 23
 Warning (10739): Verilog HDL warning at decode_cxa.v(27): actual bit length 32 differs from formal bit length 1 File: /home/aluno/Downloads/RegaAutomaticav3/decode_cxa.v Line: 27
 Warning (10739): Verilog HDL warning at decode_cxa.v(35): actual bit length 32 differs from formal bit length 1 File: /home/aluno/Downloads/RegaAutomaticav3/decode_cxa.v Line: 35
 Warning (10739): Verilog HDL warning at decode_cxa.v(43): actual bit length 32 differs from formal bit length 1 File: /home/aluno/Downloads/RegaAutomaticav3/decode_cxa.v Line: 43
-Warning (10030): Net "C2n" at decode_cxa.v(23) has no driver or initial value, using a default initial value '0' File: /home/aluno/Downloads/RegaAutomaticav3/decode_cxa.v Line: 23
-Warning (10030): Net "C1" at decode_cxa.v(23) has no driver or initial value, using a default initial value '0' File: /home/aluno/Downloads/RegaAutomaticav3/decode_cxa.v Line: 23
-Warning (10030): Net "C0n" at decode_cxa.v(23) has no driver or initial value, using a default initial value '0' File: /home/aluno/Downloads/RegaAutomaticav3/decode_cxa.v Line: 23
 Info (12128): Elaborating entity "decode_simb" for hierarchy "Seletor_Imagem:comb_17|decode_simb:comb_10" File: /home/aluno/Downloads/RegaAutomaticav3/Seletor_Imagem.v Line: 32
 Warning (10739): Verilog HDL warning at decode_simb.v(47): actual bit length 32 differs from formal bit length 1 File: /home/aluno/Downloads/RegaAutomaticav3/decode_simb.v Line: 47
 Info (12128): Elaborating entity "Irrigacao" for hierarchy "Irrigacao:comb_18" File: /home/aluno/Downloads/RegaAutomaticav3/main.v Line: 45
@@ -756,14 +744,14 @@ Warning (13024): Output pins are stuck at VCC or GND
 Info (17049): 8 registers lost all their fanouts during netlist optimizations.
 Warning (21074): Design contains 1 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "T1" File: /home/aluno/Downloads/RegaAutomaticav3/main.v Line: 5
-Info (21057): Implemented 108 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 106 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 7 input pins
     Info (21059): Implemented 20 output pins
-    Info (21061): Implemented 81 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 47 warnings
+    Info (21061): Implemented 79 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 41 warnings
     Info: Peak virtual memory: 340 megabytes
-    Info: Processing ended: Mon Jul 22 10:23:59 2024
-    Info: Elapsed time: 00:00:05
-    Info: Total CPU time (on all processors): 00:00:11
+    Info: Processing ended: Mon Jul 22 14:58:39 2024
+    Info: Elapsed time: 00:00:06
+    Info: Total CPU time (on all processors): 00:00:12
 
 

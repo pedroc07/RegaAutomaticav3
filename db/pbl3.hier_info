@@ -387,14 +387,14 @@ SEG_P <= <VCC>
 
 |main|Seletor_Imagem:comb_17|decode_cxa:comb_9
 Nv1 => Or0.IN0
+Nv1 => Or1.IN0
 Nv1 => And5.IN0
-Nv1 => And0.IN0
 Nv0 => Or0.IN1
-Nv0 => And0.IN1
 Nv0 => And5.IN1
-SEG_A <= And0.DB_MAX_OUTPUT_PORT_TYPE
+Nv0 => Or1.IN1
+SEG_A <= Or1.DB_MAX_OUTPUT_PORT_TYPE
 SEG_B <= <VCC>
-SEG_C <= <GND>
+SEG_C <= <VCC>
 SEG_D <= <GND>
 SEG_E <= Or0.DB_MAX_OUTPUT_PORT_TYPE
 SEG_F <= <VCC>
@@ -403,14 +403,14 @@ SEG_P <= <VCC>
 
 
 |main|Seletor_Imagem:comb_17|decode_simb:comb_10
-Limp => Or1.IN0
 Limp => Or0.IN0
+Limp => Or1.IN0
 Limp => And3.IN0
 Limp => And4.IN0
-Mist => Or0.IN1
-Mist => Or1.IN1
-Mist => And3.IN1
-Mist => And4.IN1
+M => Or1.IN1
+M => Or0.IN1
+M => And3.IN1
+M => And4.IN1
 SEG_A <= Or0.DB_MAX_OUTPUT_PORT_TYPE
 SEG_B <= Or0.DB_MAX_OUTPUT_PORT_TYPE
 SEG_C <= Or0.DB_MAX_OUTPUT_PORT_TYPE
@@ -460,13 +460,14 @@ Nv1 => Mist.IN0
 Nv1 => or3.IN0
 Nv1 => and7.IN0
 Nv1 => and8.IN0
+Nv1 => Limp.IN0
 Nv0 => and0.IN1
 Nv0 => and2.IN1
 Nv0 => and4.IN1
 Nv0 => and6.IN0
-Nv0 => and8.IN1
 Nv0 => or3.IN1
 Nv0 => and7.IN1
+Nv0 => and8.IN1
 Asp => and0.IN2
 Asp => and1.IN2
 Asp => and2.IN2

@@ -1,3 +1,7 @@
+//parar contador quando nao tiver rega
+//setar contador em 30 ou ajustar valvula
+//parar irrigacao quando tiver na limpeza
+
 // Declaracao do modulo
 module main (Clk, Rst, Us, Bs, Vs, A, G, Nv1, Nv0, Adub, Ve, Mist, Limp0, Limp1, SEG_D1, SEG_D2, SEG_D3, SEG_D4, SEG_A, SEG_B, SEG_C, SEG_D, SEG_E, SEG_F, SEG_G, SEG_P, T1);  
 
@@ -31,7 +35,7 @@ module main (Clk, Rst, Us, Bs, Vs, A, G, Nv1, Nv0, Adub, Ve, Mist, Limp0, Limp1,
 	nor Nor0(wire1, ContA3, ContA2, ContA1, ContA0, ContB1, ContB0);
 	nor Nor1(wire2, ContA3, ContA2, ContA1, ContA0, ContB1n, ContB0n);
 	or Or0(T0, wire1, wire2);
-	fft chave_seletora (.T(T0),.clock(CRn),.Q(Y));
+	fft chave_seletora (.T(wire1),.clock(CRn),.Q(Y));
 	
 	//Contadores do cronometro
 	

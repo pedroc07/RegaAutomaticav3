@@ -12,19 +12,19 @@ not Not1(notNv0, Nv0);
 
 //SEGMENTO A
 
-and And0(SEG_A, notNv1, notNv0);
+or Or1(SEG_A, notNv1, notNv0);
 
 //SEGMENTO B
 
-and And1(SEG_B, 1, 1);
+not Not3(SEG_B, 0);
 
 //SEGMENTO C
 
-and And2(SEG_C, C2n, C1, C0n);
+not Not6(SEG_C, 0);
 
 //SEGMENTO D
 
-and And3(SEG_D, 0, 0);
+not Not4(SEG_D, 1);
 
 //SEGMENTO E
 
@@ -32,14 +32,14 @@ or Or0(SEG_E, Nv1, Nv0);
 
 //SEGMENTO F
 
-and And4(SEG_F, 1, 1);
+not Not5(SEG_F, 0);
 
 //SEGMENTO G
 
-and And5(SEG_G, notNv0, Nv1);
+and And5(SEG_G, notNv1, Nv0);
 
 //SEGMENTO P
 
-not (SEG_P, 0);
+not Not2(SEG_P, 0);
 
 endmodule

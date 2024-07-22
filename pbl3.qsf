@@ -95,3 +95,4 @@ set_global_assignment -name VERILOG_FILE Seletor_Imagem.v
 set_global_assignment -name VERILOG_FILE mef_adub_limp.v
 set_global_assignment -name VERILOG_FILE decode_cxa.v
 set_global_assignment -name VERILOG_FILE decode_simb.v
+set_location_assignment PIN_50 -to T1

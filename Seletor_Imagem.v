@@ -64,22 +64,22 @@ module Seletor_Imagem(S, Limp, Mist, Nv1, Nv0, ContA3, ContA2, ContA1, ContA0, C
 	and And3(SEG_D, Wire17, Wire16, Wire14, Wire15);
 
 	// SEGMENTO E
-	or Or22(Wire20, SEG_C2, Sel[1], Sel[0]);		//00
-	or Or23(Wire21, SEG_C3, Sel[1], Sel0n);		//01
+	or Or22(Wire20, SEG_E2, Sel[1], Sel[0]);		//00
+	or Or23(Wire21, SEG_E3, Sel[1], Sel0n);		//01
 	or Or8(Wire18, SEG_E1, Sel1n, Sel[0]);  		//10
 	or Or9(Wire19, SEG_E0, Sel1n, Sel0n);         	//11
 	and And4(SEG_E, Wire21, Wire20, Wire18, Wire19);
 	
 	// SEGMENTO F
-	or Or24(Wire24, SEG_C2, Sel[1], Sel[0]);		//00
-	or Or25(Wire25, SEG_C3, Sel[1], Sel0n);		//01
+	or Or24(Wire24, SEG_F2, Sel[1], Sel[0]);		//00
+	or Or25(Wire25, SEG_F3, Sel[1], Sel0n);		//01
 	or Or10(Wire22, SEG_F1, Sel1n, Sel[0]);  		//10
 	or Or11(Wire23, SEG_F0, Sel1n, Sel0n);         	//11
 	and And5(SEG_F, Wire24, Wire25, Wire22, Wire23);
 	
 	// SEGMENTO G
-	or Or26(Wire28, SEG_C2, Sel[1], Sel[0]);		//00
-	or Or27(Wire29, SEG_C3, Sel[1], Sel0n);		//01
+	or Or26(Wire28, SEG_G2, Sel[1], Sel[0]);		//00
+	or Or27(Wire29, SEG_G3, Sel[1], Sel0n);		//01
 	or Or12(Wire26, SEG_G1, Sel1n, Sel[0]);  		//10
 	or Or13(Wire27, SEG_G0, Sel1n, Sel0n);         	//11
 	and An6(SEG_G, Wire28, Wire29, Wire26, Wire27);
