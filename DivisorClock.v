@@ -30,6 +30,8 @@ module DivisorClock (clock, Sel, clock_Asp, clock_Got);
    fft div_524288 (.T(1'b1),.clock(Q[17]),.Q(Q[18]));
    fft div_1048576 (.T(1'b1),.clock(Q[18]),.Q(Q[19]));
    fft div_2097152 (.T(1'b1),.clock(Q[19]),.Q(clock_Got));
-   fft div_4194304 (.T(1'b1),.clock(clock_Got),.Q(clock_Asp));
+   fft div_4194304 (.T(1'b1),.clock(clock_Got),.Q(Q[20]));
+	fft (1, Q[20], Q[21]);
+	fft (1, Q[21], clock_Asp);
 	
 endmodule 

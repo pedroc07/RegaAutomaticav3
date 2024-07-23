@@ -34,16 +34,14 @@ module mef_adub_limp ( input clk ,
 	
 	//condicoes estado D
 	
-	and and6(cond4, Nv0, Nv1, Nv2);
+	and and6(cond4, Nv0, notNv1, Nv2);
 	
 	//condicoes saidas
 	
 	//Ve
-	not not5(notcond4, cond4);
 	
 	//Mist
-	and and7(wire3, notNv2, Nv1);
-	or or1(cond5, Nv2, wire3);
+	not not5(cond5, cond6);
 
 	//Limp
 	
@@ -77,7 +75,7 @@ module mef_adub_limp ( input clk ,
         	else nextstate <= A;
         	end
 	// output logic
-	assign Ve = (notcond4 & (state == D)) ;
+	assign Ve = (state == D) ;
 	assign Mist = (cond5 & (state == C));
 	assign Limp = (cond6 & (state == C)) ;
     

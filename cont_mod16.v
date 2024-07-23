@@ -1,8 +1,8 @@
 //Definição do módulo Contador de Dezena de modulo 16 Decrescente
 
-module cont_mod16(Y, Clk, Q3, Q2, Q1, Q0);
+module cont_mod16(Pos9, Y, Clk, Q3, Q2, Q1, Q0);
 
-input Clk, Y;
+input Clk, Y, Pos9;
 
 output Q3, Q2, Q1, Q0;
 
@@ -38,9 +38,9 @@ or Or2(T3, Wire7, Wire8, Wire9);
 
 
 //Flip-flops JK usados para fazer o contador
-fft(1, Clk, Q0);
-fft(T1, Clk, Q1);
-fft(T2, Clk, Q2);
-fft(T3, Clk, Q3);
+fft_rst(Pos9, 0, 1, Clk, Q0);
+fft_rst(0, Pos9, T1, Clk, Q1);
+fft_rst(0, Pos9, T2, Clk, Q2);
+fft_rst(Pos9, 0, T3, Clk, Q3);
 
 endmodule

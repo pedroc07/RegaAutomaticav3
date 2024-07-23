@@ -1,7 +1,7 @@
 //Definição do módulo Contador modulo 2 crescente e decrescente
-module cont_mod2(Y, Clk, Q1, Q0);
+module cont_mod2(Pos2, Y, Clk, Q1, Q0);
 
-input Clk, Y;
+input Clk, Y, Pos2;
 
 output Q1, Q0;
 
@@ -26,8 +26,8 @@ not Not2(Q0n, Q0);
 
 //Flip-flops T usados para fazer o contador
 //FF0
-fft(wire7, Clk, Q0);
+fft_rst(0, Pos2, wire7, Clk, Q0);
 //FF1
-fft(wire3, Clk, Q1);
+fft_rst(Pos2, 0, wire3, Clk, Q1);
 
 endmodule
