@@ -1,6 +1,6 @@
 Fitter report for pbl3
-Tue Jul 23 15:45:51 2024
-Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Tue Jul 23 19:56:37 2024
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
 ---------------------
@@ -39,9 +39,9 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2020  Intel Corporation. All rights reserved.
+Copyright (C) 2018  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
-and other software and tools, and any partner logic 
+and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
@@ -51,22 +51,21 @@ the Intel FPGA IP License Agreement, or other applicable license
 agreement, including, without limitation, that your use is for
 the sole purpose of programming logic devices manufactured by
 Intel and sold by Intel or its authorized distributors.  Please
-refer to the applicable agreement for further details, at
-https://fpgasoftware.intel.com/eula.
+refer to the applicable agreement for further details.
 
 
 
 +---------------------------------------------------------------------+
 ; Fitter Summary                                                      ;
 +-----------------------+---------------------------------------------+
-; Fitter Status         ; Successful - Tue Jul 23 15:45:51 2024       ;
-; Quartus Prime Version ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
+; Fitter Status         ; Successful - Tue Jul 23 19:56:37 2024       ;
+; Quartus Prime Version ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name         ; pbl3                                        ;
 ; Top-level Entity Name ; main                                        ;
 ; Family                ; MAX II                                      ;
 ; Device                ; EPM240T100C5                                ;
 ; Timing Models         ; Final                                       ;
-; Total logic elements  ; 87 / 240 ( 36 % )                           ;
+; Total logic elements  ; 89 / 240 ( 37 % )                           ;
 ; Total pins            ; 27 / 80 ( 34 % )                            ;
 ; Total virtual pins    ; 0                                           ;
 ; UFM blocks            ; 0 / 1 ( 0 % )                               ;
@@ -127,16 +126,16 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 6           ;
-; Maximum allowed            ; 6           ;
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 1.08        ;
-; Maximum used               ; 6           ;
+; Average used               ; 1.02        ;
+; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   1.8%      ;
-;     Processors 3-6         ;   1.6%      ;
+;     Processor 2            ;   0.8%      ;
+;     Processors 3-4         ;   0.7%      ;
 +----------------------------+-------------+
 
 
@@ -152,56 +151,56 @@ https://fpgasoftware.intel.com/eula.
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in /home/aluno/Downloads/rega3/RegaAutomaticav3/output_files/pbl3.pin.
+The pin-out file can be found in C:/Users/User/Desktop/RegaAutomaticav3/output_files/pbl3.pin.
 
 
-+------------------------------------------------------------------+
-; Fitter Resource Usage Summary                                    ;
-+---------------------------------------------+--------------------+
-; Resource                                    ; Usage              ;
-+---------------------------------------------+--------------------+
-; Total logic elements                        ; 87 / 240 ( 36 % )  ;
-;     -- Combinational with no register       ; 48                 ;
-;     -- Register only                        ; 0                  ;
-;     -- Combinational with a register        ; 39                 ;
-;                                             ;                    ;
-; Logic element usage by number of LUT inputs ;                    ;
-;     -- 4 input functions                    ; 40                 ;
-;     -- 3 input functions                    ; 9                  ;
-;     -- 2 input functions                    ; 13                 ;
-;     -- 1 input functions                    ; 25                 ;
-;     -- 0 input functions                    ; 0                  ;
-;                                             ;                    ;
-; Logic elements by mode                      ;                    ;
-;     -- normal mode                          ; 87                 ;
-;     -- arithmetic mode                      ; 0                  ;
-;     -- qfbk mode                            ; 0                  ;
-;     -- register cascade mode                ; 0                  ;
-;     -- synchronous clear/load mode          ; 0                  ;
-;     -- asynchronous clear/load mode         ; 6                  ;
-;                                             ;                    ;
-; Total registers                             ; 39 / 240 ( 16 % )  ;
-; Total LABs                                  ; 19 / 24 ( 79 % )   ;
-; Logic elements in carry chains              ; 0                  ;
-; Virtual pins                                ; 0                  ;
-; I/O pins                                    ; 27 / 80 ( 34 % )   ;
-;     -- Clock pins                           ; 1 / 4 ( 25 % )     ;
-;                                             ;                    ;
-; UFM blocks                                  ; 0 / 1 ( 0 % )      ;
-;                                             ;                    ;
-;     -- Total Fixed Point DSP Blocks         ; 0                  ;
-;     -- Total Floating Point DSP Blocks      ; 0                  ;
-;                                             ;                    ;
-; Global signals                              ; 4                  ;
-;     -- Global clocks                        ; 4 / 4 ( 100 % )    ;
-; JTAGs                                       ; 0 / 1 ( 0 % )      ;
-; Average interconnect usage (total/H/V)      ; 8.7% / 9.8% / 7.6% ;
-; Peak interconnect usage (total/H/V)         ; 8.7% / 9.8% / 7.6% ;
-; Maximum fan-out                             ; 21                 ;
-; Highest non-global fan-out                  ; 21                 ;
-; Total fan-out                               ; 302                ;
-; Average fan-out                             ; 2.65               ;
-+---------------------------------------------+--------------------+
++-------------------------------------------------------------------+
+; Fitter Resource Usage Summary                                     ;
++---------------------------------------------+---------------------+
+; Resource                                    ; Usage               ;
++---------------------------------------------+---------------------+
+; Total logic elements                        ; 89 / 240 ( 37 % )   ;
+;     -- Combinational with no register       ; 50                  ;
+;     -- Register only                        ; 0                   ;
+;     -- Combinational with a register        ; 39                  ;
+;                                             ;                     ;
+; Logic element usage by number of LUT inputs ;                     ;
+;     -- 4 input functions                    ; 44                  ;
+;     -- 3 input functions                    ; 8                   ;
+;     -- 2 input functions                    ; 12                  ;
+;     -- 1 input functions                    ; 25                  ;
+;     -- 0 input functions                    ; 0                   ;
+;                                             ;                     ;
+; Logic elements by mode                      ;                     ;
+;     -- normal mode                          ; 89                  ;
+;     -- arithmetic mode                      ; 0                   ;
+;     -- qfbk mode                            ; 0                   ;
+;     -- register cascade mode                ; 0                   ;
+;     -- synchronous clear/load mode          ; 0                   ;
+;     -- asynchronous clear/load mode         ; 7                   ;
+;                                             ;                     ;
+; Total registers                             ; 39 / 240 ( 16 % )   ;
+; Total LABs                                  ; 20 / 24 ( 83 % )    ;
+; Logic elements in carry chains              ; 0                   ;
+; Virtual pins                                ; 0                   ;
+; I/O pins                                    ; 27 / 80 ( 34 % )    ;
+;     -- Clock pins                           ; 1 / 4 ( 25 % )      ;
+;                                             ;                     ;
+; UFM blocks                                  ; 0 / 1 ( 0 % )       ;
+;                                             ;                     ;
+;     -- Total Fixed Point DSP Blocks         ; 0                   ;
+;     -- Total Floating Point DSP Blocks      ; 0                   ;
+;                                             ;                     ;
+; Global signals                              ; 4                   ;
+;     -- Global clocks                        ; 4 / 4 ( 100 % )     ;
+; JTAGs                                       ; 0 / 1 ( 0 % )       ;
+; Average interconnect usage (total/H/V)      ; 9.3% / 10.9% / 7.6% ;
+; Peak interconnect usage (total/H/V)         ; 9.3% / 10.9% / 7.6% ;
+; Maximum fan-out                             ; 21                  ;
+; Highest non-global fan-out                  ; 21                  ;
+; Total fan-out                               ; 314                 ;
+; Average fan-out                             ; 2.71                ;
++---------------------------------------------+---------------------+
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -209,10 +208,10 @@ The pin-out file can be found in /home/aluno/Downloads/rega3/RegaAutomaticav3/ou
 +------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+-----------------+----------+--------------+--------------+----------------------+----------------+
 ; Name ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Cell number ; Combinational Fan-Out ; Registered Fan-Out ; Global ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Location assigned by ; Slow Slew Rate ;
 +------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+-----------------+----------+--------------+--------------+----------------------+----------------+
-; Adub ; 52    ; 2        ; 8            ; 1            ; 4           ; 1                     ; 0                  ; no     ; no              ; no       ; Off          ; 3.3-V LVTTL  ; User                 ; no             ;
+; Adub ; 52    ; 2        ; 8            ; 1            ; 4           ; 2                     ; 0                  ; no     ; no              ; no       ; Off          ; 3.3-V LVTTL  ; User                 ; no             ;
 ; Bs   ; 36    ; 1        ; 4            ; 0            ; 2           ; 3                     ; 0                  ; no     ; no              ; no       ; Off          ; 3.3-V LVTTL  ; User                 ; no             ;
 ; Clk  ; 12    ; 1        ; 1            ; 3            ; 3           ; 7                     ; 0                  ; yes    ; no              ; no       ; Off          ; 3.3-V LVTTL  ; User                 ; no             ;
-; Rst  ; 35    ; 1        ; 3            ; 0            ; 0           ; 12                    ; 0                  ; no     ; no              ; no       ; Off          ; 3.3-V LVTTL  ; User                 ; no             ;
+; Rst  ; 35    ; 1        ; 3            ; 0            ; 0           ; 13                    ; 0                  ; no     ; no              ; no       ; Off          ; 3.3-V LVTTL  ; User                 ; no             ;
 ; T1   ; 50    ; 1        ; 7            ; 0            ; 1           ; 0                     ; 0                  ; no     ; no              ; no       ; Off          ; 3.3-V LVTTL  ; User                 ; no             ;
 ; Us   ; 33    ; 1        ; 3            ; 0            ; 2           ; 2                     ; 0                  ; no     ; no              ; no       ; Off          ; 3.3-V LVTTL  ; User                 ; no             ;
 ; Vs   ; 34    ; 1        ; 3            ; 0            ; 1           ; 3                     ; 0                  ; no     ; no              ; no       ; Off          ; 3.3-V LVTTL  ; User                 ; no             ;
@@ -233,7 +232,7 @@ The pin-out file can be found in /home/aluno/Downloads/rega3/RegaAutomaticav3/ou
 ; Nv1    ; 76    ; 2        ; 7            ; 5            ; 1           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; User                 ; 10 pF ; -                    ; -                   ;
 ; SEG_A  ; 90    ; 2        ; 4            ; 5            ; 1           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; User                 ; 10 pF ; -                    ; -                   ;
 ; SEG_B  ; 70    ; 2        ; 8            ; 4            ; 4           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; User                 ; 10 pF ; -                    ; -                   ;
-; SEG_C  ; 41    ; 1        ; 5            ; 0            ; 1           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; User                 ; 10 pF ; -                    ; -                   ;
+; SEG_C  ; 41    ; 1        ; 5            ; 0            ; 1           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; yes                    ; User                 ; 10 pF ; -                    ; -                   ;
 ; SEG_D  ; 98    ; 2        ; 2            ; 5            ; 0           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; User                 ; 10 pF ; -                    ; -                   ;
 ; SEG_D1 ; 88    ; 2        ; 5            ; 5            ; 3           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; User                 ; 10 pF ; -                    ; -                   ;
 ; SEG_D2 ; 66    ; 2        ; 8            ; 3            ; 3           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; User                 ; 10 pF ; -                    ; -                   ;
@@ -387,7 +386,7 @@ Note: User assignments will override these defaults. The user specified values a
 +-----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+----------------------------------------------------------+----------------+--------------+
 ; Compilation Hierarchy Node  ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name                                      ; Entity Name    ; Library Name ;
 +-----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+----------------------------------------------------------+----------------+--------------+
-; |main                       ; 87 (0)      ; 39           ; 0          ; 27   ; 0            ; 48 (0)       ; 0 (0)             ; 39 (0)           ; 0 (0)           ; 0 (0)      ; |main                                                    ; main           ; work         ;
+; |main                       ; 89 (1)      ; 39           ; 0          ; 27   ; 0            ; 50 (1)       ; 0 (0)             ; 39 (0)           ; 0 (0)           ; 0 (0)      ; |main                                                    ; main           ; work         ;
 ;    |DivisorClock:comb_9|    ; 24 (0)      ; 24           ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 24 (0)           ; 0 (0)           ; 0 (0)      ; |main|DivisorClock:comb_9                                ; DivisorClock   ; work         ;
 ;       |fft:comb_3|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|DivisorClock:comb_9|fft:comb_3                     ; fft            ; work         ;
 ;       |fft:comb_4|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|DivisorClock:comb_9|fft:comb_4                     ; fft            ; work         ;
@@ -413,24 +412,24 @@ Note: User assignments will override these defaults. The user specified values a
 ;       |fft:div_65536|       ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|DivisorClock:comb_9|fft:div_65536                  ; fft            ; work         ;
 ;       |fft:div_8192|        ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|DivisorClock:comb_9|fft:div_8192                   ; fft            ; work         ;
 ;       |fft:div_8|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|DivisorClock:comb_9|fft:div_8                      ; fft            ; work         ;
-;    |Seletor_Imagem:comb_20| ; 31 (23)     ; 2            ; 0          ; 0    ; 0            ; 29 (23)      ; 0 (0)             ; 2 (0)            ; 0 (0)           ; 0 (0)      ; |main|Seletor_Imagem:comb_20                             ; Seletor_Imagem ; work         ;
-;       |cont_mod4:comb_4|    ; 2 (0)       ; 2            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (0)            ; 0 (0)           ; 0 (0)      ; |main|Seletor_Imagem:comb_20|cont_mod4:comb_4            ; cont_mod4      ; work         ;
-;          |fft:comb_8|       ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|Seletor_Imagem:comb_20|cont_mod4:comb_4|fft:comb_8 ; fft            ; work         ;
-;          |fft:comb_9|       ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|Seletor_Imagem:comb_20|cont_mod4:comb_4|fft:comb_9 ; fft            ; work         ;
-;       |decode:comb_10|      ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|Seletor_Imagem:comb_20|decode:comb_10              ; decode         ; work         ;
-;       |demux_1x4:comb_3|    ; 4 (4)       ; 0            ; 0          ; 0    ; 0            ; 4 (4)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|Seletor_Imagem:comb_20|demux_1x4:comb_3            ; demux_1x4      ; work         ;
-;    |cont_mod16:comb_18|     ; 11 (5)      ; 4            ; 0          ; 0    ; 0            ; 7 (5)        ; 0 (0)             ; 4 (0)            ; 0 (0)           ; 0 (0)      ; |main|cont_mod16:comb_18                                 ; cont_mod16     ; work         ;
-;       |fft_rst:comb_21|     ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|cont_mod16:comb_18|fft_rst:comb_21                 ; fft_rst        ; work         ;
-;       |fft_rst:comb_22|     ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|cont_mod16:comb_18|fft_rst:comb_22                 ; fft_rst        ; work         ;
-;       |fft_rst:comb_23|     ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|cont_mod16:comb_18|fft_rst:comb_23                 ; fft_rst        ; work         ;
-;       |fft_rst:comb_24|     ; 3 (3)       ; 1            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|cont_mod16:comb_18|fft_rst:comb_24                 ; fft_rst        ; work         ;
-;    |cont_mod2:comb_19|      ; 2 (0)       ; 2            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (0)            ; 0 (0)           ; 0 (0)      ; |main|cont_mod2:comb_19                                  ; cont_mod2      ; work         ;
-;       |fft_rst:comb_14|     ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|cont_mod2:comb_19|fft_rst:comb_14                  ; fft_rst        ; work         ;
-;       |fft_rst:comb_15|     ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|cont_mod2:comb_19|fft_rst:comb_15                  ; fft_rst        ; work         ;
-;    |fft:chave_seletora|     ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|fft:chave_seletora                                 ; fft            ; work         ;
-;    |mef_adub_limp:comb_23|  ; 15 (15)     ; 4            ; 0          ; 0    ; 0            ; 11 (11)      ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |main|mef_adub_limp:comb_23                              ; mef_adub_limp  ; work         ;
-;    |mef_tiporega:comb_22|   ; 2 (2)       ; 2            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (2)            ; 0 (0)           ; 0 (0)      ; |main|mef_tiporega:comb_22                               ; mef_tiporega   ; work         ;
-;    |mux_1x4_normal:comb_17| ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|mux_1x4_normal:comb_17                             ; mux_1x4_normal ; work         ;
+;    |Seletor_Imagem:comb_22| ; 30 (22)     ; 2            ; 0          ; 0    ; 0            ; 28 (22)      ; 0 (0)             ; 2 (0)            ; 0 (0)           ; 0 (0)      ; |main|Seletor_Imagem:comb_22                             ; Seletor_Imagem ; work         ;
+;       |cont_mod4:comb_4|    ; 2 (0)       ; 2            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (0)            ; 0 (0)           ; 0 (0)      ; |main|Seletor_Imagem:comb_22|cont_mod4:comb_4            ; cont_mod4      ; work         ;
+;          |fft:comb_8|       ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|Seletor_Imagem:comb_22|cont_mod4:comb_4|fft:comb_8 ; fft            ; work         ;
+;          |fft:comb_9|       ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|Seletor_Imagem:comb_22|cont_mod4:comb_4|fft:comb_9 ; fft            ; work         ;
+;       |decode:comb_10|      ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|Seletor_Imagem:comb_22|decode:comb_10              ; decode         ; work         ;
+;       |demux_1x4:comb_3|    ; 4 (4)       ; 0            ; 0          ; 0    ; 0            ; 4 (4)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|Seletor_Imagem:comb_22|demux_1x4:comb_3            ; demux_1x4      ; work         ;
+;    |cont_mod16:comb_20|     ; 12 (8)      ; 4            ; 0          ; 0    ; 0            ; 8 (8)        ; 0 (0)             ; 4 (0)            ; 0 (0)           ; 0 (0)      ; |main|cont_mod16:comb_20                                 ; cont_mod16     ; work         ;
+;       |fft_rst:comb_21|     ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|cont_mod16:comb_20|fft_rst:comb_21                 ; fft_rst        ; work         ;
+;       |fft_rst:comb_22|     ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|cont_mod16:comb_20|fft_rst:comb_22                 ; fft_rst        ; work         ;
+;       |fft_rst:comb_23|     ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|cont_mod16:comb_20|fft_rst:comb_23                 ; fft_rst        ; work         ;
+;       |fft_rst:comb_24|     ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|cont_mod16:comb_20|fft_rst:comb_24                 ; fft_rst        ; work         ;
+;    |cont_mod2:comb_21|      ; 2 (0)       ; 2            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (0)            ; 0 (0)           ; 0 (0)      ; |main|cont_mod2:comb_21                                  ; cont_mod2      ; work         ;
+;       |fft_rst:comb_14|     ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|cont_mod2:comb_21|fft_rst:comb_14                  ; fft_rst        ; work         ;
+;       |fft_rst:comb_15|     ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|cont_mod2:comb_21|fft_rst:comb_15                  ; fft_rst        ; work         ;
+;    |flipflopJK:comb_17|     ; 2 (2)       ; 1            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|flipflopJK:comb_17                                 ; flipflopJK     ; work         ;
+;    |mef_adub_limp:comb_25|  ; 15 (15)     ; 4            ; 0          ; 0    ; 0            ; 11 (11)      ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |main|mef_adub_limp:comb_25                              ; mef_adub_limp  ; work         ;
+;    |mef_tiporega:comb_24|   ; 2 (2)       ; 2            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (2)            ; 0 (0)           ; 0 (0)      ; |main|mef_tiporega:comb_24                               ; mef_tiporega   ; work         ;
+;    |mux_1x4_normal:comb_19| ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|mux_1x4_normal:comb_19                             ; mux_1x4_normal ; work         ;
 +-----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+----------------------------------------------------------+----------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -476,32 +475,32 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Name                                  ; Location    ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ;
 +---------------------------------------+-------------+---------+--------------+--------+----------------------+------------------+
 ; Clk                                   ; PIN_12      ; 7       ; Clock        ; yes    ; Global Clock         ; GCLK0            ;
-; DivisorClock:comb_9|fft:comb_3|Q      ; LC_X5_Y3_N9 ; 2       ; Clock        ; no     ; --                   ; --               ;
-; DivisorClock:comb_9|fft:div_1024|Q    ; LC_X5_Y4_N2 ; 2       ; Clock        ; no     ; --                   ; --               ;
-; DivisorClock:comb_9|fft:div_1048576|Q ; LC_X6_Y3_N4 ; 2       ; Clock        ; no     ; --                   ; --               ;
-; DivisorClock:comb_9|fft:div_128|Q     ; LC_X4_Y1_N7 ; 2       ; Clock        ; no     ; --                   ; --               ;
-; DivisorClock:comb_9|fft:div_131072|Q  ; LC_X7_Y4_N4 ; 2       ; Clock        ; no     ; --                   ; --               ;
+; DivisorClock:comb_9|fft:comb_3|Q      ; LC_X3_Y1_N9 ; 2       ; Clock        ; no     ; --                   ; --               ;
+; DivisorClock:comb_9|fft:div_1024|Q    ; LC_X5_Y3_N3 ; 2       ; Clock        ; no     ; --                   ; --               ;
+; DivisorClock:comb_9|fft:div_1048576|Q ; LC_X5_Y1_N8 ; 2       ; Clock        ; no     ; --                   ; --               ;
+; DivisorClock:comb_9|fft:div_128|Q     ; LC_X5_Y4_N9 ; 2       ; Clock        ; no     ; --                   ; --               ;
+; DivisorClock:comb_9|fft:div_131072|Q  ; LC_X7_Y1_N4 ; 2       ; Clock        ; no     ; --                   ; --               ;
 ; DivisorClock:comb_9|fft:div_16384|Q   ; LC_X3_Y3_N2 ; 2       ; Clock        ; no     ; --                   ; --               ;
-; DivisorClock:comb_9|fft:div_16|Q      ; LC_X6_Y1_N9 ; 2       ; Clock        ; no     ; --                   ; --               ;
-; DivisorClock:comb_9|fft:div_2048|Q    ; LC_X4_Y4_N8 ; 2       ; Clock        ; no     ; --                   ; --               ;
-; DivisorClock:comb_9|fft:div_2097152|Q ; LC_X6_Y3_N2 ; 3       ; Clock        ; no     ; --                   ; --               ;
-; DivisorClock:comb_9|fft:div_256|Q     ; LC_X4_Y1_N5 ; 2       ; Clock        ; no     ; --                   ; --               ;
-; DivisorClock:comb_9|fft:div_262144|Q  ; LC_X7_Y4_N2 ; 2       ; Clock        ; no     ; --                   ; --               ;
-; DivisorClock:comb_9|fft:div_2|Q       ; LC_X7_Y1_N4 ; 2       ; Clock        ; no     ; --                   ; --               ;
-; DivisorClock:comb_9|fft:div_32768|Q   ; LC_X2_Y3_N8 ; 2       ; Clock        ; no     ; --                   ; --               ;
-; DivisorClock:comb_9|fft:div_32|Q      ; LC_X5_Y1_N8 ; 2       ; Clock        ; no     ; --                   ; --               ;
-; DivisorClock:comb_9|fft:div_4096|Q    ; LC_X4_Y4_N9 ; 2       ; Clock        ; no     ; --                   ; --               ;
-; DivisorClock:comb_9|fft:div_4194304|Q ; LC_X5_Y3_N8 ; 2       ; Clock        ; no     ; --                   ; --               ;
-; DivisorClock:comb_9|fft:div_4|Q       ; LC_X7_Y1_N2 ; 2       ; Clock        ; no     ; --                   ; --               ;
-; DivisorClock:comb_9|fft:div_512|Q     ; LC_X5_Y4_N4 ; 2       ; Clock        ; no     ; --                   ; --               ;
-; DivisorClock:comb_9|fft:div_524288|Q  ; LC_X6_Y4_N5 ; 2       ; Clock        ; no     ; --                   ; --               ;
-; DivisorClock:comb_9|fft:div_64|Q      ; LC_X5_Y1_N9 ; 2       ; Clock        ; no     ; --                   ; --               ;
-; DivisorClock:comb_9|fft:div_65536|Q   ; LC_X2_Y3_N9 ; 4       ; Clock        ; yes    ; Global Clock         ; GCLK2            ;
-; DivisorClock:comb_9|fft:div_8192|Q    ; LC_X3_Y3_N4 ; 2       ; Clock        ; no     ; --                   ; --               ;
-; DivisorClock:comb_9|fft:div_8|Q       ; LC_X6_Y1_N8 ; 2       ; Clock        ; no     ; --                   ; --               ;
-; Rst                                   ; PIN_35      ; 12      ; Async. clear ; no     ; --                   ; --               ;
-; cont_mod16:comb_18|fft_rst:comb_24|Q  ; LC_X4_Y2_N6 ; 11      ; Clock        ; yes    ; Global Clock         ; GCLK1            ;
-; mux_1x4_normal:comb_17|WideOr0        ; LC_X4_Y3_N7 ; 5       ; Clock        ; yes    ; Global Clock         ; GCLK3            ;
+; DivisorClock:comb_9|fft:div_16|Q      ; LC_X3_Y4_N8 ; 2       ; Clock        ; no     ; --                   ; --               ;
+; DivisorClock:comb_9|fft:div_2048|Q    ; LC_X4_Y3_N8 ; 2       ; Clock        ; no     ; --                   ; --               ;
+; DivisorClock:comb_9|fft:div_2097152|Q ; LC_X4_Y1_N8 ; 3       ; Clock        ; no     ; --                   ; --               ;
+; DivisorClock:comb_9|fft:div_256|Q     ; LC_X5_Y4_N3 ; 2       ; Clock        ; no     ; --                   ; --               ;
+; DivisorClock:comb_9|fft:div_262144|Q  ; LC_X7_Y1_N2 ; 2       ; Clock        ; no     ; --                   ; --               ;
+; DivisorClock:comb_9|fft:div_2|Q       ; LC_X2_Y4_N4 ; 2       ; Clock        ; no     ; --                   ; --               ;
+; DivisorClock:comb_9|fft:div_32768|Q   ; LC_X2_Y3_N9 ; 2       ; Clock        ; no     ; --                   ; --               ;
+; DivisorClock:comb_9|fft:div_32|Q      ; LC_X4_Y4_N9 ; 2       ; Clock        ; no     ; --                   ; --               ;
+; DivisorClock:comb_9|fft:div_4096|Q    ; LC_X4_Y3_N9 ; 2       ; Clock        ; no     ; --                   ; --               ;
+; DivisorClock:comb_9|fft:div_4194304|Q ; LC_X4_Y1_N1 ; 2       ; Clock        ; no     ; --                   ; --               ;
+; DivisorClock:comb_9|fft:div_4|Q       ; LC_X2_Y4_N2 ; 2       ; Clock        ; no     ; --                   ; --               ;
+; DivisorClock:comb_9|fft:div_512|Q     ; LC_X6_Y4_N3 ; 2       ; Clock        ; no     ; --                   ; --               ;
+; DivisorClock:comb_9|fft:div_524288|Q  ; LC_X6_Y1_N9 ; 2       ; Clock        ; no     ; --                   ; --               ;
+; DivisorClock:comb_9|fft:div_64|Q      ; LC_X4_Y4_N3 ; 2       ; Clock        ; no     ; --                   ; --               ;
+; DivisorClock:comb_9|fft:div_65536|Q   ; LC_X2_Y3_N8 ; 4       ; Clock        ; yes    ; Global Clock         ; GCLK2            ;
+; DivisorClock:comb_9|fft:div_8192|Q    ; LC_X3_Y3_N5 ; 2       ; Clock        ; no     ; --                   ; --               ;
+; DivisorClock:comb_9|fft:div_8|Q       ; LC_X3_Y4_N9 ; 2       ; Clock        ; no     ; --                   ; --               ;
+; Rst                                   ; PIN_35      ; 13      ; Async. clear ; no     ; --                   ; --               ;
+; cont_mod16:comb_20|fft_rst:comb_24|Q  ; LC_X5_Y2_N2 ; 13      ; Clock        ; yes    ; Global Clock         ; GCLK3            ;
+; mux_1x4_normal:comb_19|WideOr0        ; LC_X2_Y3_N7 ; 5       ; Clock        ; yes    ; Global Clock         ; GCLK1            ;
 +---------------------------------------+-------------+---------+--------------+--------+----------------------+------------------+
 
 
@@ -511,9 +510,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Name                                 ; Location    ; Fan-Out ; Global Resource Used ; Global Line Name ;
 +--------------------------------------+-------------+---------+----------------------+------------------+
 ; Clk                                  ; PIN_12      ; 7       ; Global Clock         ; GCLK0            ;
-; DivisorClock:comb_9|fft:div_65536|Q  ; LC_X2_Y3_N9 ; 4       ; Global Clock         ; GCLK2            ;
-; cont_mod16:comb_18|fft_rst:comb_24|Q ; LC_X4_Y2_N6 ; 11      ; Global Clock         ; GCLK1            ;
-; mux_1x4_normal:comb_17|WideOr0       ; LC_X4_Y3_N7 ; 5       ; Global Clock         ; GCLK3            ;
+; DivisorClock:comb_9|fft:div_65536|Q  ; LC_X2_Y3_N8 ; 4       ; Global Clock         ; GCLK2            ;
+; cont_mod16:comb_20|fft_rst:comb_24|Q ; LC_X5_Y2_N2 ; 13      ; Global Clock         ; GCLK3            ;
+; mux_1x4_normal:comb_19|WideOr0       ; LC_X2_Y3_N7 ; 5       ; Global Clock         ; GCLK1            ;
 +--------------------------------------+-------------+---------+----------------------+------------------+
 
 
@@ -522,102 +521,99 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+--------------------+
 ; Routing Resource Type ; Usage              ;
 +-----------------------+--------------------+
-; C4s                   ; 51 / 784 ( 7 % )   ;
-; Direct links          ; 27 / 888 ( 3 % )   ;
+; C4s                   ; 49 / 784 ( 6 % )   ;
+; Direct links          ; 34 / 888 ( 4 % )   ;
 ; Global clocks         ; 4 / 4 ( 100 % )    ;
-; LAB clocks            ; 8 / 32 ( 25 % )    ;
-; LUT chains            ; 8 / 216 ( 4 % )    ;
-; Local interconnects   ; 115 / 888 ( 13 % ) ;
-; R4s                   ; 57 / 704 ( 8 % )   ;
+; LAB clocks            ; 7 / 32 ( 22 % )    ;
+; LUT chains            ; 11 / 216 ( 5 % )   ;
+; Local interconnects   ; 127 / 888 ( 14 % ) ;
+; R4s                   ; 62 / 704 ( 9 % )   ;
 +-----------------------+--------------------+
 
 
 +---------------------------------------------------------------------------+
 ; LAB Logic Elements                                                        ;
 +--------------------------------------------+------------------------------+
-; Number of Logic Elements  (Average = 4.58) ; Number of LABs  (Total = 19) ;
+; Number of Logic Elements  (Average = 4.45) ; Number of LABs  (Total = 20) ;
 +--------------------------------------------+------------------------------+
-; 1                                          ; 1                            ;
-; 2                                          ; 11                           ;
-; 3                                          ; 0                            ;
+; 1                                          ; 2                            ;
+; 2                                          ; 10                           ;
+; 3                                          ; 1                            ;
 ; 4                                          ; 0                            ;
-; 5                                          ; 0                            ;
-; 6                                          ; 1                            ;
+; 5                                          ; 1                            ;
+; 6                                          ; 0                            ;
 ; 7                                          ; 0                            ;
 ; 8                                          ; 0                            ;
-; 9                                          ; 2                            ;
-; 10                                         ; 4                            ;
+; 9                                          ; 1                            ;
+; 10                                         ; 5                            ;
 +--------------------------------------------+------------------------------+
 
 
 +-------------------------------------------------------------------+
 ; LAB-wide Signals                                                  ;
 +------------------------------------+------------------------------+
-; LAB-wide Signals  (Average = 0.95) ; Number of LABs  (Total = 19) ;
+; LAB-wide Signals  (Average = 1.00) ; Number of LABs  (Total = 20) ;
 +------------------------------------+------------------------------+
 ; 1 Async. clear                     ; 2                            ;
-; 1 Clock                            ; 13                           ;
-; 2 Clocks                           ; 3                            ;
+; 1 Clock                            ; 16                           ;
+; 2 Clocks                           ; 2                            ;
 +------------------------------------+------------------------------+
 
 
 +----------------------------------------------------------------------------+
 ; LAB Signals Sourced                                                        ;
 +---------------------------------------------+------------------------------+
-; Number of Signals Sourced  (Average = 4.58) ; Number of LABs  (Total = 19) ;
+; Number of Signals Sourced  (Average = 4.45) ; Number of LABs  (Total = 20) ;
 +---------------------------------------------+------------------------------+
 ; 0                                           ; 0                            ;
-; 1                                           ; 1                            ;
-; 2                                           ; 11                           ;
-; 3                                           ; 0                            ;
-; 4                                           ; 0                            ;
-; 5                                           ; 0                            ;
-; 6                                           ; 1                            ;
-; 7                                           ; 0                            ;
-; 8                                           ; 0                            ;
-; 9                                           ; 2                            ;
-; 10                                          ; 4                            ;
-+---------------------------------------------+------------------------------+
-
-
-+--------------------------------------------------------------------------------+
-; LAB Signals Sourced Out                                                        ;
-+-------------------------------------------------+------------------------------+
-; Number of Signals Sourced Out  (Average = 2.68) ; Number of LABs  (Total = 19) ;
-+-------------------------------------------------+------------------------------+
-; 0                                               ; 0                            ;
-; 1                                               ; 12                           ;
-; 2                                               ; 0                            ;
-; 3                                               ; 0                            ;
-; 4                                               ; 1                            ;
-; 5                                               ; 4                            ;
-; 6                                               ; 1                            ;
-; 7                                               ; 0                            ;
-; 8                                               ; 0                            ;
-; 9                                               ; 1                            ;
-+-------------------------------------------------+------------------------------+
-
-
-+----------------------------------------------------------------------------+
-; LAB Distinct Inputs                                                        ;
-+---------------------------------------------+------------------------------+
-; Number of Distinct Inputs  (Average = 4.00) ; Number of LABs  (Total = 19) ;
-+---------------------------------------------+------------------------------+
-; 0                                           ; 0                            ;
-; 1                                           ; 12                           ;
-; 2                                           ; 0                            ;
+; 1                                           ; 2                            ;
+; 2                                           ; 10                           ;
 ; 3                                           ; 1                            ;
 ; 4                                           ; 0                            ;
 ; 5                                           ; 1                            ;
 ; 6                                           ; 0                            ;
 ; 7                                           ; 0                            ;
 ; 8                                           ; 0                            ;
-; 9                                           ; 2                            ;
+; 9                                           ; 1                            ;
+; 10                                          ; 5                            ;
++---------------------------------------------+------------------------------+
+
+
++--------------------------------------------------------------------------------+
+; LAB Signals Sourced Out                                                        ;
++-------------------------------------------------+------------------------------+
+; Number of Signals Sourced Out  (Average = 2.75) ; Number of LABs  (Total = 20) ;
++-------------------------------------------------+------------------------------+
+; 0                                               ; 0                            ;
+; 1                                               ; 10                           ;
+; 2                                               ; 3                            ;
+; 3                                               ; 0                            ;
+; 4                                               ; 1                            ;
+; 5                                               ; 3                            ;
+; 6                                               ; 2                            ;
+; 7                                               ; 0                            ;
+; 8                                               ; 1                            ;
++-------------------------------------------------+------------------------------+
+
+
++----------------------------------------------------------------------------+
+; LAB Distinct Inputs                                                        ;
++---------------------------------------------+------------------------------+
+; Number of Distinct Inputs  (Average = 4.25) ; Number of LABs  (Total = 20) ;
++---------------------------------------------+------------------------------+
+; 0                                           ; 0                            ;
+; 1                                           ; 11                           ;
+; 2                                           ; 0                            ;
+; 3                                           ; 0                            ;
+; 4                                           ; 1                            ;
+; 5                                           ; 2                            ;
+; 6                                           ; 1                            ;
+; 7                                           ; 0                            ;
+; 8                                           ; 1                            ;
+; 9                                           ; 0                            ;
 ; 10                                          ; 0                            ;
-; 11                                          ; 0                            ;
+; 11                                          ; 2                            ;
 ; 12                                          ; 2                            ;
-; 13                                          ; 0                            ;
-; 14                                          ; 1                            ;
 +---------------------------------------------+------------------------------+
 
 
@@ -640,6 +636,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------+----------------------+-------------------+
 ; Source Clock(s) ; Destination Clock(s) ; Delay Added in ns ;
 +-----------------+----------------------+-------------------+
+; I/O             ; Clk                  ; 1.0               ;
++-----------------+----------------------+-------------------+
 Note: For more information on problematic transfers, consider running the Fitter again with the Optimize hold timing option (Settings Menu) turned off.
 This will disable optimization of problematic paths and expose them for further analysis using the Timing Analyzer.
 
@@ -649,7 +647,7 @@ This will disable optimization of problematic paths and expose them for further 
 +-----------------+------------------------------+-------------------+
 ; Source Register ; Destination Register         ; Delay Added in ns ;
 +-----------------+------------------------------+-------------------+
-; Bs              ; mef_tiporega:comb_22|state.D ; 0.488             ;
+; Bs              ; mef_tiporega:comb_24|state.D ; 0.502             ;
 +-----------------+------------------------------+-------------------+
 Note: This table only shows the top 1 path(s) that have the largest delay added for hold.
 
@@ -658,7 +656,7 @@ Note: This table only shows the top 1 path(s) that have the largest delay added 
 ; Fitter Messages ;
 +-----------------+
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (119006): Selected device EPM240T100C5 for design "pbl3"
 Info (21077): Low junction temperature is 0 degrees C
 Info (21077): High junction temperature is 85 degrees C
@@ -679,7 +677,7 @@ Info (332111): Found 26 clocks
     Info (332111): ======== ============
     Info (332111):    1.000           Bs
     Info (332111):    1.000          Clk
-    Info (332111):    1.000 cont_mod16:comb_18|fft_rst:comb_24|Q
+    Info (332111):    1.000 cont_mod16:comb_20|fft_rst:comb_24|Q
     Info (332111):    1.000 DivisorClock:comb_9|fft:comb_3|Q
     Info (332111):    1.000 DivisorClock:comb_9|fft:div_2|Q
     Info (332111):    1.000 DivisorClock:comb_9|fft:div_4|Q
@@ -704,20 +702,22 @@ Info (332111): Found 26 clocks
     Info (332111):    1.000 DivisorClock:comb_9|fft:div_2097152|Q
     Info (332111):    1.000 DivisorClock:comb_9|fft:div_4194304|Q
 Info (186079): Completed User Assigned Global Signals Promotion Operation
-Info (186215): Automatically promoted signal "Clk" to use Global clock in PIN 12 File: /home/aluno/Downloads/rega3/RegaAutomaticav3/main.v Line: 8
-Info (186215): Automatically promoted signal "mux_1x4_normal:comb_17|WideOr0" to use Global clock File: /home/aluno/Downloads/rega3/RegaAutomaticav3/mux_1x4_normal.v Line: 22
-Info (186216): Automatically promoted some destinations of signal "DivisorClock:comb_9|fft:div_65536|Q" to use Global clock File: /home/aluno/Downloads/rega3/RegaAutomaticav3/fft.v Line: 7
-    Info (186217): Destination "DivisorClock:comb_9|fft:div_65536|Q" may be non-global or may not use global clock File: /home/aluno/Downloads/rega3/RegaAutomaticav3/fft.v Line: 7
-Info (186216): Automatically promoted some destinations of signal "cont_mod16:comb_18|fft_rst:comb_24|Q" to use Global clock File: /home/aluno/Downloads/rega3/RegaAutomaticav3/fft_rst.v Line: 7
-    Info (186217): Destination "Seletor_Imagem:comb_20|decode:comb_10|And1~0" may be non-global or may not use global clock File: /home/aluno/Downloads/rega3/RegaAutomaticav3/decode.v Line: 26
-    Info (186217): Destination "Seletor_Imagem:comb_20|And4~1" may be non-global or may not use global clock File: /home/aluno/Downloads/rega3/RegaAutomaticav3/Seletor_Imagem.v Line: 78
-    Info (186217): Destination "Seletor_Imagem:comb_20|And5~2" may be non-global or may not use global clock File: /home/aluno/Downloads/rega3/RegaAutomaticav3/Seletor_Imagem.v Line: 85
-    Info (186217): Destination "Seletor_Imagem:comb_20|And6~0" may be non-global or may not use global clock File: /home/aluno/Downloads/rega3/RegaAutomaticav3/Seletor_Imagem.v Line: 92
-    Info (186217): Destination "Seletor_Imagem:comb_20|decode:comb_10|And1~1" may be non-global or may not use global clock File: /home/aluno/Downloads/rega3/RegaAutomaticav3/decode.v Line: 26
-    Info (186217): Destination "fft:chave_seletora|Q" may be non-global or may not use global clock File: /home/aluno/Downloads/rega3/RegaAutomaticav3/fft.v Line: 7
-    Info (186217): Destination "cont_mod16:comb_18|Or1~1" may be non-global or may not use global clock File: /home/aluno/Downloads/rega3/RegaAutomaticav3/cont_mod16.v Line: 36
-    Info (186217): Destination "cont_mod16:comb_18|Or0~0" may be non-global or may not use global clock File: /home/aluno/Downloads/rega3/RegaAutomaticav3/cont_mod16.v Line: 35
-    Info (186217): Destination "cont_mod16:comb_18|fft_rst:comb_24|Q~1" may be non-global or may not use global clock File: /home/aluno/Downloads/rega3/RegaAutomaticav3/fft_rst.v Line: 7
+Info (186215): Automatically promoted signal "Clk" to use Global clock in PIN 12 File: C:/Users/User/Desktop/RegaAutomaticav3/main.v Line: 8
+Info (186215): Automatically promoted signal "mux_1x4_normal:comb_19|WideOr0" to use Global clock File: C:/Users/User/Desktop/RegaAutomaticav3/mux_1x4_normal.v Line: 22
+Info (186216): Automatically promoted some destinations of signal "DivisorClock:comb_9|fft:div_65536|Q" to use Global clock File: C:/Users/User/Desktop/RegaAutomaticav3/fft.v Line: 7
+    Info (186217): Destination "DivisorClock:comb_9|fft:div_65536|Q" may be non-global or may not use global clock File: C:/Users/User/Desktop/RegaAutomaticav3/fft.v Line: 7
+Info (186216): Automatically promoted some destinations of signal "cont_mod16:comb_20|fft_rst:comb_24|Q" to use Global clock File: C:/Users/User/Desktop/RegaAutomaticav3/fft_rst.v Line: 7
+    Info (186217): Destination "cont_mod16:comb_20|fft_rst:comb_24|Q" may be non-global or may not use global clock File: C:/Users/User/Desktop/RegaAutomaticav3/fft_rst.v Line: 7
+    Info (186217): Destination "Seletor_Imagem:comb_22|decode:comb_10|And1~0" may be non-global or may not use global clock File: C:/Users/User/Desktop/RegaAutomaticav3/decode.v Line: 26
+    Info (186217): Destination "Seletor_Imagem:comb_22|And4~1" may be non-global or may not use global clock File: C:/Users/User/Desktop/RegaAutomaticav3/Seletor_Imagem.v Line: 78
+    Info (186217): Destination "Seletor_Imagem:comb_22|And5~2" may be non-global or may not use global clock File: C:/Users/User/Desktop/RegaAutomaticav3/Seletor_Imagem.v Line: 85
+    Info (186217): Destination "Seletor_Imagem:comb_22|And6~0" may be non-global or may not use global clock File: C:/Users/User/Desktop/RegaAutomaticav3/Seletor_Imagem.v Line: 92
+    Info (186217): Destination "Seletor_Imagem:comb_22|decode:comb_10|And1~1" may be non-global or may not use global clock File: C:/Users/User/Desktop/RegaAutomaticav3/decode.v Line: 26
+    Info (186217): Destination "flipflopJK:comb_17|q" may be non-global or may not use global clock File: C:/Users/User/Desktop/RegaAutomaticav3/flipflopJK.v Line: 6
+    Info (186217): Destination "cont_mod16:comb_20|Or1~1" may be non-global or may not use global clock File: C:/Users/User/Desktop/RegaAutomaticav3/cont_mod16.v Line: 36
+    Info (186217): Destination "cont_mod16:comb_20|Or0~0" may be non-global or may not use global clock File: C:/Users/User/Desktop/RegaAutomaticav3/cont_mod16.v Line: 35
+    Info (186217): Destination "cont_mod16:comb_20|Or2~1" may be non-global or may not use global clock File: C:/Users/User/Desktop/RegaAutomaticav3/cont_mod16.v Line: 37
+    Info (186218): Limited to 10 non-global destinations
 Info (186079): Completed Auto Global Promotion Operation
 Info (176234): Starting register packing
 Info (186468): Started processing fast register assignments
@@ -733,26 +733,26 @@ Info (170191): Fitter placement operations beginning
 Info (170137): Fitter placement was successful
 Info (170192): Fitter placement operations ending: elapsed time is 00:00:00
 Info (170193): Fitter routing operations beginning
-Info (170195): Router estimated average interconnect usage is 6% of the available device resources
-    Info (170196): Router estimated peak interconnect usage is 6% of the available device resources in the region that extends from location X0_Y0 to location X8_Y5
+Info (170195): Router estimated average interconnect usage is 7% of the available device resources
+    Info (170196): Router estimated peak interconnect usage is 7% of the available device resources in the region that extends from location X0_Y0 to location X8_Y5
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:00
-Info (11888): Total time spent on timing analysis during the Fitter is 0.28 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.37 seconds.
 Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:00
 Warning (171167): Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
 Warning (169174): The Reserve All Unused Pins setting has not been specified, and will default to 'As output driving ground'.
-Info (144001): Generated suppressed messages file /home/aluno/Downloads/rega3/RegaAutomaticav3/output_files/pbl3.fit.smsg
+Info (144001): Generated suppressed messages file C:/Users/User/Desktop/RegaAutomaticav3/output_files/pbl3.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 7 warnings
-    Info: Peak virtual memory: 972 megabytes
-    Info: Processing ended: Tue Jul 23 15:45:51 2024
-    Info: Elapsed time: 00:00:01
+    Info: Peak virtual memory: 5318 megabytes
+    Info: Processing ended: Tue Jul 23 19:56:37 2024
+    Info: Elapsed time: 00:00:05
     Info: Total CPU time (on all processors): 00:00:02
 
 
 +----------------------------+
 ; Fitter Suppressed Messages ;
 +----------------------------+
-The suppressed messages can be found in /home/aluno/Downloads/rega3/RegaAutomaticav3/output_files/pbl3.fit.smsg.
+The suppressed messages can be found in C:/Users/User/Desktop/RegaAutomaticav3/output_files/pbl3.fit.smsg.
 
 

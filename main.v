@@ -34,9 +34,9 @@ module main (Clk, Rst, Us, Bs, Vs, A, G, Nv1, Nv0, Adub, Ve, Mist, Limp0, Limp1,
 	not not4(ContA2n, ContA2);
 	not not5(ContA1n, ContA1);
 	nor Nor0(wire1, ContA3, ContA2, ContA1, ContA0, ContB1, ContB0);
-	//nor Nor1(wire2, ContA3, ContA2, ContA1, ContA0, ContB1n, ContB0n);
-	//or Or0(T0, wire1, wire2);
-	fft chave_seletora (.T(wire1),.clock(CRn),.Q(Y));
+	and and100(wire2, ContA3, ContA2n, ContA1n, ContA0, ContB1, ContB0n);
+	flipflopJK(wire1, wire2, Rst, 0, clock_Reduzido, Y);
+	//fft chave_seletora (.T(wire1),.clock(CRn),.Q(Y));
 	//assign Y = Ve;
 	
 	//Contadores do cronometro
