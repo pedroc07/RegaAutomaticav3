@@ -96,3 +96,5 @@ set_global_assignment -name VERILOG_FILE mef_adub_limp.v
 set_global_assignment -name VERILOG_FILE decode_cxa.v
 set_global_assignment -name VERILOG_FILE decode_simb.v
 set_location_assignment PIN_50 -to T1
+set_global_assignment -name VERILOG_FILE mux_1x4_normal.v
+set_global_assignment -name VERILOG_FILE cont_mod2.v

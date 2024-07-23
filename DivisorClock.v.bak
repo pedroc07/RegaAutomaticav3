@@ -1,9 +1,9 @@
 // Definição do módulo DivisorClock
-module DivisorClock (clock, Sel, clock_Asp, clock_Got);
+module DivisorClock (clock, Sel, clock_Reduzido);
 
 	// Declaracao de portas
    input clock;
-   output clock_Asp, clock_Got, Sel;
+   output clock_Reduzido, Sel;
 
    // Fios intermediários
    wire [20:0] Q;
@@ -29,7 +29,7 @@ module DivisorClock (clock, Sel, clock_Asp, clock_Got);
    fft div_262144 (.T(1'b1),.clock(Q[16]),.Q(Q[17]));
    fft div_524288 (.T(1'b1),.clock(Q[17]),.Q(Q[18]));
    fft div_1048576 (.T(1'b1),.clock(Q[18]),.Q(Q[19]));
-   fft div_2097152 (.T(1'b1),.clock(Q[19]),.Q(clock_Got));
-   fft div_4194304 (.T(1'b1),.clock(clock_Got),.Q(clock_Asp));
+   fft div_2097152 (.T(1'b1),.clock(Q[19]),.Q(Q[20]));
+   fft div_4194304 (.T(1'b1),.clock(Q[20]),.Q(clock_Reduzido));
 
 endmodule 

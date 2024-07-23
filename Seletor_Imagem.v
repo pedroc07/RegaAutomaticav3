@@ -16,7 +16,7 @@ module Seletor_Imagem(S, Limp, Mist, Nv1, Nv0, ContA3, ContA2, ContA1, ContA0, C
 		  SEG_A3, SEG_B3, SEG_C3, SEG_DTres, SEG_E3, SEG_F3, SEG_G3, SEG_P3;
 	
 	//Seleciona os segmentos
-	demux_1x4(0, Sel, SEG_D1, SEG_D2, SEG_D3, SEG_D4);
+	demux_1x4(0, Sel[1], Sel[0], SEG_D1, SEG_D2, SEG_D3, SEG_D4);
 	
 	// Bits seletores de imagem
 	cont_mod4(0, S, Sel[1], Sel[0]);
@@ -82,7 +82,7 @@ module Seletor_Imagem(S, Limp, Mist, Nv1, Nv0, ContA3, ContA2, ContA1, ContA0, C
 	or Or27(Wire29, SEG_G3, Sel[1], Sel0n);		//01
 	or Or12(Wire26, SEG_G1, Sel1n, Sel[0]);  		//10
 	or Or13(Wire27, SEG_G0, Sel1n, Sel0n);         	//11
-	and An6(SEG_G, Wire28, Wire29, Wire26, Wire27);
+	and And6(SEG_G, Wire28, Wire29, Wire26, Wire27);
 
 	not(SEG_P, 0);
 	

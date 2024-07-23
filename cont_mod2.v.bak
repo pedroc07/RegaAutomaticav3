@@ -1,0 +1,19 @@
+//Definição do módulo Contador modulo 2 crescente e decrescente
+module cont_mod2(Y, Clk, Q1, Q0);
+
+input Clk, Y;
+
+output Q1, Q0;
+
+//Fios intermediários
+wire Q1n, Q0n;
+
+not Not0(Q1n, Q1);
+
+//Flip-flops JK usados para fazer o contador
+//FF0
+fft(1, Clk, Q1n);
+//FF1
+fft(wire3, Clk, Q0);
+
+endmodule

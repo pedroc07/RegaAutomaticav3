@@ -1,5 +1,5 @@
 module mef_adub_limp ( input clk ,
-	input reset, input Adub, input Nv1, input Nv0, input Asp, output Ve, output Mist, output Limp) ;
+	input reset, input Adub, input Nv2, input Nv1, input Nv0, input Asp, output Ve, output Mist, output Limp) ;
 	reg[2:0] state, nextstate ;
 	// state code
 	parameter A = 2'b00 ;
@@ -7,7 +7,14 @@ module mef_adub_limp ( input clk ,
 	parameter C = 2'b10 ;
 	parameter D = 2'b11 ;
 	wire wire0, wire1, wire2, wire3, wire4, wire5, wire6, cond0, cond1, cond2, cond3, cond4, cond5, cond6, notA, notAdub, notNv1, notNv0;
+	
+	//condicoes estado A
+	
 	not not0(notA, Asp);
+	and and0(cond0, notNv2, notNv1, notNv0, notA);
+	
+	//condicoes estado B
+	
 	not not1(notAdub, Adub);
 	not not2(notNv1, Nv1);
 	not not3(notNv0, Nv0);
@@ -15,7 +22,7 @@ module mef_adub_limp ( input clk ,
 	and and1(wire1, notAdub, Nv1, Asp);
 	and and2(wire2, Adub, Nv0, Asp);
 	and and3(wire3, Adub, Nv1, Asp);
-	or or0(cond0, wire0, wire1);
+	or or0(cond7, wire0, wire1);
 	or or1(cond1, wire2, wire3);
 	and and4(cond2, Nv1, Nv0);
 	and and5(wire4, Nv1, notA);
@@ -31,9 +38,9 @@ module mef_adub_limp ( input clk ,
     	// next state logic
 	always @ (*)begin
         	if(state == A) begin
-            	if (cond3) nextstate <= A ;
-            	else if(cond5) nextstate <= D ;
-					else nextstate <= B ;
+            	if (Asp) nextstate <= B ;
+            	else if(cond0) nextstate <= D ;
+					else nextstate <= A ;
         	end
         	else if(state == B) begin
             	if (notA) nextstate <= A ;

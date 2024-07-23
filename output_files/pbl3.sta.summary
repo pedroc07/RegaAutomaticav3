@@ -3,286 +3,286 @@ Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Setup 'Clk'
-Slack : -5.558
-TNS   : -28.268
-
-Type  : Setup 'DivisorClock:comb_8|fft:div_4194304|Q'
-Slack : -3.924
-TNS   : -15.311
-
-Type  : Setup 'DivisorClock:comb_8|fft:div_65536|Q'
-Slack : -1.531
-TNS   : -3.054
+Slack : -7.132
+TNS   : -37.840
 
 Type  : Setup 'cont_mod16:comb_15|fft:comb_24|Q'
-Slack : -1.481
-TNS   : -2.715
+Slack : -6.185
+TNS   : -12.056
 
-Type  : Setup 'DivisorClock:comb_8|fft:div_2048|Q'
-Slack : 0.457
+Type  : Setup 'DivisorClock:comb_9|fft:div_2097152|Q'
+Slack : -6.144
+TNS   : -27.415
+
+Type  : Setup 'Bs'
+Slack : -3.642
+TNS   : -13.426
+
+Type  : Setup 'DivisorClock:comb_9|fft:div_65536|Q'
+Slack : -1.502
+TNS   : -3.000
+
+Type  : Setup 'DivisorClock:comb_9|fft:div_512|Q'
+Slack : 0.210
 TNS   : 0.000
 
-Type  : Setup 'DivisorClock:comb_8|fft:div_2|Q'
+Type  : Setup 'DivisorClock:comb_9|fft:div_2048|Q'
 Slack : 0.466
 TNS   : 0.000
 
-Type  : Setup 'DivisorClock:comb_8|fft:div_524288|Q'
+Type  : Setup 'DivisorClock:comb_9|fft:div_2|Q'
 Slack : 0.466
 TNS   : 0.000
 
-Type  : Setup 'DivisorClock:comb_8|fft:div_8192|Q'
+Type  : Setup 'DivisorClock:comb_9|fft:div_8192|Q'
 Slack : 0.466
 TNS   : 0.000
 
-Type  : Setup 'DivisorClock:comb_8|fft:div_131072|Q'
+Type  : Setup 'DivisorClock:comb_9|fft:div_1048576|Q'
 Slack : 0.467
 TNS   : 0.000
 
-Type  : Setup 'DivisorClock:comb_8|fft:div_2097152|Q'
+Type  : Setup 'DivisorClock:comb_9|fft:div_128|Q'
 Slack : 0.467
 TNS   : 0.000
 
-Type  : Setup 'DivisorClock:comb_8|fft:div_32768|Q'
+Type  : Setup 'DivisorClock:comb_9|fft:div_262144|Q'
 Slack : 0.467
 TNS   : 0.000
 
-Type  : Setup 'DivisorClock:comb_8|fft:div_512|Q'
+Type  : Setup 'DivisorClock:comb_9|fft:div_32768|Q'
 Slack : 0.467
 TNS   : 0.000
 
-Type  : Setup 'DivisorClock:comb_8|fft:div_64|Q'
-Slack : 0.468
+Type  : Setup 'DivisorClock:comb_9|fft:div_32|Q'
+Slack : 0.467
 TNS   : 0.000
 
-Type  : Setup 'DivisorClock:comb_8|fft:div_8|Q'
-Slack : 0.469
+Type  : Setup 'DivisorClock:comb_9|fft:div_8|Q'
+Slack : 0.467
 TNS   : 0.000
 
-Type  : Setup 'DivisorClock:comb_8|fft:div_4|Q'
-Slack : 0.570
+Type  : Setup 'DivisorClock:comb_9|fft:div_256|Q'
+Slack : 0.560
 TNS   : 0.000
 
-Type  : Setup 'DivisorClock:comb_8|fft:div_1024|Q'
-Slack : 0.811
+Type  : Setup 'DivisorClock:comb_9|fft:div_16|Q'
+Slack : 0.819
 TNS   : 0.000
 
-Type  : Setup 'DivisorClock:comb_8|fft:div_16384|Q'
-Slack : 0.824
+Type  : Setup 'DivisorClock:comb_9|fft:div_64|Q'
+Slack : 0.819
 TNS   : 0.000
 
-Type  : Setup 'DivisorClock:comb_8|fft:div_1048576|Q'
+Type  : Setup 'DivisorClock:comb_9|fft:div_16384|Q'
 Slack : 0.825
 TNS   : 0.000
 
-Type  : Setup 'DivisorClock:comb_8|fft:div_32|Q'
+Type  : Setup 'DivisorClock:comb_9|fft:div_4|Q'
 Slack : 0.825
 TNS   : 0.000
 
-Type  : Setup 'DivisorClock:comb_8|fft:div_256|Q'
-Slack : 0.836
+Type  : Setup 'DivisorClock:comb_9|fft:div_524288|Q'
+Slack : 0.828
 TNS   : 0.000
 
-Type  : Setup 'DivisorClock:comb_8|fft:div_262144|Q'
-Slack : 1.256
+Type  : Setup 'DivisorClock:comb_9|fft:div_131072|Q'
+Slack : 0.833
 TNS   : 0.000
 
-Type  : Setup 'DivisorClock:comb_8|fft:div_128|Q'
-Slack : 1.363
+Type  : Setup 'DivisorClock:comb_9|fft:div_1024|Q'
+Slack : 1.201
 TNS   : 0.000
 
-Type  : Setup 'DivisorClock:comb_8|fft:div_4096|Q'
-Slack : 1.376
+Type  : Setup 'DivisorClock:comb_9|fft:div_4096|Q'
+Slack : 1.253
 TNS   : 0.000
 
-Type  : Setup 'DivisorClock:comb_8|fft:div_16|Q'
-Slack : 1.657
-TNS   : 0.000
+Type  : Hold 'Bs'
+Slack : -6.803
+TNS   : -27.090
 
-Type  : Hold 'DivisorClock:comb_8|fft:div_65536|Q'
-Slack : -2.810
-TNS   : -2.810
+Type  : Hold 'DivisorClock:comb_9|fft:div_2097152|Q'
+Slack : -4.301
+TNS   : -16.296
 
-Type  : Hold 'DivisorClock:comb_8|fft:div_4194304|Q'
-Slack : -1.865
-TNS   : -4.304
+Type  : Hold 'DivisorClock:comb_9|fft:div_65536|Q'
+Slack : -2.400
+TNS   : -2.400
 
 Type  : Hold 'Clk'
 Slack : -1.807
 TNS   : -1.807
 
-Type  : Hold 'DivisorClock:comb_8|fft:div_16|Q'
-Slack : -1.711
-TNS   : -1.711
+Type  : Hold 'DivisorClock:comb_9|fft:div_4096|Q'
+Slack : -1.307
+TNS   : -1.307
 
-Type  : Hold 'DivisorClock:comb_8|fft:div_4096|Q'
-Slack : -1.430
-TNS   : -1.430
+Type  : Hold 'DivisorClock:comb_9|fft:div_1024|Q'
+Slack : -1.255
+TNS   : -1.255
 
-Type  : Hold 'DivisorClock:comb_8|fft:div_128|Q'
-Slack : -1.417
-TNS   : -1.417
+Type  : Hold 'DivisorClock:comb_9|fft:div_131072|Q'
+Slack : -0.887
+TNS   : -0.887
 
-Type  : Hold 'DivisorClock:comb_8|fft:div_262144|Q'
-Slack : -1.310
-TNS   : -1.310
+Type  : Hold 'DivisorClock:comb_9|fft:div_524288|Q'
+Slack : -0.882
+TNS   : -0.882
 
-Type  : Hold 'DivisorClock:comb_8|fft:div_256|Q'
-Slack : -0.890
-TNS   : -0.890
-
-Type  : Hold 'DivisorClock:comb_8|fft:div_1048576|Q'
+Type  : Hold 'DivisorClock:comb_9|fft:div_16384|Q'
 Slack : -0.879
 TNS   : -0.879
 
-Type  : Hold 'DivisorClock:comb_8|fft:div_32|Q'
+Type  : Hold 'DivisorClock:comb_9|fft:div_4|Q'
 Slack : -0.879
 TNS   : -0.879
 
-Type  : Hold 'DivisorClock:comb_8|fft:div_16384|Q'
-Slack : -0.878
-TNS   : -0.878
+Type  : Hold 'DivisorClock:comb_9|fft:div_16|Q'
+Slack : -0.873
+TNS   : -0.873
 
-Type  : Hold 'DivisorClock:comb_8|fft:div_1024|Q'
-Slack : -0.865
-TNS   : -0.865
+Type  : Hold 'DivisorClock:comb_9|fft:div_64|Q'
+Slack : -0.873
+TNS   : -0.873
 
-Type  : Hold 'DivisorClock:comb_8|fft:div_4|Q'
-Slack : -0.624
-TNS   : -0.624
+Type  : Hold 'DivisorClock:comb_9|fft:div_256|Q'
+Slack : -0.614
+TNS   : -0.614
 
-Type  : Hold 'DivisorClock:comb_8|fft:div_8|Q'
-Slack : -0.523
-TNS   : -0.523
-
-Type  : Hold 'DivisorClock:comb_8|fft:div_64|Q'
-Slack : -0.522
-TNS   : -0.522
-
-Type  : Hold 'DivisorClock:comb_8|fft:div_131072|Q'
+Type  : Hold 'DivisorClock:comb_9|fft:div_1048576|Q'
 Slack : -0.521
 TNS   : -0.521
 
-Type  : Hold 'DivisorClock:comb_8|fft:div_2097152|Q'
+Type  : Hold 'DivisorClock:comb_9|fft:div_128|Q'
 Slack : -0.521
 TNS   : -0.521
 
-Type  : Hold 'DivisorClock:comb_8|fft:div_32768|Q'
+Type  : Hold 'DivisorClock:comb_9|fft:div_262144|Q'
 Slack : -0.521
 TNS   : -0.521
 
-Type  : Hold 'DivisorClock:comb_8|fft:div_512|Q'
+Type  : Hold 'DivisorClock:comb_9|fft:div_32768|Q'
 Slack : -0.521
 TNS   : -0.521
 
-Type  : Hold 'DivisorClock:comb_8|fft:div_2|Q'
+Type  : Hold 'DivisorClock:comb_9|fft:div_32|Q'
+Slack : -0.521
+TNS   : -0.521
+
+Type  : Hold 'DivisorClock:comb_9|fft:div_8|Q'
+Slack : -0.521
+TNS   : -0.521
+
+Type  : Hold 'DivisorClock:comb_9|fft:div_2048|Q'
 Slack : -0.520
 TNS   : -0.520
 
-Type  : Hold 'DivisorClock:comb_8|fft:div_524288|Q'
+Type  : Hold 'DivisorClock:comb_9|fft:div_2|Q'
 Slack : -0.520
 TNS   : -0.520
 
-Type  : Hold 'DivisorClock:comb_8|fft:div_8192|Q'
+Type  : Hold 'DivisorClock:comb_9|fft:div_8192|Q'
 Slack : -0.520
 TNS   : -0.520
 
-Type  : Hold 'DivisorClock:comb_8|fft:div_2048|Q'
-Slack : -0.511
-TNS   : -0.511
+Type  : Hold 'DivisorClock:comb_9|fft:div_512|Q'
+Slack : -0.264
+TNS   : -0.264
 
 Type  : Hold 'cont_mod16:comb_15|fft:comb_24|Q'
-Slack : 1.280
+Slack : 1.686
 TNS   : 0.000
+
+Type  : Minimum Pulse Width 'Bs'
+Slack : -2.289
+TNS   : -2.289
 
 Type  : Minimum Pulse Width 'Clk'
 Slack : -2.289
 TNS   : -2.289
 
-Type  : Minimum Pulse Width 'DivisorClock:comb_8|fft:div_1024|Q'
+Type  : Minimum Pulse Width 'DivisorClock:comb_9|fft:div_1024|Q'
 Slack : 0.234
 TNS   : 0.000
 
-Type  : Minimum Pulse Width 'DivisorClock:comb_8|fft:div_1048576|Q'
+Type  : Minimum Pulse Width 'DivisorClock:comb_9|fft:div_1048576|Q'
 Slack : 0.234
 TNS   : 0.000
 
-Type  : Minimum Pulse Width 'DivisorClock:comb_8|fft:div_128|Q'
+Type  : Minimum Pulse Width 'DivisorClock:comb_9|fft:div_128|Q'
 Slack : 0.234
 TNS   : 0.000
 
-Type  : Minimum Pulse Width 'DivisorClock:comb_8|fft:div_131072|Q'
+Type  : Minimum Pulse Width 'DivisorClock:comb_9|fft:div_131072|Q'
 Slack : 0.234
 TNS   : 0.000
 
-Type  : Minimum Pulse Width 'DivisorClock:comb_8|fft:div_16384|Q'
+Type  : Minimum Pulse Width 'DivisorClock:comb_9|fft:div_16384|Q'
 Slack : 0.234
 TNS   : 0.000
 
-Type  : Minimum Pulse Width 'DivisorClock:comb_8|fft:div_16|Q'
+Type  : Minimum Pulse Width 'DivisorClock:comb_9|fft:div_16|Q'
 Slack : 0.234
 TNS   : 0.000
 
-Type  : Minimum Pulse Width 'DivisorClock:comb_8|fft:div_2048|Q'
+Type  : Minimum Pulse Width 'DivisorClock:comb_9|fft:div_2048|Q'
 Slack : 0.234
 TNS   : 0.000
 
-Type  : Minimum Pulse Width 'DivisorClock:comb_8|fft:div_2097152|Q'
+Type  : Minimum Pulse Width 'DivisorClock:comb_9|fft:div_2097152|Q'
 Slack : 0.234
 TNS   : 0.000
 
-Type  : Minimum Pulse Width 'DivisorClock:comb_8|fft:div_256|Q'
+Type  : Minimum Pulse Width 'DivisorClock:comb_9|fft:div_256|Q'
 Slack : 0.234
 TNS   : 0.000
 
-Type  : Minimum Pulse Width 'DivisorClock:comb_8|fft:div_262144|Q'
+Type  : Minimum Pulse Width 'DivisorClock:comb_9|fft:div_262144|Q'
 Slack : 0.234
 TNS   : 0.000
 
-Type  : Minimum Pulse Width 'DivisorClock:comb_8|fft:div_2|Q'
+Type  : Minimum Pulse Width 'DivisorClock:comb_9|fft:div_2|Q'
 Slack : 0.234
 TNS   : 0.000
 
-Type  : Minimum Pulse Width 'DivisorClock:comb_8|fft:div_32768|Q'
+Type  : Minimum Pulse Width 'DivisorClock:comb_9|fft:div_32768|Q'
 Slack : 0.234
 TNS   : 0.000
 
-Type  : Minimum Pulse Width 'DivisorClock:comb_8|fft:div_32|Q'
+Type  : Minimum Pulse Width 'DivisorClock:comb_9|fft:div_32|Q'
 Slack : 0.234
 TNS   : 0.000
 
-Type  : Minimum Pulse Width 'DivisorClock:comb_8|fft:div_4096|Q'
+Type  : Minimum Pulse Width 'DivisorClock:comb_9|fft:div_4096|Q'
 Slack : 0.234
 TNS   : 0.000
 
-Type  : Minimum Pulse Width 'DivisorClock:comb_8|fft:div_4194304|Q'
+Type  : Minimum Pulse Width 'DivisorClock:comb_9|fft:div_4|Q'
 Slack : 0.234
 TNS   : 0.000
 
-Type  : Minimum Pulse Width 'DivisorClock:comb_8|fft:div_4|Q'
+Type  : Minimum Pulse Width 'DivisorClock:comb_9|fft:div_512|Q'
 Slack : 0.234
 TNS   : 0.000
 
-Type  : Minimum Pulse Width 'DivisorClock:comb_8|fft:div_512|Q'
+Type  : Minimum Pulse Width 'DivisorClock:comb_9|fft:div_524288|Q'
 Slack : 0.234
 TNS   : 0.000
 
-Type  : Minimum Pulse Width 'DivisorClock:comb_8|fft:div_524288|Q'
+Type  : Minimum Pulse Width 'DivisorClock:comb_9|fft:div_64|Q'
 Slack : 0.234
 TNS   : 0.000
 
-Type  : Minimum Pulse Width 'DivisorClock:comb_8|fft:div_64|Q'
+Type  : Minimum Pulse Width 'DivisorClock:comb_9|fft:div_65536|Q'
 Slack : 0.234
 TNS   : 0.000
 
-Type  : Minimum Pulse Width 'DivisorClock:comb_8|fft:div_65536|Q'
+Type  : Minimum Pulse Width 'DivisorClock:comb_9|fft:div_8192|Q'
 Slack : 0.234
 TNS   : 0.000
 
-Type  : Minimum Pulse Width 'DivisorClock:comb_8|fft:div_8192|Q'
-Slack : 0.234
-TNS   : 0.000
-
-Type  : Minimum Pulse Width 'DivisorClock:comb_8|fft:div_8|Q'
+Type  : Minimum Pulse Width 'DivisorClock:comb_9|fft:div_8|Q'
 Slack : 0.234
 TNS   : 0.000
 
