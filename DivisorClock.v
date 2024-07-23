@@ -6,7 +6,7 @@ module DivisorClock (clock, Sel, clock_Asp, clock_Got);
    output clock_Asp, clock_Got, Sel;
 
    // Fios intermediários
-   wire [20:0] Q;
+   wire [30:0] Q;
 	
 
    fft div_2 (.T(1'b1),.clock(clock),.Q(Q[0]));
@@ -31,5 +31,5 @@ module DivisorClock (clock, Sel, clock_Asp, clock_Got);
    fft div_1048576 (.T(1'b1),.clock(Q[18]),.Q(Q[19]));
    fft div_2097152 (.T(1'b1),.clock(Q[19]),.Q(clock_Got));
    fft div_4194304 (.T(1'b1),.clock(clock_Got),.Q(clock_Asp));
-
+	
 endmodule 

@@ -4,27 +4,27 @@ Rst => Rst.IN2
 Us => Us.IN1
 Bs => Bs.IN3
 Vs => Vs.IN3
-A <= Asp.DB_MAX_OUTPUT_PORT_TYPE
-G <= mef_tiporega:comb_19.port6
-Nv1 <= Nv1.DB_MAX_OUTPUT_PORT_TYPE
-Nv0 <= Nv0.DB_MAX_OUTPUT_PORT_TYPE
+A << Asp.DB_MAX_OUTPUT_PORT_TYPE
+G << mef_tiporega:comb_19.port6
+Nv1 << Nv1.DB_MAX_OUTPUT_PORT_TYPE
+Nv0 << Nv0.DB_MAX_OUTPUT_PORT_TYPE
 Adub => wire_Adub.IN1
-Ve <= mef_adub_limp:comb_20.port7
-Mist <= Mist.DB_MAX_OUTPUT_PORT_TYPE
-Limp0 <= Limp0.DB_MAX_OUTPUT_PORT_TYPE
-Limp1 <= Limp0.DB_MAX_OUTPUT_PORT_TYPE
-SEG_D1 <= Seletor_Imagem:comb_17.port11
-SEG_D2 <= Seletor_Imagem:comb_17.port12
-SEG_D3 <= Seletor_Imagem:comb_17.port13
-SEG_D4 <= Seletor_Imagem:comb_17.port14
-SEG_A <= Seletor_Imagem:comb_17.port15
-SEG_B <= Seletor_Imagem:comb_17.port16
-SEG_C <= Seletor_Imagem:comb_17.port17
-SEG_D <= Seletor_Imagem:comb_17.port18
-SEG_E <= Seletor_Imagem:comb_17.port19
-SEG_F <= Seletor_Imagem:comb_17.port20
-SEG_G <= Seletor_Imagem:comb_17.port21
-SEG_P <= Seletor_Imagem:comb_17.port22
+Ve << mef_adub_limp:comb_20.port7
+Mist << Mist.DB_MAX_OUTPUT_PORT_TYPE
+Limp0 << Limp0.DB_MAX_OUTPUT_PORT_TYPE
+Limp1 << Limp0.DB_MAX_OUTPUT_PORT_TYPE
+SEG_D1 << Seletor_Imagem:comb_17.port11
+SEG_D2 << Seletor_Imagem:comb_17.port12
+SEG_D3 << Seletor_Imagem:comb_17.port13
+SEG_D4 << Seletor_Imagem:comb_17.port14
+SEG_A << Seletor_Imagem:comb_17.port15
+SEG_B << Seletor_Imagem:comb_17.port16
+SEG_C << Seletor_Imagem:comb_17.port17
+SEG_D << Seletor_Imagem:comb_17.port18
+SEG_E << Seletor_Imagem:comb_17.port19
+SEG_F << Seletor_Imagem:comb_17.port20
+SEG_G << Seletor_Imagem:comb_17.port21
+SEG_P << Seletor_Imagem:comb_17.port22
 T1 => ~NO_FANOUT~
 
 
@@ -262,7 +262,7 @@ Mist => Mist.IN1
 Nv1 => Nv1.IN1
 Nv0 => Nv0.IN1
 ContA3 => ContA3.IN1
-ContA2 => ContA2.IN2
+ContA2 => ContA2.IN1
 ContA1 => ContA1.IN1
 ContA0 => ContA0.IN1
 ContB1 => ContB1.IN1
@@ -320,7 +320,7 @@ clock => Q~reg0.CLK
 Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|main|Seletor_Imagem:comb_17|decode:comb_7
+|main|Seletor_Imagem:comb_17|decode:comb_10
 C3 => And1.IN0
 C3 => And9.IN0
 C3 => And10.IN0
@@ -363,7 +363,7 @@ SEG_G <= Or5.DB_MAX_OUTPUT_PORT_TYPE
 SEG_P <= <VCC>
 
 
-|main|Seletor_Imagem:comb_17|decode:comb_8
+|main|Seletor_Imagem:comb_17|decode:comb_11
 C3 => And1.IN0
 C3 => And9.IN0
 C3 => And10.IN0
@@ -406,7 +406,7 @@ SEG_G <= Or5.DB_MAX_OUTPUT_PORT_TYPE
 SEG_P <= <VCC>
 
 
-|main|Seletor_Imagem:comb_17|decode_cxa:comb_9
+|main|Seletor_Imagem:comb_17|decode_cxa:comb_12
 Nv2 => Or0.IN0
 Nv2 => And5.IN0
 Nv2 => SEG_A.DATAIN
@@ -424,7 +424,7 @@ SEG_G <= And5.DB_MAX_OUTPUT_PORT_TYPE
 SEG_P <= <VCC>
 
 
-|main|Seletor_Imagem:comb_17|decode_simb:comb_10
+|main|Seletor_Imagem:comb_17|decode_simb:comb_13
 Limp => Or0.IN0
 Limp => Or1.IN0
 Limp => And3.IN0

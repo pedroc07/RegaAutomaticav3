@@ -3,50 +3,50 @@ Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Setup 'Clk'
-Slack : -9.250
-TNS   : -41.835
-
-Type  : Setup 'cont_mod16:comb_15|fft:comb_24|Q'
-Slack : -6.976
-TNS   : -13.949
+Slack : -9.498
+TNS   : -44.809
 
 Type  : Setup 'DivisorClock:comb_9|fft:div_2097152|Q'
-Slack : -5.696
-TNS   : -26.881
+Slack : -6.301
+TNS   : -29.466
+
+Type  : Setup 'cont_mod16:comb_15|fft:comb_24|Q'
+Slack : -4.784
+TNS   : -9.364
 
 Type  : Setup 'Bs'
-Slack : -3.503
-TNS   : -14.702
+Slack : -3.940
+TNS   : -16.449
 
 Type  : Setup 'DivisorClock:comb_9|fft:div_65536|Q'
-Slack : -1.518
-TNS   : -3.027
+Slack : -1.496
+TNS   : -2.988
+
+Type  : Setup 'DivisorClock:comb_9|fft:div_8192|Q'
+Slack : 0.457
+TNS   : 0.000
+
+Type  : Setup 'DivisorClock:comb_9|fft:div_128|Q'
+Slack : 0.466
+TNS   : 0.000
 
 Type  : Setup 'DivisorClock:comb_9|fft:div_131072|Q'
 Slack : 0.466
 TNS   : 0.000
 
-Type  : Setup 'DivisorClock:comb_9|fft:div_2|Q'
-Slack : 0.466
-TNS   : 0.000
-
-Type  : Setup 'DivisorClock:comb_9|fft:div_32|Q'
-Slack : 0.466
-TNS   : 0.000
-
-Type  : Setup 'DivisorClock:comb_9|fft:div_8192|Q'
-Slack : 0.466
-TNS   : 0.000
-
-Type  : Setup 'DivisorClock:comb_9|fft:div_128|Q'
-Slack : 0.467
-TNS   : 0.000
-
 Type  : Setup 'DivisorClock:comb_9|fft:div_2048|Q'
-Slack : 0.467
+Slack : 0.466
+TNS   : 0.000
+
+Type  : Setup 'DivisorClock:comb_9|fft:div_8|Q'
+Slack : 0.466
 TNS   : 0.000
 
 Type  : Setup 'DivisorClock:comb_9|fft:div_32768|Q'
+Slack : 0.467
+TNS   : 0.000
+
+Type  : Setup 'DivisorClock:comb_9|fft:div_32|Q'
 Slack : 0.467
 TNS   : 0.000
 
@@ -54,32 +54,20 @@ Type  : Setup 'DivisorClock:comb_9|fft:div_512|Q'
 Slack : 0.467
 TNS   : 0.000
 
-Type  : Setup 'DivisorClock:comb_9|fft:div_524288|Q'
-Slack : 0.467
-TNS   : 0.000
-
-Type  : Setup 'DivisorClock:comb_9|fft:div_8|Q'
-Slack : 0.467
+Type  : Setup 'DivisorClock:comb_9|fft:div_2|Q'
+Slack : 0.469
 TNS   : 0.000
 
 Type  : Setup 'DivisorClock:comb_9|fft:div_1048576|Q'
-Slack : 0.549
+Slack : 0.814
 TNS   : 0.000
 
-Type  : Setup 'DivisorClock:comb_9|fft:div_1024|Q'
-Slack : 0.808
+Type  : Setup 'DivisorClock:comb_9|fft:div_4096|Q'
+Slack : 0.817
 TNS   : 0.000
 
-Type  : Setup 'DivisorClock:comb_9|fft:div_64|Q'
-Slack : 0.808
-TNS   : 0.000
-
-Type  : Setup 'DivisorClock:comb_9|fft:div_262144|Q'
-Slack : 0.825
-TNS   : 0.000
-
-Type  : Setup 'DivisorClock:comb_9|fft:div_4|Q'
-Slack : 0.825
+Type  : Setup 'DivisorClock:comb_9|fft:div_16384|Q'
+Slack : 0.822
 TNS   : 0.000
 
 Type  : Setup 'DivisorClock:comb_9|fft:div_256|Q'
@@ -87,78 +75,94 @@ Slack : 0.828
 TNS   : 0.000
 
 Type  : Setup 'DivisorClock:comb_9|fft:div_16|Q'
-Slack : 1.297
+Slack : 0.833
 TNS   : 0.000
 
-Type  : Setup 'DivisorClock:comb_9|fft:div_16384|Q'
-Slack : 1.519
+Type  : Setup 'DivisorClock:comb_9|fft:div_262144|Q'
+Slack : 0.840
 TNS   : 0.000
 
-Type  : Setup 'DivisorClock:comb_9|fft:div_4096|Q'
-Slack : 1.841
+Type  : Setup 'DivisorClock:comb_9|fft:div_64|Q'
+Slack : 1.185
+TNS   : 0.000
+
+Type  : Setup 'DivisorClock:comb_9|fft:div_524288|Q'
+Slack : 1.280
+TNS   : 0.000
+
+Type  : Setup 'DivisorClock:comb_9|fft:div_1024|Q'
+Slack : 1.344
+TNS   : 0.000
+
+Type  : Setup 'DivisorClock:comb_9|fft:div_4|Q'
+Slack : 1.397
 TNS   : 0.000
 
 Type  : Hold 'Bs'
-Slack : -5.275
-TNS   : -20.636
+Slack : -5.528
+TNS   : -20.395
 
 Type  : Hold 'DivisorClock:comb_9|fft:div_2097152|Q'
-Slack : -3.082
-TNS   : -11.409
+Slack : -3.167
+TNS   : -10.598
 
 Type  : Hold 'DivisorClock:comb_9|fft:div_65536|Q'
 Slack : -2.108
 TNS   : -2.108
 
-Type  : Hold 'DivisorClock:comb_9|fft:div_4096|Q'
-Slack : -1.895
-TNS   : -1.895
-
 Type  : Hold 'Clk'
-Slack : -1.807
-TNS   : -1.807
+Slack : -1.808
+TNS   : -1.808
 
-Type  : Hold 'DivisorClock:comb_9|fft:div_16384|Q'
-Slack : -1.573
-TNS   : -1.573
+Type  : Hold 'DivisorClock:comb_9|fft:div_4|Q'
+Slack : -1.451
+TNS   : -1.451
+
+Type  : Hold 'DivisorClock:comb_9|fft:div_1024|Q'
+Slack : -1.398
+TNS   : -1.398
+
+Type  : Hold 'DivisorClock:comb_9|fft:div_524288|Q'
+Slack : -1.334
+TNS   : -1.334
+
+Type  : Hold 'DivisorClock:comb_9|fft:div_64|Q'
+Slack : -1.239
+TNS   : -1.239
+
+Type  : Hold 'DivisorClock:comb_9|fft:div_262144|Q'
+Slack : -0.894
+TNS   : -0.894
 
 Type  : Hold 'DivisorClock:comb_9|fft:div_16|Q'
-Slack : -1.351
-TNS   : -1.351
+Slack : -0.887
+TNS   : -0.887
 
 Type  : Hold 'DivisorClock:comb_9|fft:div_256|Q'
 Slack : -0.882
 TNS   : -0.882
 
-Type  : Hold 'DivisorClock:comb_9|fft:div_262144|Q'
-Slack : -0.879
-TNS   : -0.879
+Type  : Hold 'DivisorClock:comb_9|fft:div_16384|Q'
+Slack : -0.876
+TNS   : -0.876
 
-Type  : Hold 'DivisorClock:comb_9|fft:div_4|Q'
-Slack : -0.879
-TNS   : -0.879
-
-Type  : Hold 'DivisorClock:comb_9|fft:div_1024|Q'
-Slack : -0.862
-TNS   : -0.862
-
-Type  : Hold 'DivisorClock:comb_9|fft:div_64|Q'
-Slack : -0.862
-TNS   : -0.862
+Type  : Hold 'DivisorClock:comb_9|fft:div_4096|Q'
+Slack : -0.871
+TNS   : -0.871
 
 Type  : Hold 'DivisorClock:comb_9|fft:div_1048576|Q'
-Slack : -0.603
-TNS   : -0.603
+Slack : -0.868
+TNS   : -0.868
 
-Type  : Hold 'DivisorClock:comb_9|fft:div_128|Q'
-Slack : -0.521
-TNS   : -0.521
-
-Type  : Hold 'DivisorClock:comb_9|fft:div_2048|Q'
-Slack : -0.521
-TNS   : -0.521
+Type  : Hold 'DivisorClock:comb_9|fft:div_2|Q'
+Slack : -0.523
+TNS   : -0.523
 
 Type  : Hold 'DivisorClock:comb_9|fft:div_32768|Q'
+Slack : -0.521
+TNS   : -0.521
+
+Type  : Hold 'DivisorClock:comb_9|fft:div_32|Q'
 Slack : -0.521
 TNS   : -0.521
 
@@ -166,32 +170,28 @@ Type  : Hold 'DivisorClock:comb_9|fft:div_512|Q'
 Slack : -0.521
 TNS   : -0.521
 
-Type  : Hold 'DivisorClock:comb_9|fft:div_524288|Q'
-Slack : -0.521
-TNS   : -0.521
-
-Type  : Hold 'DivisorClock:comb_9|fft:div_8|Q'
-Slack : -0.521
-TNS   : -0.521
+Type  : Hold 'DivisorClock:comb_9|fft:div_128|Q'
+Slack : -0.520
+TNS   : -0.520
 
 Type  : Hold 'DivisorClock:comb_9|fft:div_131072|Q'
 Slack : -0.520
 TNS   : -0.520
 
-Type  : Hold 'DivisorClock:comb_9|fft:div_2|Q'
+Type  : Hold 'DivisorClock:comb_9|fft:div_2048|Q'
 Slack : -0.520
 TNS   : -0.520
 
-Type  : Hold 'DivisorClock:comb_9|fft:div_32|Q'
+Type  : Hold 'DivisorClock:comb_9|fft:div_8|Q'
 Slack : -0.520
 TNS   : -0.520
 
 Type  : Hold 'DivisorClock:comb_9|fft:div_8192|Q'
-Slack : -0.520
-TNS   : -0.520
+Slack : -0.511
+TNS   : -0.511
 
 Type  : Hold 'cont_mod16:comb_15|fft:comb_24|Q'
-Slack : 1.702
+Slack : 1.679
 TNS   : 0.000
 
 Type  : Minimum Pulse Width 'Bs'

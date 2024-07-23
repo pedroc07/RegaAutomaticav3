@@ -14,6 +14,8 @@ module Seletor_Imagem(S, Limp, Mist, Nv1, Nv0, ContA3, ContA2, ContA1, ContA0, C
 		  SEG_A1, SEG_B1, SEG_C1, SEG_DUm, SEG_E1, SEG_F1, SEG_G1, SEG_P1,
 		  SEG_A2, SEG_B2, SEG_C2, SEG_DDois, SEG_E2, SEG_F2, SEG_G2, SEG_P2,
 		  SEG_A3, SEG_B3, SEG_C3, SEG_DTres, SEG_E3, SEG_F3, SEG_G3, SEG_P3;
+		  
+	wire NvCr;
 	
 	//Seleciona os segmentos
 	demux_1x4(0, Sel[1], Sel[0], SEG_D1, SEG_D2, SEG_D3, SEG_D4);
@@ -25,10 +27,15 @@ module Seletor_Imagem(S, Limp, Mist, Nv1, Nv0, ContA3, ContA2, ContA1, ContA0, C
 	not Not0(Sel0n, Sel[0]);
 	not Not1(Sel1n, Sel[1]);
 	
+	not Not2(notA2, ContA2);
+	not Not3(notA3, ContA3);
+	
+	or Or99(NvCr, ContA3, ContA2);
+	
 	// Decodificadores para o display
 	decode(ContA3, ContA2, ContA1, ContA0, SEG_A0, SEG_B0, SEG_C0, SEG_D0, SEG_E0, SEG_F0, SEG_G0, SEG_P0);
 	decode(0, 0, ContB1, ContB0, SEG_A1, SEG_B1, SEG_C1, SEG_DUm, SEG_E1, SEG_F1, SEG_G1, SEG_P1);
-	decode_cxa(Nv1, Nv0, ContA2, SEG_A2, SEG_B2, SEG_C2, SEG_DDois, SEG_E2, SEG_F2, SEG_G2, SEG_P2);
+	decode_cxa(Nv1, Nv0, NvCr, SEG_A2, SEG_B2, SEG_C2, SEG_DDois, SEG_E2, SEG_F2, SEG_G2, SEG_P2);
 	decode_simb(Limp, Mist, SEG_A3, SEG_B3, SEG_C3, SEG_DTres, SEG_E3, SEG_F3, SEG_G3, SEG_P3);
 	
 	// Demux que varre as linhas conforme o seletor
