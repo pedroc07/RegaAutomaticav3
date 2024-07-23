@@ -1,5 +1,5 @@
 Analysis & Synthesis report for pbl3
-Tue Jul 23 10:09:47 2024
+Tue Jul 23 12:20:08 2024
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -77,12 +77,12 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                              ;
 +-----------------------------+---------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Tue Jul 23 10:09:47 2024       ;
+; Analysis & Synthesis Status ; Successful - Tue Jul 23 12:20:08 2024       ;
 ; Quartus Prime Version       ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name               ; pbl3                                        ;
 ; Top-level Entity Name       ; main                                        ;
 ; Family                      ; MAX II                                      ;
-; Total logic elements        ; 80                                          ;
+; Total logic elements        ; 86                                          ;
 ; Total pins                  ; 27                                          ;
 ; Total virtual pins          ; 0                                           ;
 ; UFM blocks                  ; 0 / 1 ( 0 % )                               ;
@@ -176,61 +176,61 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                ;
-+----------------------------------+-----------------+------------------------------+---------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                            ; Library ;
-+----------------------------------+-----------------+------------------------------+---------------------------------------------------------+---------+
-; Irrigacao.v                      ; yes             ; User Verilog HDL File        ; /home/aluno/Downloads/RegaAutomaticav3/Irrigacao.v      ;         ;
-; mef_tiporega.v                   ; yes             ; User Verilog HDL File        ; /home/aluno/Downloads/RegaAutomaticav3/mef_tiporega.v   ;         ;
-; main.v                           ; yes             ; User Verilog HDL File        ; /home/aluno/Downloads/RegaAutomaticav3/main.v           ;         ;
-; cont_mod4.v                      ; yes             ; User Verilog HDL File        ; /home/aluno/Downloads/RegaAutomaticav3/cont_mod4.v      ;         ;
-; cont_mod16.v                     ; yes             ; User Verilog HDL File        ; /home/aluno/Downloads/RegaAutomaticav3/cont_mod16.v     ;         ;
-; DivisorClock.v                   ; yes             ; User Verilog HDL File        ; /home/aluno/Downloads/RegaAutomaticav3/DivisorClock.v   ;         ;
-; fft.v                            ; yes             ; User Verilog HDL File        ; /home/aluno/Downloads/RegaAutomaticav3/fft.v            ;         ;
-; decode.v                         ; yes             ; User Verilog HDL File        ; /home/aluno/Downloads/RegaAutomaticav3/decode.v         ;         ;
-; Seletor_Imagem.v                 ; yes             ; User Verilog HDL File        ; /home/aluno/Downloads/RegaAutomaticav3/Seletor_Imagem.v ;         ;
-; mef_adub_limp.v                  ; yes             ; User Verilog HDL File        ; /home/aluno/Downloads/RegaAutomaticav3/mef_adub_limp.v  ;         ;
-; decode_cxa.v                     ; yes             ; User Verilog HDL File        ; /home/aluno/Downloads/RegaAutomaticav3/decode_cxa.v     ;         ;
-; decode_simb.v                    ; yes             ; User Verilog HDL File        ; /home/aluno/Downloads/RegaAutomaticav3/decode_simb.v    ;         ;
-; mux_1x4_normal.v                 ; yes             ; User Verilog HDL File        ; /home/aluno/Downloads/RegaAutomaticav3/mux_1x4_normal.v ;         ;
-; cont_mod2.v                      ; yes             ; User Verilog HDL File        ; /home/aluno/Downloads/RegaAutomaticav3/cont_mod2.v      ;         ;
-; demux_1x4.v                      ; yes             ; Auto-Found Verilog HDL File  ; /home/aluno/Downloads/RegaAutomaticav3/demux_1x4.v      ;         ;
-+----------------------------------+-----------------+------------------------------+---------------------------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                      ;
++----------------------------------+-----------------+------------------------------+---------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                  ; Library ;
++----------------------------------+-----------------+------------------------------+---------------------------------------------------------------+---------+
+; Irrigacao.v                      ; yes             ; User Verilog HDL File        ; /home/aluno/Downloads/rega3/RegaAutomaticav3/Irrigacao.v      ;         ;
+; mef_tiporega.v                   ; yes             ; User Verilog HDL File        ; /home/aluno/Downloads/rega3/RegaAutomaticav3/mef_tiporega.v   ;         ;
+; main.v                           ; yes             ; User Verilog HDL File        ; /home/aluno/Downloads/rega3/RegaAutomaticav3/main.v           ;         ;
+; cont_mod4.v                      ; yes             ; User Verilog HDL File        ; /home/aluno/Downloads/rega3/RegaAutomaticav3/cont_mod4.v      ;         ;
+; cont_mod16.v                     ; yes             ; User Verilog HDL File        ; /home/aluno/Downloads/rega3/RegaAutomaticav3/cont_mod16.v     ;         ;
+; DivisorClock.v                   ; yes             ; User Verilog HDL File        ; /home/aluno/Downloads/rega3/RegaAutomaticav3/DivisorClock.v   ;         ;
+; fft.v                            ; yes             ; User Verilog HDL File        ; /home/aluno/Downloads/rega3/RegaAutomaticav3/fft.v            ;         ;
+; decode.v                         ; yes             ; User Verilog HDL File        ; /home/aluno/Downloads/rega3/RegaAutomaticav3/decode.v         ;         ;
+; Seletor_Imagem.v                 ; yes             ; User Verilog HDL File        ; /home/aluno/Downloads/rega3/RegaAutomaticav3/Seletor_Imagem.v ;         ;
+; mef_adub_limp.v                  ; yes             ; User Verilog HDL File        ; /home/aluno/Downloads/rega3/RegaAutomaticav3/mef_adub_limp.v  ;         ;
+; decode_cxa.v                     ; yes             ; User Verilog HDL File        ; /home/aluno/Downloads/rega3/RegaAutomaticav3/decode_cxa.v     ;         ;
+; decode_simb.v                    ; yes             ; User Verilog HDL File        ; /home/aluno/Downloads/rega3/RegaAutomaticav3/decode_simb.v    ;         ;
+; mux_1x4_normal.v                 ; yes             ; User Verilog HDL File        ; /home/aluno/Downloads/rega3/RegaAutomaticav3/mux_1x4_normal.v ;         ;
+; cont_mod2.v                      ; yes             ; User Verilog HDL File        ; /home/aluno/Downloads/rega3/RegaAutomaticav3/cont_mod2.v      ;         ;
+; demux_1x4.v                      ; yes             ; Auto-Found Verilog HDL File  ; /home/aluno/Downloads/rega3/RegaAutomaticav3/demux_1x4.v      ;         ;
++----------------------------------+-----------------+------------------------------+---------------------------------------------------------------+---------+
 
 
-+----------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                                                        ;
-+---------------------------------------------+------------------------------------------------------+
-; Resource                                    ; Usage                                                ;
-+---------------------------------------------+------------------------------------------------------+
-; Total logic elements                        ; 80                                                   ;
-;     -- Combinational with no register       ; 43                                                   ;
-;     -- Register only                        ; 0                                                    ;
-;     -- Combinational with a register        ; 37                                                   ;
-;                                             ;                                                      ;
-; Logic element usage by number of LUT inputs ;                                                      ;
-;     -- 4 input functions                    ; 33                                                   ;
-;     -- 3 input functions                    ; 9                                                    ;
-;     -- 2 input functions                    ; 14                                                   ;
-;     -- 1 input functions                    ; 24                                                   ;
-;     -- 0 input functions                    ; 0                                                    ;
-;                                             ;                                                      ;
-; Logic elements by mode                      ;                                                      ;
-;     -- normal mode                          ; 80                                                   ;
-;     -- arithmetic mode                      ; 0                                                    ;
-;     -- qfbk mode                            ; 0                                                    ;
-;     -- register cascade mode                ; 0                                                    ;
-;     -- synchronous clear/load mode          ; 0                                                    ;
-;     -- asynchronous clear/load mode         ; 6                                                    ;
-;                                             ;                                                      ;
-; Total registers                             ; 37                                                   ;
-; I/O pins                                    ; 27                                                   ;
-; Maximum fan-out node                        ; Seletor_Imagem:comb_17|cont_mod4:comb_4|fft:comb_9|Q ;
-; Maximum fan-out                             ; 17                                                   ;
-; Total fan-out                               ; 273                                                  ;
-; Average fan-out                             ; 2.55                                                 ;
-+---------------------------------------------+------------------------------------------------------+
++--------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                                    ;
++---------------------------------------------+----------------------------------+
+; Resource                                    ; Usage                            ;
++---------------------------------------------+----------------------------------+
+; Total logic elements                        ; 86                               ;
+;     -- Combinational with no register       ; 49                               ;
+;     -- Register only                        ; 0                                ;
+;     -- Combinational with a register        ; 37                               ;
+;                                             ;                                  ;
+; Logic element usage by number of LUT inputs ;                                  ;
+;     -- 4 input functions                    ; 37                               ;
+;     -- 3 input functions                    ; 14                               ;
+;     -- 2 input functions                    ; 11                               ;
+;     -- 1 input functions                    ; 24                               ;
+;     -- 0 input functions                    ; 0                                ;
+;                                             ;                                  ;
+; Logic elements by mode                      ;                                  ;
+;     -- normal mode                          ; 86                               ;
+;     -- arithmetic mode                      ; 0                                ;
+;     -- qfbk mode                            ; 0                                ;
+;     -- register cascade mode                ; 0                                ;
+;     -- synchronous clear/load mode          ; 0                                ;
+;     -- asynchronous clear/load mode         ; 6                                ;
+;                                             ;                                  ;
+; Total registers                             ; 37                               ;
+; I/O pins                                    ; 27                               ;
+; Maximum fan-out node                        ; cont_mod16:comb_15|fft:comb_23|Q ;
+; Maximum fan-out                             ; 20                               ;
+; Total fan-out                               ; 298                              ;
+; Average fan-out                             ; 2.64                             ;
++---------------------------------------------+----------------------------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -238,7 +238,7 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+----------------------------------------------------------+----------------+--------------+
 ; Compilation Hierarchy Node  ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name                                      ; Entity Name    ; Library Name ;
 +-----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+----------------------------------------------------------+----------------+--------------+
-; |main                       ; 80 (0)      ; 37           ; 0          ; 27   ; 0            ; 43 (0)       ; 0 (0)             ; 37 (0)           ; 0 (0)           ; 0 (0)      ; |main                                                    ; main           ; work         ;
+; |main                       ; 86 (0)      ; 37           ; 0          ; 27   ; 0            ; 49 (0)       ; 0 (0)             ; 37 (0)           ; 0 (0)           ; 0 (0)      ; |main                                                    ; main           ; work         ;
 ;    |DivisorClock:comb_9|    ; 22 (0)      ; 22           ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 22 (0)           ; 0 (0)           ; 0 (0)      ; |main|DivisorClock:comb_9                                ; DivisorClock   ; work         ;
 ;       |fft:div_1024|        ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|DivisorClock:comb_9|fft:div_1024                   ; fft            ; work         ;
 ;       |fft:div_1048576|     ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|DivisorClock:comb_9|fft:div_1048576                ; fft            ; work         ;
@@ -262,23 +262,22 @@ https://fpgasoftware.intel.com/eula.
 ;       |fft:div_65536|       ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|DivisorClock:comb_9|fft:div_65536                  ; fft            ; work         ;
 ;       |fft:div_8192|        ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|DivisorClock:comb_9|fft:div_8192                   ; fft            ; work         ;
 ;       |fft:div_8|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|DivisorClock:comb_9|fft:div_8                      ; fft            ; work         ;
-;    |Seletor_Imagem:comb_17| ; 29 (22)     ; 2            ; 0          ; 0    ; 0            ; 27 (22)      ; 0 (0)             ; 2 (0)            ; 0 (0)           ; 0 (0)      ; |main|Seletor_Imagem:comb_17                             ; Seletor_Imagem ; work         ;
+;    |Seletor_Imagem:comb_17| ; 33 (25)     ; 2            ; 0          ; 0    ; 0            ; 31 (25)      ; 0 (0)             ; 2 (0)            ; 0 (0)           ; 0 (0)      ; |main|Seletor_Imagem:comb_17                             ; Seletor_Imagem ; work         ;
 ;       |cont_mod4:comb_4|    ; 2 (0)       ; 2            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (0)            ; 0 (0)           ; 0 (0)      ; |main|Seletor_Imagem:comb_17|cont_mod4:comb_4            ; cont_mod4      ; work         ;
 ;          |fft:comb_8|       ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|Seletor_Imagem:comb_17|cont_mod4:comb_4|fft:comb_8 ; fft            ; work         ;
 ;          |fft:comb_9|       ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|Seletor_Imagem:comb_17|cont_mod4:comb_4|fft:comb_9 ; fft            ; work         ;
-;       |decode:comb_7|       ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|Seletor_Imagem:comb_17|decode:comb_7               ; decode         ; work         ;
-;       |decode:comb_8|       ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|Seletor_Imagem:comb_17|decode:comb_8               ; decode         ; work         ;
-;       |demux_1x4:comb_3|    ; 3 (3)       ; 0            ; 0          ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|Seletor_Imagem:comb_17|demux_1x4:comb_3            ; demux_1x4      ; work         ;
+;       |decode:comb_7|       ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|Seletor_Imagem:comb_17|decode:comb_7               ; decode         ; work         ;
+;       |demux_1x4:comb_3|    ; 4 (4)       ; 0            ; 0          ; 0    ; 0            ; 4 (4)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|Seletor_Imagem:comb_17|demux_1x4:comb_3            ; demux_1x4      ; work         ;
 ;    |cont_mod16:comb_15|     ; 9 (3)       ; 4            ; 0          ; 0    ; 0            ; 5 (3)        ; 0 (0)             ; 4 (0)            ; 0 (0)           ; 0 (0)      ; |main|cont_mod16:comb_15                                 ; cont_mod16     ; work         ;
 ;       |fft:comb_21|         ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|cont_mod16:comb_15|fft:comb_21                     ; fft            ; work         ;
-;       |fft:comb_22|         ; 2 (2)       ; 1            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|cont_mod16:comb_15|fft:comb_22                     ; fft            ; work         ;
-;       |fft:comb_23|         ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|cont_mod16:comb_15|fft:comb_23                     ; fft            ; work         ;
+;       |fft:comb_22|         ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|cont_mod16:comb_15|fft:comb_22                     ; fft            ; work         ;
+;       |fft:comb_23|         ; 2 (2)       ; 1            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|cont_mod16:comb_15|fft:comb_23                     ; fft            ; work         ;
 ;       |fft:comb_24|         ; 2 (2)       ; 1            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|cont_mod16:comb_15|fft:comb_24                     ; fft            ; work         ;
 ;    |cont_mod2:comb_16|      ; 2 (0)       ; 2            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (0)            ; 0 (0)           ; 0 (0)      ; |main|cont_mod2:comb_16                                  ; cont_mod2      ; work         ;
 ;       |fft:comb_14|         ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|cont_mod2:comb_16|fft:comb_14                      ; fft            ; work         ;
 ;       |fft:comb_15|         ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|cont_mod2:comb_16|fft:comb_15                      ; fft            ; work         ;
 ;    |fft:chave_seletora|     ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|fft:chave_seletora                                 ; fft            ; work         ;
-;    |mef_adub_limp:comb_20|  ; 14 (14)     ; 4            ; 0          ; 0    ; 0            ; 10 (10)      ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |main|mef_adub_limp:comb_20                              ; mef_adub_limp  ; work         ;
+;    |mef_adub_limp:comb_20|  ; 16 (16)     ; 4            ; 0          ; 0    ; 0            ; 12 (12)      ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |main|mef_adub_limp:comb_20                              ; mef_adub_limp  ; work         ;
 ;    |mef_tiporega:comb_19|   ; 2 (2)       ; 2            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (2)            ; 0 (0)           ; 0 (0)      ; |main|mef_tiporega:comb_19                               ; mef_tiporega   ; work         ;
 ;    |mux_1x4_normal:comb_14| ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|mux_1x4_normal:comb_14                             ; mux_1x4_normal ; work         ;
 +-----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+----------------------------------------------------------+----------------+--------------+
@@ -662,107 +661,108 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Tue Jul 23 10:09:42 2024
+    Info: Processing started: Tue Jul 23 12:20:03 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off pbl3 -c pbl3
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file Irrigacao.v
-    Info (12023): Found entity 1: Irrigacao File: /home/aluno/Downloads/RegaAutomaticav3/Irrigacao.v Line: 2
+    Info (12023): Found entity 1: Irrigacao File: /home/aluno/Downloads/rega3/RegaAutomaticav3/Irrigacao.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file mef_tiporega.v
-    Info (12023): Found entity 1: mef_tiporega File: /home/aluno/Downloads/RegaAutomaticav3/mef_tiporega.v Line: 1
+    Info (12023): Found entity 1: mef_tiporega File: /home/aluno/Downloads/rega3/RegaAutomaticav3/mef_tiporega.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file main.v
-    Info (12023): Found entity 1: main File: /home/aluno/Downloads/RegaAutomaticav3/main.v Line: 5
+    Info (12023): Found entity 1: main File: /home/aluno/Downloads/rega3/RegaAutomaticav3/main.v Line: 4
 Info (12021): Found 1 design units, including 1 entities, in source file cont_mod4.v
-    Info (12023): Found entity 1: cont_mod4 File: /home/aluno/Downloads/RegaAutomaticav3/cont_mod4.v Line: 2
+    Info (12023): Found entity 1: cont_mod4 File: /home/aluno/Downloads/rega3/RegaAutomaticav3/cont_mod4.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file flipflopJK.v
-    Info (12023): Found entity 1: flipflopJK File: /home/aluno/Downloads/RegaAutomaticav3/flipflopJK.v Line: 3
+    Info (12023): Found entity 1: flipflopJK File: /home/aluno/Downloads/rega3/RegaAutomaticav3/flipflopJK.v Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file cont_mod16.v
-    Info (12023): Found entity 1: cont_mod16 File: /home/aluno/Downloads/RegaAutomaticav3/cont_mod16.v Line: 3
+    Info (12023): Found entity 1: cont_mod16 File: /home/aluno/Downloads/rega3/RegaAutomaticav3/cont_mod16.v Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file DivisorClock.v
-    Info (12023): Found entity 1: DivisorClock File: /home/aluno/Downloads/RegaAutomaticav3/DivisorClock.v Line: 2
+    Info (12023): Found entity 1: DivisorClock File: /home/aluno/Downloads/rega3/RegaAutomaticav3/DivisorClock.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file fft.v
-    Info (12023): Found entity 1: fft File: /home/aluno/Downloads/RegaAutomaticav3/fft.v Line: 2
+    Info (12023): Found entity 1: fft File: /home/aluno/Downloads/rega3/RegaAutomaticav3/fft.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file decode.v
-    Info (12023): Found entity 1: decode File: /home/aluno/Downloads/RegaAutomaticav3/decode.v Line: 3
+    Info (12023): Found entity 1: decode File: /home/aluno/Downloads/rega3/RegaAutomaticav3/decode.v Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file Seletor_Imagem.v
-    Info (12023): Found entity 1: Seletor_Imagem File: /home/aluno/Downloads/RegaAutomaticav3/Seletor_Imagem.v Line: 1
+    Info (12023): Found entity 1: Seletor_Imagem File: /home/aluno/Downloads/rega3/RegaAutomaticav3/Seletor_Imagem.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file mef_adub_limp.v
-    Info (12023): Found entity 1: mef_adub_limp File: /home/aluno/Downloads/RegaAutomaticav3/mef_adub_limp.v Line: 1
+    Info (12023): Found entity 1: mef_adub_limp File: /home/aluno/Downloads/rega3/RegaAutomaticav3/mef_adub_limp.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file decode_cxa.v
-    Info (12023): Found entity 1: decode_cxa File: /home/aluno/Downloads/RegaAutomaticav3/decode_cxa.v Line: 3
+    Info (12023): Found entity 1: decode_cxa File: /home/aluno/Downloads/rega3/RegaAutomaticav3/decode_cxa.v Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file decode_simb.v
-    Info (12023): Found entity 1: decode_simb File: /home/aluno/Downloads/RegaAutomaticav3/decode_simb.v Line: 3
+    Info (12023): Found entity 1: decode_simb File: /home/aluno/Downloads/rega3/RegaAutomaticav3/decode_simb.v Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file mux_1x4_normal.v
-    Info (12023): Found entity 1: mux_1x4_normal File: /home/aluno/Downloads/RegaAutomaticav3/mux_1x4_normal.v Line: 2
+    Info (12023): Found entity 1: mux_1x4_normal File: /home/aluno/Downloads/rega3/RegaAutomaticav3/mux_1x4_normal.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file cont_mod2.v
-    Info (12023): Found entity 1: cont_mod2 File: /home/aluno/Downloads/RegaAutomaticav3/cont_mod2.v Line: 2
-Warning (10236): Verilog HDL Implicit Net warning at main.v(33): created implicit net for "CRn" File: /home/aluno/Downloads/RegaAutomaticav3/main.v Line: 33
-Warning (10236): Verilog HDL Implicit Net warning at cont_mod4.v(12): created implicit net for "Yn" File: /home/aluno/Downloads/RegaAutomaticav3/cont_mod4.v Line: 12
-Warning (10236): Verilog HDL Implicit Net warning at cont_mod16.v(18): created implicit net for "Yn" File: /home/aluno/Downloads/RegaAutomaticav3/cont_mod16.v Line: 18
-Warning (10236): Verilog HDL Implicit Net warning at cont_mod16.v(20): created implicit net for "Wire0" File: /home/aluno/Downloads/RegaAutomaticav3/cont_mod16.v Line: 20
-Warning (10236): Verilog HDL Implicit Net warning at cont_mod2.v(12): created implicit net for "Yn" File: /home/aluno/Downloads/RegaAutomaticav3/cont_mod2.v Line: 12
-Critical Warning (10846): Verilog HDL Instantiation warning at main.v(27): instance has no name File: /home/aluno/Downloads/RegaAutomaticav3/main.v Line: 27
-Critical Warning (10846): Verilog HDL Instantiation warning at main.v(41): instance has no name File: /home/aluno/Downloads/RegaAutomaticav3/main.v Line: 41
-Critical Warning (10846): Verilog HDL Instantiation warning at cont_mod16.v(41): instance has no name File: /home/aluno/Downloads/RegaAutomaticav3/cont_mod16.v Line: 41
-Critical Warning (10846): Verilog HDL Instantiation warning at cont_mod16.v(42): instance has no name File: /home/aluno/Downloads/RegaAutomaticav3/cont_mod16.v Line: 42
-Critical Warning (10846): Verilog HDL Instantiation warning at cont_mod16.v(43): instance has no name File: /home/aluno/Downloads/RegaAutomaticav3/cont_mod16.v Line: 43
-Critical Warning (10846): Verilog HDL Instantiation warning at cont_mod16.v(44): instance has no name File: /home/aluno/Downloads/RegaAutomaticav3/cont_mod16.v Line: 44
-Critical Warning (10846): Verilog HDL Instantiation warning at main.v(42): instance has no name File: /home/aluno/Downloads/RegaAutomaticav3/main.v Line: 42
-Critical Warning (10846): Verilog HDL Instantiation warning at cont_mod2.v(29): instance has no name File: /home/aluno/Downloads/RegaAutomaticav3/cont_mod2.v Line: 29
-Critical Warning (10846): Verilog HDL Instantiation warning at cont_mod2.v(31): instance has no name File: /home/aluno/Downloads/RegaAutomaticav3/cont_mod2.v Line: 31
-Critical Warning (10846): Verilog HDL Instantiation warning at main.v(43): instance has no name File: /home/aluno/Downloads/RegaAutomaticav3/main.v Line: 43
-Critical Warning (10846): Verilog HDL Instantiation warning at Seletor_Imagem.v(19): instance has no name File: /home/aluno/Downloads/RegaAutomaticav3/Seletor_Imagem.v Line: 19
-Critical Warning (10846): Verilog HDL Instantiation warning at cont_mod4.v(21): instance has no name File: /home/aluno/Downloads/RegaAutomaticav3/cont_mod4.v Line: 21
-Critical Warning (10846): Verilog HDL Instantiation warning at cont_mod4.v(23): instance has no name File: /home/aluno/Downloads/RegaAutomaticav3/cont_mod4.v Line: 23
-Critical Warning (10846): Verilog HDL Instantiation warning at Seletor_Imagem.v(22): instance has no name File: /home/aluno/Downloads/RegaAutomaticav3/Seletor_Imagem.v Line: 22
-Critical Warning (10846): Verilog HDL Instantiation warning at Seletor_Imagem.v(29): instance has no name File: /home/aluno/Downloads/RegaAutomaticav3/Seletor_Imagem.v Line: 29
-Critical Warning (10846): Verilog HDL Instantiation warning at Seletor_Imagem.v(30): instance has no name File: /home/aluno/Downloads/RegaAutomaticav3/Seletor_Imagem.v Line: 30
-Critical Warning (10846): Verilog HDL Instantiation warning at Seletor_Imagem.v(31): instance has no name File: /home/aluno/Downloads/RegaAutomaticav3/Seletor_Imagem.v Line: 31
-Critical Warning (10846): Verilog HDL Instantiation warning at Seletor_Imagem.v(32): instance has no name File: /home/aluno/Downloads/RegaAutomaticav3/Seletor_Imagem.v Line: 32
-Critical Warning (10846): Verilog HDL Instantiation warning at main.v(46): instance has no name File: /home/aluno/Downloads/RegaAutomaticav3/main.v Line: 46
-Critical Warning (10846): Verilog HDL Instantiation warning at main.v(49): instance has no name File: /home/aluno/Downloads/RegaAutomaticav3/main.v Line: 49
-Critical Warning (10846): Verilog HDL Instantiation warning at main.v(52): instance has no name File: /home/aluno/Downloads/RegaAutomaticav3/main.v Line: 52
-Critical Warning (10846): Verilog HDL Instantiation warning at main.v(53): instance has no name File: /home/aluno/Downloads/RegaAutomaticav3/main.v Line: 53
+    Info (12023): Found entity 1: cont_mod2 File: /home/aluno/Downloads/rega3/RegaAutomaticav3/cont_mod2.v Line: 2
+Warning (10236): Verilog HDL Implicit Net warning at main.v(32): created implicit net for "CRn" File: /home/aluno/Downloads/rega3/RegaAutomaticav3/main.v Line: 32
+Warning (10236): Verilog HDL Implicit Net warning at cont_mod4.v(12): created implicit net for "Yn" File: /home/aluno/Downloads/rega3/RegaAutomaticav3/cont_mod4.v Line: 12
+Warning (10236): Verilog HDL Implicit Net warning at cont_mod16.v(18): created implicit net for "Yn" File: /home/aluno/Downloads/rega3/RegaAutomaticav3/cont_mod16.v Line: 18
+Warning (10236): Verilog HDL Implicit Net warning at cont_mod16.v(20): created implicit net for "Wire0" File: /home/aluno/Downloads/rega3/RegaAutomaticav3/cont_mod16.v Line: 20
+Warning (10236): Verilog HDL Implicit Net warning at mef_adub_limp.v(17): created implicit net for "notNv2" File: /home/aluno/Downloads/rega3/RegaAutomaticav3/mef_adub_limp.v Line: 17
+Warning (10236): Verilog HDL Implicit Net warning at cont_mod2.v(12): created implicit net for "Yn" File: /home/aluno/Downloads/rega3/RegaAutomaticav3/cont_mod2.v Line: 12
+Critical Warning (10846): Verilog HDL Instantiation warning at main.v(26): instance has no name File: /home/aluno/Downloads/rega3/RegaAutomaticav3/main.v Line: 26
+Critical Warning (10846): Verilog HDL Instantiation warning at main.v(40): instance has no name File: /home/aluno/Downloads/rega3/RegaAutomaticav3/main.v Line: 40
+Critical Warning (10846): Verilog HDL Instantiation warning at cont_mod16.v(41): instance has no name File: /home/aluno/Downloads/rega3/RegaAutomaticav3/cont_mod16.v Line: 41
+Critical Warning (10846): Verilog HDL Instantiation warning at cont_mod16.v(42): instance has no name File: /home/aluno/Downloads/rega3/RegaAutomaticav3/cont_mod16.v Line: 42
+Critical Warning (10846): Verilog HDL Instantiation warning at cont_mod16.v(43): instance has no name File: /home/aluno/Downloads/rega3/RegaAutomaticav3/cont_mod16.v Line: 43
+Critical Warning (10846): Verilog HDL Instantiation warning at cont_mod16.v(44): instance has no name File: /home/aluno/Downloads/rega3/RegaAutomaticav3/cont_mod16.v Line: 44
+Critical Warning (10846): Verilog HDL Instantiation warning at main.v(41): instance has no name File: /home/aluno/Downloads/rega3/RegaAutomaticav3/main.v Line: 41
+Critical Warning (10846): Verilog HDL Instantiation warning at cont_mod2.v(29): instance has no name File: /home/aluno/Downloads/rega3/RegaAutomaticav3/cont_mod2.v Line: 29
+Critical Warning (10846): Verilog HDL Instantiation warning at cont_mod2.v(31): instance has no name File: /home/aluno/Downloads/rega3/RegaAutomaticav3/cont_mod2.v Line: 31
+Critical Warning (10846): Verilog HDL Instantiation warning at main.v(42): instance has no name File: /home/aluno/Downloads/rega3/RegaAutomaticav3/main.v Line: 42
+Critical Warning (10846): Verilog HDL Instantiation warning at Seletor_Imagem.v(19): instance has no name File: /home/aluno/Downloads/rega3/RegaAutomaticav3/Seletor_Imagem.v Line: 19
+Critical Warning (10846): Verilog HDL Instantiation warning at cont_mod4.v(21): instance has no name File: /home/aluno/Downloads/rega3/RegaAutomaticav3/cont_mod4.v Line: 21
+Critical Warning (10846): Verilog HDL Instantiation warning at cont_mod4.v(23): instance has no name File: /home/aluno/Downloads/rega3/RegaAutomaticav3/cont_mod4.v Line: 23
+Critical Warning (10846): Verilog HDL Instantiation warning at Seletor_Imagem.v(22): instance has no name File: /home/aluno/Downloads/rega3/RegaAutomaticav3/Seletor_Imagem.v Line: 22
+Critical Warning (10846): Verilog HDL Instantiation warning at Seletor_Imagem.v(29): instance has no name File: /home/aluno/Downloads/rega3/RegaAutomaticav3/Seletor_Imagem.v Line: 29
+Critical Warning (10846): Verilog HDL Instantiation warning at Seletor_Imagem.v(30): instance has no name File: /home/aluno/Downloads/rega3/RegaAutomaticav3/Seletor_Imagem.v Line: 30
+Critical Warning (10846): Verilog HDL Instantiation warning at Seletor_Imagem.v(31): instance has no name File: /home/aluno/Downloads/rega3/RegaAutomaticav3/Seletor_Imagem.v Line: 31
+Critical Warning (10846): Verilog HDL Instantiation warning at Seletor_Imagem.v(32): instance has no name File: /home/aluno/Downloads/rega3/RegaAutomaticav3/Seletor_Imagem.v Line: 32
+Critical Warning (10846): Verilog HDL Instantiation warning at main.v(45): instance has no name File: /home/aluno/Downloads/rega3/RegaAutomaticav3/main.v Line: 45
+Critical Warning (10846): Verilog HDL Instantiation warning at main.v(48): instance has no name File: /home/aluno/Downloads/rega3/RegaAutomaticav3/main.v Line: 48
+Critical Warning (10846): Verilog HDL Instantiation warning at main.v(51): instance has no name File: /home/aluno/Downloads/rega3/RegaAutomaticav3/main.v Line: 51
+Critical Warning (10846): Verilog HDL Instantiation warning at main.v(52): instance has no name File: /home/aluno/Downloads/rega3/RegaAutomaticav3/main.v Line: 52
 Info (12127): Elaborating entity "main" for the top level hierarchy
-Warning (10739): Verilog HDL warning at main.v(20): actual bit length 32 differs from formal bit length 1 File: /home/aluno/Downloads/RegaAutomaticav3/main.v Line: 20
-Warning (10739): Verilog HDL warning at main.v(21): actual bit length 32 differs from formal bit length 1 File: /home/aluno/Downloads/RegaAutomaticav3/main.v Line: 21
-Info (12128): Elaborating entity "DivisorClock" for hierarchy "DivisorClock:comb_9" File: /home/aluno/Downloads/RegaAutomaticav3/main.v Line: 27
-Info (12128): Elaborating entity "fft" for hierarchy "DivisorClock:comb_9|fft:div_2" File: /home/aluno/Downloads/RegaAutomaticav3/DivisorClock.v Line: 12
-Info (12128): Elaborating entity "mux_1x4_normal" for hierarchy "mux_1x4_normal:comb_14" File: /home/aluno/Downloads/RegaAutomaticav3/main.v Line: 41
-Info (12128): Elaborating entity "cont_mod16" for hierarchy "cont_mod16:comb_15" File: /home/aluno/Downloads/RegaAutomaticav3/main.v Line: 42
-Info (12128): Elaborating entity "cont_mod2" for hierarchy "cont_mod2:comb_16" File: /home/aluno/Downloads/RegaAutomaticav3/main.v Line: 43
-Info (12128): Elaborating entity "Seletor_Imagem" for hierarchy "Seletor_Imagem:comb_17" File: /home/aluno/Downloads/RegaAutomaticav3/main.v Line: 46
-Warning (10739): Verilog HDL warning at Seletor_Imagem.v(87): actual bit length 32 differs from formal bit length 1 File: /home/aluno/Downloads/RegaAutomaticav3/Seletor_Imagem.v Line: 87
+Warning (10739): Verilog HDL warning at main.v(19): actual bit length 32 differs from formal bit length 1 File: /home/aluno/Downloads/rega3/RegaAutomaticav3/main.v Line: 19
+Warning (10739): Verilog HDL warning at main.v(20): actual bit length 32 differs from formal bit length 1 File: /home/aluno/Downloads/rega3/RegaAutomaticav3/main.v Line: 20
+Info (12128): Elaborating entity "DivisorClock" for hierarchy "DivisorClock:comb_9" File: /home/aluno/Downloads/rega3/RegaAutomaticav3/main.v Line: 26
+Info (12128): Elaborating entity "fft" for hierarchy "DivisorClock:comb_9|fft:div_2" File: /home/aluno/Downloads/rega3/RegaAutomaticav3/DivisorClock.v Line: 12
+Info (12128): Elaborating entity "mux_1x4_normal" for hierarchy "mux_1x4_normal:comb_14" File: /home/aluno/Downloads/rega3/RegaAutomaticav3/main.v Line: 40
+Info (12128): Elaborating entity "cont_mod16" for hierarchy "cont_mod16:comb_15" File: /home/aluno/Downloads/rega3/RegaAutomaticav3/main.v Line: 41
+Info (12128): Elaborating entity "cont_mod2" for hierarchy "cont_mod2:comb_16" File: /home/aluno/Downloads/rega3/RegaAutomaticav3/main.v Line: 42
+Info (12128): Elaborating entity "Seletor_Imagem" for hierarchy "Seletor_Imagem:comb_17" File: /home/aluno/Downloads/rega3/RegaAutomaticav3/main.v Line: 45
+Warning (10739): Verilog HDL warning at Seletor_Imagem.v(87): actual bit length 32 differs from formal bit length 1 File: /home/aluno/Downloads/rega3/RegaAutomaticav3/Seletor_Imagem.v Line: 87
 Warning (12125): Using design file demux_1x4.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: demux_1x4 File: /home/aluno/Downloads/RegaAutomaticav3/demux_1x4.v Line: 2
-Info (12128): Elaborating entity "demux_1x4" for hierarchy "Seletor_Imagem:comb_17|demux_1x4:comb_3" File: /home/aluno/Downloads/RegaAutomaticav3/Seletor_Imagem.v Line: 19
-Info (12128): Elaborating entity "cont_mod4" for hierarchy "Seletor_Imagem:comb_17|cont_mod4:comb_4" File: /home/aluno/Downloads/RegaAutomaticav3/Seletor_Imagem.v Line: 22
-Info (12128): Elaborating entity "decode" for hierarchy "Seletor_Imagem:comb_17|decode:comb_7" File: /home/aluno/Downloads/RegaAutomaticav3/Seletor_Imagem.v Line: 29
-Warning (10739): Verilog HDL warning at decode.v(63): actual bit length 32 differs from formal bit length 1 File: /home/aluno/Downloads/RegaAutomaticav3/decode.v Line: 63
-Info (12128): Elaborating entity "decode_cxa" for hierarchy "Seletor_Imagem:comb_17|decode_cxa:comb_9" File: /home/aluno/Downloads/RegaAutomaticav3/Seletor_Imagem.v Line: 31
-Warning (10739): Verilog HDL warning at decode_cxa.v(19): actual bit length 32 differs from formal bit length 1 File: /home/aluno/Downloads/RegaAutomaticav3/decode_cxa.v Line: 19
-Warning (10739): Verilog HDL warning at decode_cxa.v(23): actual bit length 32 differs from formal bit length 1 File: /home/aluno/Downloads/RegaAutomaticav3/decode_cxa.v Line: 23
-Warning (10739): Verilog HDL warning at decode_cxa.v(27): actual bit length 32 differs from formal bit length 1 File: /home/aluno/Downloads/RegaAutomaticav3/decode_cxa.v Line: 27
-Warning (10739): Verilog HDL warning at decode_cxa.v(35): actual bit length 32 differs from formal bit length 1 File: /home/aluno/Downloads/RegaAutomaticav3/decode_cxa.v Line: 35
-Warning (10739): Verilog HDL warning at decode_cxa.v(43): actual bit length 32 differs from formal bit length 1 File: /home/aluno/Downloads/RegaAutomaticav3/decode_cxa.v Line: 43
-Info (12128): Elaborating entity "decode_simb" for hierarchy "Seletor_Imagem:comb_17|decode_simb:comb_10" File: /home/aluno/Downloads/RegaAutomaticav3/Seletor_Imagem.v Line: 32
-Warning (10739): Verilog HDL warning at decode_simb.v(47): actual bit length 32 differs from formal bit length 1 File: /home/aluno/Downloads/RegaAutomaticav3/decode_simb.v Line: 47
-Info (12128): Elaborating entity "Irrigacao" for hierarchy "Irrigacao:comb_18" File: /home/aluno/Downloads/RegaAutomaticav3/main.v Line: 49
-Info (12128): Elaborating entity "mef_tiporega" for hierarchy "mef_tiporega:comb_19" File: /home/aluno/Downloads/RegaAutomaticav3/main.v Line: 52
-Info (12128): Elaborating entity "mef_adub_limp" for hierarchy "mef_adub_limp:comb_20" File: /home/aluno/Downloads/RegaAutomaticav3/main.v Line: 53
+    Info (12023): Found entity 1: demux_1x4 File: /home/aluno/Downloads/rega3/RegaAutomaticav3/demux_1x4.v Line: 2
+Info (12128): Elaborating entity "demux_1x4" for hierarchy "Seletor_Imagem:comb_17|demux_1x4:comb_3" File: /home/aluno/Downloads/rega3/RegaAutomaticav3/Seletor_Imagem.v Line: 19
+Info (12128): Elaborating entity "cont_mod4" for hierarchy "Seletor_Imagem:comb_17|cont_mod4:comb_4" File: /home/aluno/Downloads/rega3/RegaAutomaticav3/Seletor_Imagem.v Line: 22
+Info (12128): Elaborating entity "decode" for hierarchy "Seletor_Imagem:comb_17|decode:comb_7" File: /home/aluno/Downloads/rega3/RegaAutomaticav3/Seletor_Imagem.v Line: 29
+Warning (10739): Verilog HDL warning at decode.v(63): actual bit length 32 differs from formal bit length 1 File: /home/aluno/Downloads/rega3/RegaAutomaticav3/decode.v Line: 63
+Info (12128): Elaborating entity "decode_cxa" for hierarchy "Seletor_Imagem:comb_17|decode_cxa:comb_9" File: /home/aluno/Downloads/rega3/RegaAutomaticav3/Seletor_Imagem.v Line: 31
+Warning (10739): Verilog HDL warning at decode_cxa.v(20): actual bit length 32 differs from formal bit length 1 File: /home/aluno/Downloads/rega3/RegaAutomaticav3/decode_cxa.v Line: 20
+Warning (10739): Verilog HDL warning at decode_cxa.v(24): actual bit length 32 differs from formal bit length 1 File: /home/aluno/Downloads/rega3/RegaAutomaticav3/decode_cxa.v Line: 24
+Warning (10739): Verilog HDL warning at decode_cxa.v(28): actual bit length 32 differs from formal bit length 1 File: /home/aluno/Downloads/rega3/RegaAutomaticav3/decode_cxa.v Line: 28
+Warning (10739): Verilog HDL warning at decode_cxa.v(36): actual bit length 32 differs from formal bit length 1 File: /home/aluno/Downloads/rega3/RegaAutomaticav3/decode_cxa.v Line: 36
+Warning (10739): Verilog HDL warning at decode_cxa.v(44): actual bit length 32 differs from formal bit length 1 File: /home/aluno/Downloads/rega3/RegaAutomaticav3/decode_cxa.v Line: 44
+Info (12128): Elaborating entity "decode_simb" for hierarchy "Seletor_Imagem:comb_17|decode_simb:comb_10" File: /home/aluno/Downloads/rega3/RegaAutomaticav3/Seletor_Imagem.v Line: 32
+Warning (10739): Verilog HDL warning at decode_simb.v(47): actual bit length 32 differs from formal bit length 1 File: /home/aluno/Downloads/rega3/RegaAutomaticav3/decode_simb.v Line: 47
+Info (12128): Elaborating entity "Irrigacao" for hierarchy "Irrigacao:comb_18" File: /home/aluno/Downloads/rega3/RegaAutomaticav3/main.v Line: 48
+Info (12128): Elaborating entity "mef_tiporega" for hierarchy "mef_tiporega:comb_19" File: /home/aluno/Downloads/rega3/RegaAutomaticav3/main.v Line: 51
+Info (12128): Elaborating entity "mef_adub_limp" for hierarchy "mef_adub_limp:comb_20" File: /home/aluno/Downloads/rega3/RegaAutomaticav3/main.v Line: 52
 Warning (12241): 5 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "SEG_P" is stuck at VCC File: /home/aluno/Downloads/RegaAutomaticav3/main.v Line: 9
+    Warning (13410): Pin "SEG_P" is stuck at VCC File: /home/aluno/Downloads/rega3/RegaAutomaticav3/main.v Line: 8
 Info (17049): 8 registers lost all their fanouts during netlist optimizations.
 Warning (21074): Design contains 1 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "T1" File: /home/aluno/Downloads/RegaAutomaticav3/main.v Line: 8
-Info (21057): Implemented 107 device resources after synthesis - the final resource count might be different
+    Warning (15610): No output dependent on input pin "T1" File: /home/aluno/Downloads/rega3/RegaAutomaticav3/main.v Line: 7
+Info (21057): Implemented 113 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 7 input pins
     Info (21059): Implemented 20 output pins
-    Info (21061): Implemented 80 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 44 warnings
-    Info: Peak virtual memory: 339 megabytes
-    Info: Processing ended: Tue Jul 23 10:09:47 2024
+    Info (21061): Implemented 86 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 45 warnings
+    Info: Peak virtual memory: 340 megabytes
+    Info: Processing ended: Tue Jul 23 12:20:08 2024
     Info: Elapsed time: 00:00:05
     Info: Total CPU time (on all processors): 00:00:12
 

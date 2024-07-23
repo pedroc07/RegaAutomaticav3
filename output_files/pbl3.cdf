@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(EPM240T100) Path("/home/aluno/Downloads/RegaAutomaticav3/output_files/") File("pbl3.pof") MfrSpec(OpMask(1) SEC_Device(EPM240T100) Child_OpMask(2 1 1));
+		Device PartName(EPM240T100) Path("/home/aluno/Downloads/rega3/RegaAutomaticav3/output_files/") File("pbl3.pof") MfrSpec(OpMask(1) SEC_Device(EPM240T100) Child_OpMask(2 1 1));
 
 ChainEnd;
 

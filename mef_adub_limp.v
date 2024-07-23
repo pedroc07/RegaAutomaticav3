@@ -6,31 +6,49 @@ module mef_adub_limp ( input clk ,
 	parameter B = 2'b01 ;
 	parameter C = 2'b10 ;
 	parameter D = 2'b11 ;
-	wire wire0, wire1, wire2, wire3, wire4, wire5, wire6, cond0, cond1, cond2, cond3, cond4, cond5, cond6, notA, notAdub, notNv1, notNv0;
+	wire wire0, wire1, wire2, wire3, wire4, wire5, wire6, cond0, cond1, cond2, cond3, cond4, notcond4, cond5, cond6, notA, notAdub, notNv1, notNv0;
+	
+	//entradas negadas	
+	
+	not not0(notA, Asp);
+	not not1(notAdub, Adub);
+	not not2(notNv1, Nv1);
+	not not3(notNv0, Nv0);
+	not not4(notNv2, Nv2);
 	
 	//condicoes estado A
 	
-	not not0(notA, Asp);
 	and and0(cond0, notNv2, notNv1, notNv0, notA);
 	
 	//condicoes estado B
 	
-	not not1(notAdub, Adub);
-	not not2(notNv1, Nv1);
-	not not3(notNv0, Nv0);
-	and and0(wire0, notAdub, Nv0, Asp);
-	and and1(wire1, notAdub, Nv1, Asp);
-	and and2(wire2, Adub, Nv0, Asp);
-	and and3(wire3, Adub, Nv1, Asp);
-	or or0(cond7, wire0, wire1);
-	or or1(cond1, wire2, wire3);
-	and and4(cond2, Nv1, Nv0);
-	and and5(wire4, Nv1, notA);
-	and and6(wire5, Nv0, notA);
-	or or2(cond3, wire4, wire5);
-	or or3(cond4, notNv1, notNv0);
-	and and7(cond5, notNv0, notNv1, notA);
-	and and8(cond6, notNv1, notNv0);
+	and and1(cond1, notNv2, notNv1, notNv0, Asp);
+	and and2(wire0, notAdub, Nv0, Asp);
+	and and3(wire1, notAdub, Nv1, Asp);
+	and and4(wire2, notAdub, Nv2, Asp);	
+	or or0(cond2, wire0, wire1, wire2);
+
+	//condicoes estado C
+	
+	and and5(cond3, notNv0, notNv1, notNv2);
+	
+	//condicoes estado D
+	
+	and and6(cond4, Nv0, Nv1, Nv2);
+	
+	//condicoes saidas
+	
+	//Ve
+	not not5(notcond4, cond4);
+	
+	//Mist
+	and and7(wire3, notNv2, Nv1);
+	or or1(cond5, Nv2, wire3);
+
+	//Limp
+	
+	and and8(cond6, Nv0, notNv1, notNv2);
+
 	// state register
 	always @ ( posedge clk, posedge reset)
     	if ( reset ) state <= A ;
@@ -44,23 +62,23 @@ module mef_adub_limp ( input clk ,
         	end
         	else if(state == B) begin
             	if (notA) nextstate <= A ;
-            	else if(cond0) nextstate <= B ;
-					else if(cond1) nextstate <= C ;
-					else nextstate <= D ;
+            	else if(cond1) nextstate <= D ;
+					else if(cond2) nextstate <= B ;
+					else nextstate <= C ;
         	end
         	else if(state == C) begin
-            	if (cond6) nextstate <= D;
+            	if (cond3) nextstate <= D;
 					else nextstate <= C ;
         	end
         	else if(state == D) begin
-            	if (cond2) nextstate <= A ;
+            	if (cond4) nextstate <= A ;
 					else nextstate <= D ;
         	end
         	else nextstate <= A;
         	end
 	// output logic
-	assign Ve = (cond4 & (state == D)) ;
-	assign Mist = (Nv1 & (state == C));
-	assign Limp = (notNv1 & (state == C)) ;
+	assign Ve = (notcond4 & (state == D)) ;
+	assign Mist = (cond5 & (state == C));
+	assign Limp = (cond6 & (state == C)) ;
     
 endmodule

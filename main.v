@@ -49,6 +49,6 @@ module main (Clk, Rst, Us, Bs, Vs, A, G, Nv1, Nv0, Adub, Ve, Mist, Limp0, Limp1,
 	
 	// Maquinas de estado
 	mef_tiporega ( Clk, Rst, REGA, Vs, Bs, A, G) ;
-	mef_adub_limp (Clk, Rst, wire_Adub, ContB1, ContB0, Asp, Ve, Mist, Limp0);
+	mef_adub_limp (Clk, Rst, wire_Adub, ContB1, ContB0, ContA2, Asp, Ve, Mist, Limp0);
 	
 endmodule
