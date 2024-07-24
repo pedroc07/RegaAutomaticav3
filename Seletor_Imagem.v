@@ -8,7 +8,7 @@ module Seletor_Imagem(S, Limp, Mist, Nv1, Nv0, ContA3, ContA2, ContA1, ContA0, C
 	wire Sel0n, Sel1n, Wire0, Wire1, Wire2, Wire3, Wire4, Wire5, Wire6, Wire7, 
 	Wire8, Wire9, Wire10, Wire11, Wire12, Wire13, Wire14, Wire15, Wire16, Wire17, 
 	Wire18, Wire19, Wire20, Wire21, Wire22, Wire23, Wire24, Wire25, Wire26, Wire27,
-	Wire28, Wire29;
+	Wire28, Wire29, Wire30;
 	
 	wire SEG_A0, SEG_B0, SEG_C0, SEG_D0, SEG_E0, SEG_F0, SEG_G0, SEG_P0,
 		  SEG_A1, SEG_B1, SEG_C1, SEG_DUm, SEG_E1, SEG_F1, SEG_G1, SEG_P1,
@@ -17,11 +17,13 @@ module Seletor_Imagem(S, Limp, Mist, Nv1, Nv0, ContA3, ContA2, ContA1, ContA0, C
 		  
 	wire NvCr;
 	
+	assign SEG_D4 = 1;
+	
 	//Seleciona os segmentos
-	demux_1x4(0, Sel[1], Sel[0], SEG_D1, SEG_D2, SEG_D3, SEG_D4);
+	demux_1x4(0, Sel[1], Sel[0], SEG_D1, SEG_D2, SEG_D3, Wire30);
 	
 	// Bits seletores de imagem
-	cont_mod4(0, S, Sel[1], Sel[0]);
+	cont_mod4(0, 0, 0, S, Sel[1], Sel[0]);
 	
 	// Seleciona os contadores de acordo com os bits
 	not Not0(Sel0n, Sel[0]);
@@ -35,7 +37,7 @@ module Seletor_Imagem(S, Limp, Mist, Nv1, Nv0, ContA3, ContA2, ContA1, ContA0, C
 	// Decodificadores para o display
 	decode(ContA3, ContA2, ContA1, ContA0, SEG_A0, SEG_B0, SEG_C0, SEG_D0, SEG_E0, SEG_F0, SEG_G0, SEG_P0);
 	decode(0, 0, ContB1, ContB0, SEG_A1, SEG_B1, SEG_C1, SEG_DUm, SEG_E1, SEG_F1, SEG_G1, SEG_P1);
-	decode_cxa(Nv1, Nv0, NvCr, SEG_A2, SEG_B2, SEG_C2, SEG_DDois, SEG_E2, SEG_F2, SEG_G2, SEG_P2);
+	decode_cxa(Nv1, Nv0, SEG_A2, SEG_B2, SEG_C2, SEG_DDois, SEG_E2, SEG_F2, SEG_G2, SEG_P2);
 	decode_simb(Limp, Mist, SEG_A3, SEG_B3, SEG_C3, SEG_DTres, SEG_E3, SEG_F3, SEG_G3, SEG_P3);
 	
 	// Demux que varre as linhas conforme o seletor

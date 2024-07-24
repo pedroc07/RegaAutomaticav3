@@ -1,8 +1,8 @@
 //Modulo Decodificador do nivel da caixa
 
-module decode_cxa(Nv2, Nv1, Nv0, SEG_A, SEG_B, SEG_C, SEG_D, SEG_E, SEG_F, SEG_G, SEG_P);
+module decode_cxa(Nv1, Nv0, SEG_A, SEG_B, SEG_C, SEG_D, SEG_E, SEG_F, SEG_G, SEG_P);
 
-input Nv2, Nv1, Nv0; // Entradas para o decodificador
+input Nv1, Nv0; // Entradas para o decodificador
 output SEG_A, SEG_B, SEG_C, SEG_D, SEG_E, SEG_F, SEG_G, SEG_P;
 
 // Entradas negadas
@@ -13,7 +13,7 @@ not Not1(notNv0, Nv0);
 
 //SEGMENTO A
 
-not not3(SEG_A, Nv2);
+or or1(SEG_A, notNv1, notNv0);
 
 //SEGMENTO B
 
@@ -29,7 +29,7 @@ not Not4(SEG_D, 1);
 
 //SEGMENTO E
 
-or Or0(SEG_E, Nv2, Nv1, Nv0);
+or Or0(SEG_E, Nv1, Nv0);
 
 //SEGMENTO F
 
@@ -37,7 +37,7 @@ not Not5(SEG_F, 0);
 
 //SEGMENTO G
 
-and And5(SEG_G, notNv2, notNv1, Nv0);
+and And5(SEG_G, notNv1, Nv0);
 
 //SEGMENTO P
 

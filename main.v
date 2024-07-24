@@ -25,7 +25,6 @@ module main (Clk, Rst, Us, Bs, Vs, A, G, Nv1, Nv0, Adub, Ve, Mist, Limp0, Limp1,
 	//Divisor de clock
 	
 	DivisorClock (Clk, S, clock_Asp, clock_Got);
-
 	
 	//Circuito da chave seletora dos contadores crescente/decrescente
 	not not1(ContB0n, ContB0);
@@ -34,19 +33,12 @@ module main (Clk, Rst, Us, Bs, Vs, A, G, Nv1, Nv0, Adub, Ve, Mist, Limp0, Limp1,
 	not not6(ContA3n, ContA3);
 	not not4(ContA2n, ContA2);
 	not not5(ContA1n, ContA1);
-	//nor Nor0(wire1, ContA3, ContA2, ContA1, ContA0, ContB1, ContB0);
-	//and and100(wire2, ContA3, ContA2n, ContA1n, ContA0, ContB1, ContB0n);
-	//flipflopJK(wire1, wire2, Rst, 0, clock_Reduzido, Y);
-	//fft chave_seletora (.T(wire1),.clock(CRn),.Q(Y));
 	assign Y = Ve;
 	
 	//Contadores do cronometro
 		
 	mux_1x4_normal (clock_Reduzido, Bs, Vs, clk_NULL, clock_Got, clock_Asp, clk_NULL);
-	cont_mod16(Rst, Y, clock_Reduzido, ContA3, ContA2 , ContA1, ContA0);
-	
-	mux_1x2_normal (clock_cont2, Y, ContA3, ContA3n);
-	cont_mod2(Rst, Y, clock_cont2, ContB1, ContB0);
+	cont_mod4(Limp0, Rst, Y, clock_Reduzido, ContB1, ContB0);
 	
 	//Seletor dos displays
 	Seletor_Imagem(S, Limp0, Mist, Nv1, Nv0, ContA3, ContA2, ContA1, ContA0, ContB1, ContB0, SEG_D1, SEG_D2, SEG_D3, SEG_D4, SEG_A, SEG_B, SEG_C, SEG_D, SEG_E, SEG_F, SEG_G, SEG_P);
@@ -56,6 +48,6 @@ module main (Clk, Rst, Us, Bs, Vs, A, G, Nv1, Nv0, Adub, Ve, Mist, Limp0, Limp1,
 	
 	// Maquinas de estado
 	mef_tiporega ( Clk, Rst, REGA, Vs, Bs, A, G) ;
-	mef_adub_limp (Clk, Rst, wire_Adub, ContB1, ContB0, ContA2, Asp, Ve, Mist, Limp0);
+	mef_adub_limp (Clk, Rst, wire_Adub, ContB1, ContB0, Asp, Ve, Mist, Limp0);
 	
 endmodule

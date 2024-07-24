@@ -1,7 +1,7 @@
 //Definição do módulo Contador modulo 4 decrescente
-module cont_mod4(Y, Clk, Q1, Q0);
+module cont_mod4(Pos0, Pos3, Y, Clk, Q1, Q0);
 
-input Clk, Y;
+input Clk, Y, Pos0, Pos3;
 
 output Q1, Q0;
 
@@ -18,8 +18,8 @@ not Not1(Yn, Y);
 
 //Flip-flops JK usados para fazer o contador
 //FF0
-fft(1, Clk, Q0);
+fft_rst(Pos3, Pos0, 1, Clk, Q0);
 //FF1
-fft(wire3, Clk, Q1);
+fft_rst(Pos3, Pos0, wire3, Clk, Q1);
 
 endmodule
