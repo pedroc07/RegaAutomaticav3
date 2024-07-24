@@ -41,12 +41,13 @@ module mef_adub_limp ( input clk ,
 	//Ve
 	
 	//Mist
-	not not5(cond5, cond6);
+	
+	or or1(cond5, Nv1, Nv2);
 
 	//Limp
 	
-	and and8(cond6, Nv0, notNv1, notNv2);
-
+	not not5(cond6, cond5);
+	
 	// state register
 	always @ ( posedge clk, posedge reset)
     	if ( reset ) state <= A ;

@@ -14,6 +14,6 @@ module Irrigacao (Us, L, Bs, Vs, REGA);
 	not Us1 (Wire_us, Us);
 	
 	// Tratamento de quando a rega vai ligar
-	and on_Off (REGA, Wire_us);
+	and on_Off (REGA, Wire_us, L);
 	
 endmodule

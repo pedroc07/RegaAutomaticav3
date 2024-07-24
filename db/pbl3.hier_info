@@ -1,30 +1,30 @@
 |main
 Clk => Clk.IN3
-Rst => Rst.IN5
+Rst => Rst.IN4
 Us => Us.IN1
 Bs => Bs.IN3
 Vs => Vs.IN3
-A <= Asp.DB_MAX_OUTPUT_PORT_TYPE
-G <= mef_tiporega:comb_24.port6
-Nv1 <= Nv1.DB_MAX_OUTPUT_PORT_TYPE
-Nv0 <= Nv0.DB_MAX_OUTPUT_PORT_TYPE
+A << Asp.DB_MAX_OUTPUT_PORT_TYPE
+G << mef_tiporega:comb_23.port6
+Nv1 << Nv1.DB_MAX_OUTPUT_PORT_TYPE
+Nv0 << Nv0.DB_MAX_OUTPUT_PORT_TYPE
 Adub => wire_Adub.IN1
-Ve <= mef_adub_limp:comb_25.port7
-Mist <= Mist.DB_MAX_OUTPUT_PORT_TYPE
-Limp0 <= Limp0.DB_MAX_OUTPUT_PORT_TYPE
-Limp1 <= Limp0.DB_MAX_OUTPUT_PORT_TYPE
-SEG_D1 <= Seletor_Imagem:comb_22.port11
-SEG_D2 <= Seletor_Imagem:comb_22.port12
-SEG_D3 <= Seletor_Imagem:comb_22.port13
-SEG_D4 <= Seletor_Imagem:comb_22.port14
-SEG_A <= Seletor_Imagem:comb_22.port15
-SEG_B <= Seletor_Imagem:comb_22.port16
-SEG_C <= Seletor_Imagem:comb_22.port17
-SEG_D <= Seletor_Imagem:comb_22.port18
-SEG_E <= Seletor_Imagem:comb_22.port19
-SEG_F <= Seletor_Imagem:comb_22.port20
-SEG_G <= Seletor_Imagem:comb_22.port21
-SEG_P <= Seletor_Imagem:comb_22.port22
+Ve << Y.DB_MAX_OUTPUT_PORT_TYPE
+Mist << Mist.DB_MAX_OUTPUT_PORT_TYPE
+Limp0 << Limp0.DB_MAX_OUTPUT_PORT_TYPE
+Limp1 << Limp0.DB_MAX_OUTPUT_PORT_TYPE
+SEG_D1 << Seletor_Imagem:comb_21.port11
+SEG_D2 << Seletor_Imagem:comb_21.port12
+SEG_D3 << Seletor_Imagem:comb_21.port13
+SEG_D4 << Seletor_Imagem:comb_21.port14
+SEG_A << Seletor_Imagem:comb_21.port15
+SEG_B << Seletor_Imagem:comb_21.port16
+SEG_C << Seletor_Imagem:comb_21.port17
+SEG_D << Seletor_Imagem:comb_21.port18
+SEG_E << Seletor_Imagem:comb_21.port19
+SEG_F << Seletor_Imagem:comb_21.port20
+SEG_G << Seletor_Imagem:comb_21.port21
+SEG_P << Seletor_Imagem:comb_21.port22
 T1 => ~NO_FANOUT~
 
 
@@ -179,17 +179,7 @@ clock => Q~reg0.CLK
 Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|main|flipflopJK:comb_17
-J => Mux0.IN3
-K => Mux0.IN4
-Reset => q~reg0.ACLR
-Reset => q.IN0
-Preset => q.IN1
-Clk => q~reg0.CLK
-q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|main|mux_1x4_normal:comb_19
+|main|mux_1x4_normal:comb_17
 out <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
 S1 => WideAnd2.IN0
 S1 => WideAnd3.IN0
@@ -205,7 +195,7 @@ A2 => WideAnd2.IN2
 A3 => WideAnd3.IN2
 
 
-|main|cont_mod16:comb_20
+|main|cont_mod16:comb_18
 Pos9 => Pos9.IN4
 Y => And1.IN2
 Y => And5.IN2
@@ -224,7 +214,7 @@ Q1 <= fft_rst:comb_22.port4
 Q0 <= fft_rst:comb_21.port4
 
 
-|main|cont_mod16:comb_20|fft_rst:comb_21
+|main|cont_mod16:comb_18|fft_rst:comb_21
 Prst => Q.OUTPUTSELECT
 Rst => Q.OUTPUTSELECT
 T => Q.OUTPUTSELECT
@@ -232,7 +222,7 @@ clock => Q~reg0.CLK
 Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|main|cont_mod16:comb_20|fft_rst:comb_22
+|main|cont_mod16:comb_18|fft_rst:comb_22
 Prst => Q.OUTPUTSELECT
 Rst => Q.OUTPUTSELECT
 T => Q.OUTPUTSELECT
@@ -240,7 +230,7 @@ clock => Q~reg0.CLK
 Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|main|cont_mod16:comb_20|fft_rst:comb_23
+|main|cont_mod16:comb_18|fft_rst:comb_23
 Prst => Q.OUTPUTSELECT
 Rst => Q.OUTPUTSELECT
 T => Q.OUTPUTSELECT
@@ -248,7 +238,7 @@ clock => Q~reg0.CLK
 Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|main|cont_mod16:comb_20|fft_rst:comb_24
+|main|cont_mod16:comb_18|fft_rst:comb_24
 Prst => Q.OUTPUTSELECT
 Rst => Q.OUTPUTSELECT
 T => Q.OUTPUTSELECT
@@ -256,7 +246,15 @@ clock => Q~reg0.CLK
 Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|main|cont_mod2:comb_21
+|main|mux_1x2_normal:comb_19
+out <= comb.DB_MAX_OUTPUT_PORT_TYPE
+Y => wire1.IN0
+Y => wire0.IN0
+A0 => wire0.IN1
+A1 => wire1.IN1
+
+
+|main|cont_mod2:comb_20
 Pos2 => Pos2.IN2
 Y => and0.IN1
 Y => and5.IN1
@@ -269,7 +267,7 @@ Q1 <= fft_rst:comb_15.port4
 Q0 <= fft_rst:comb_14.port4
 
 
-|main|cont_mod2:comb_21|fft_rst:comb_14
+|main|cont_mod2:comb_20|fft_rst:comb_14
 Prst => Q.OUTPUTSELECT
 Rst => Q.OUTPUTSELECT
 T => Q.OUTPUTSELECT
@@ -277,7 +275,7 @@ clock => Q~reg0.CLK
 Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|main|cont_mod2:comb_21|fft_rst:comb_15
+|main|cont_mod2:comb_20|fft_rst:comb_15
 Prst => Q.OUTPUTSELECT
 Rst => Q.OUTPUTSELECT
 T => Q.OUTPUTSELECT
@@ -285,7 +283,7 @@ clock => Q~reg0.CLK
 Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|main|Seletor_Imagem:comb_22
+|main|Seletor_Imagem:comb_21
 S => S.IN1
 Limp => Limp.IN1
 Mist => Mist.IN1
@@ -311,7 +309,7 @@ SEG_G <= And6.DB_MAX_OUTPUT_PORT_TYPE
 SEG_P <= <VCC>
 
 
-|main|Seletor_Imagem:comb_22|demux_1x4:comb_3
+|main|Seletor_Imagem:comb_21|demux_1x4:comb_3
 in => WideOr0.IN0
 in => WideOr1.IN0
 in => WideOr2.IN0
@@ -330,7 +328,7 @@ Out2 <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
 Out3 <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|main|Seletor_Imagem:comb_22|cont_mod4:comb_4
+|main|Seletor_Imagem:comb_21|cont_mod4:comb_4
 Y => and0.IN1
 Y => and1.IN1
 Clk => Clk.IN2
@@ -338,19 +336,19 @@ Q1 <= fft:comb_9.port2
 Q0 <= fft:comb_8.port2
 
 
-|main|Seletor_Imagem:comb_22|cont_mod4:comb_4|fft:comb_8
+|main|Seletor_Imagem:comb_21|cont_mod4:comb_4|fft:comb_8
 T => Q~reg0.ENA
 clock => Q~reg0.CLK
 Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|main|Seletor_Imagem:comb_22|cont_mod4:comb_4|fft:comb_9
+|main|Seletor_Imagem:comb_21|cont_mod4:comb_4|fft:comb_9
 T => Q~reg0.ENA
 clock => Q~reg0.CLK
 Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|main|Seletor_Imagem:comb_22|decode:comb_10
+|main|Seletor_Imagem:comb_21|decode:comb_10
 C3 => And1.IN0
 C3 => And9.IN0
 C3 => And10.IN0
@@ -393,7 +391,7 @@ SEG_G <= Or5.DB_MAX_OUTPUT_PORT_TYPE
 SEG_P <= <VCC>
 
 
-|main|Seletor_Imagem:comb_22|decode:comb_11
+|main|Seletor_Imagem:comb_21|decode:comb_11
 C3 => And1.IN0
 C3 => And9.IN0
 C3 => And10.IN0
@@ -436,7 +434,7 @@ SEG_G <= Or5.DB_MAX_OUTPUT_PORT_TYPE
 SEG_P <= <VCC>
 
 
-|main|Seletor_Imagem:comb_22|decode_cxa:comb_12
+|main|Seletor_Imagem:comb_21|decode_cxa:comb_12
 Nv2 => Or0.IN0
 Nv2 => And5.IN0
 Nv2 => SEG_A.DATAIN
@@ -454,7 +452,7 @@ SEG_G <= And5.DB_MAX_OUTPUT_PORT_TYPE
 SEG_P <= <VCC>
 
 
-|main|Seletor_Imagem:comb_22|decode_simb:comb_13
+|main|Seletor_Imagem:comb_21|decode_simb:comb_13
 Limp => Or0.IN0
 Limp => Or1.IN0
 Limp => And3.IN0
@@ -473,15 +471,15 @@ SEG_G <= Or0.DB_MAX_OUTPUT_PORT_TYPE
 SEG_P <= <VCC>
 
 
-|main|Irrigacao:comb_23
-Us => on_Off.IN0
-L => on_Off.IN1
+|main|Irrigacao:comb_22
+Us => on_Off.DATAIN
+L => ~NO_FANOUT~
 Bs => ~NO_FANOUT~
 Vs => ~NO_FANOUT~
 REGA <= on_Off.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|main|mef_tiporega:comb_24
+|main|mef_tiporega:comb_23
 clk => state~1.DATAIN
 reset => state~3.DATAIN
 REGA => and1.IN0
@@ -497,7 +495,7 @@ Asp <= Asp.DB_MAX_OUTPUT_PORT_TYPE
 Got <= Got.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|main|mef_adub_limp:comb_25
+|main|mef_adub_limp:comb_24
 clk => state~1.DATAIN
 reset => state~3.DATAIN
 Adub => and2.IN0
@@ -505,19 +503,18 @@ Adub => and3.IN0
 Adub => and4.IN0
 Nv2 => and4.IN1
 Nv2 => and6.IN0
+Nv2 => or1.IN0
 Nv2 => and0.IN0
 Nv2 => and1.IN0
 Nv2 => and5.IN0
-Nv2 => and8.IN0
 Nv1 => and3.IN1
+Nv1 => or1.IN1
 Nv1 => and0.IN1
 Nv1 => and1.IN1
 Nv1 => and5.IN1
 Nv1 => and6.IN1
-Nv1 => and8.IN1
 Nv0 => and2.IN1
 Nv0 => and6.IN2
-Nv0 => and8.IN2
 Nv0 => and0.IN2
 Nv0 => and1.IN2
 Nv0 => and5.IN2

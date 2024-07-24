@@ -1,6 +1,6 @@
 Analysis & Synthesis report for pbl3
-Tue Jul 23 19:56:30 2024
-Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Wed Jul 24 12:54:48 2024
+Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
 ---------------------
@@ -13,61 +13,60 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. State Machine - |main|mef_adub_limp:comb_25|state
-  9. State Machine - |main|mef_tiporega:comb_24|state
+  8. State Machine - |main|mef_adub_limp:comb_24|state
+  9. State Machine - |main|mef_tiporega:comb_23|state
  10. Registers Removed During Synthesis
  11. General Register Statistics
  12. Multiplexer Restructuring Statistics (Restructuring Performed)
- 13. Parameter Settings for User Entity Instance: mef_tiporega:comb_24
- 14. Parameter Settings for User Entity Instance: mef_adub_limp:comb_25
- 15. Port Connectivity Checks: "Seletor_Imagem:comb_22|decode_simb:comb_13"
- 16. Port Connectivity Checks: "Seletor_Imagem:comb_22|decode_cxa:comb_12"
- 17. Port Connectivity Checks: "Seletor_Imagem:comb_22|decode:comb_11"
- 18. Port Connectivity Checks: "Seletor_Imagem:comb_22|decode:comb_10"
- 19. Port Connectivity Checks: "Seletor_Imagem:comb_22|cont_mod4:comb_4|fft:comb_8"
- 20. Port Connectivity Checks: "Seletor_Imagem:comb_22|cont_mod4:comb_4"
- 21. Port Connectivity Checks: "Seletor_Imagem:comb_22|demux_1x4:comb_3"
- 22. Port Connectivity Checks: "cont_mod2:comb_21|fft_rst:comb_15"
- 23. Port Connectivity Checks: "cont_mod2:comb_21|fft_rst:comb_14"
- 24. Port Connectivity Checks: "cont_mod16:comb_20|fft_rst:comb_24"
- 25. Port Connectivity Checks: "cont_mod16:comb_20|fft_rst:comb_23"
- 26. Port Connectivity Checks: "cont_mod16:comb_20|fft_rst:comb_22"
- 27. Port Connectivity Checks: "cont_mod16:comb_20|fft_rst:comb_21"
- 28. Port Connectivity Checks: "flipflopJK:comb_17"
- 29. Port Connectivity Checks: "DivisorClock:comb_9|fft:comb_4"
- 30. Port Connectivity Checks: "DivisorClock:comb_9|fft:comb_3"
- 31. Port Connectivity Checks: "DivisorClock:comb_9|fft:div_4194304"
- 32. Port Connectivity Checks: "DivisorClock:comb_9|fft:div_2097152"
- 33. Port Connectivity Checks: "DivisorClock:comb_9|fft:div_1048576"
- 34. Port Connectivity Checks: "DivisorClock:comb_9|fft:div_524288"
- 35. Port Connectivity Checks: "DivisorClock:comb_9|fft:div_262144"
- 36. Port Connectivity Checks: "DivisorClock:comb_9|fft:div_131072"
- 37. Port Connectivity Checks: "DivisorClock:comb_9|fft:div_65536"
- 38. Port Connectivity Checks: "DivisorClock:comb_9|fft:div_32768"
- 39. Port Connectivity Checks: "DivisorClock:comb_9|fft:div_16384"
- 40. Port Connectivity Checks: "DivisorClock:comb_9|fft:div_8192"
- 41. Port Connectivity Checks: "DivisorClock:comb_9|fft:div_4096"
- 42. Port Connectivity Checks: "DivisorClock:comb_9|fft:div_2048"
- 43. Port Connectivity Checks: "DivisorClock:comb_9|fft:div_1024"
- 44. Port Connectivity Checks: "DivisorClock:comb_9|fft:div_512"
- 45. Port Connectivity Checks: "DivisorClock:comb_9|fft:div_256"
- 46. Port Connectivity Checks: "DivisorClock:comb_9|fft:div_128"
- 47. Port Connectivity Checks: "DivisorClock:comb_9|fft:div_64"
- 48. Port Connectivity Checks: "DivisorClock:comb_9|fft:div_32"
- 49. Port Connectivity Checks: "DivisorClock:comb_9|fft:div_16"
- 50. Port Connectivity Checks: "DivisorClock:comb_9|fft:div_8"
- 51. Port Connectivity Checks: "DivisorClock:comb_9|fft:div_4"
- 52. Port Connectivity Checks: "DivisorClock:comb_9|fft:div_2"
- 53. Analysis & Synthesis Messages
+ 13. Parameter Settings for User Entity Instance: mef_tiporega:comb_23
+ 14. Parameter Settings for User Entity Instance: mef_adub_limp:comb_24
+ 15. Port Connectivity Checks: "Seletor_Imagem:comb_21|decode_simb:comb_13"
+ 16. Port Connectivity Checks: "Seletor_Imagem:comb_21|decode_cxa:comb_12"
+ 17. Port Connectivity Checks: "Seletor_Imagem:comb_21|decode:comb_11"
+ 18. Port Connectivity Checks: "Seletor_Imagem:comb_21|decode:comb_10"
+ 19. Port Connectivity Checks: "Seletor_Imagem:comb_21|cont_mod4:comb_4|fft:comb_8"
+ 20. Port Connectivity Checks: "Seletor_Imagem:comb_21|cont_mod4:comb_4"
+ 21. Port Connectivity Checks: "Seletor_Imagem:comb_21|demux_1x4:comb_3"
+ 22. Port Connectivity Checks: "cont_mod2:comb_20|fft_rst:comb_15"
+ 23. Port Connectivity Checks: "cont_mod2:comb_20|fft_rst:comb_14"
+ 24. Port Connectivity Checks: "cont_mod16:comb_18|fft_rst:comb_24"
+ 25. Port Connectivity Checks: "cont_mod16:comb_18|fft_rst:comb_23"
+ 26. Port Connectivity Checks: "cont_mod16:comb_18|fft_rst:comb_22"
+ 27. Port Connectivity Checks: "cont_mod16:comb_18|fft_rst:comb_21"
+ 28. Port Connectivity Checks: "DivisorClock:comb_9|fft:comb_4"
+ 29. Port Connectivity Checks: "DivisorClock:comb_9|fft:comb_3"
+ 30. Port Connectivity Checks: "DivisorClock:comb_9|fft:div_4194304"
+ 31. Port Connectivity Checks: "DivisorClock:comb_9|fft:div_2097152"
+ 32. Port Connectivity Checks: "DivisorClock:comb_9|fft:div_1048576"
+ 33. Port Connectivity Checks: "DivisorClock:comb_9|fft:div_524288"
+ 34. Port Connectivity Checks: "DivisorClock:comb_9|fft:div_262144"
+ 35. Port Connectivity Checks: "DivisorClock:comb_9|fft:div_131072"
+ 36. Port Connectivity Checks: "DivisorClock:comb_9|fft:div_65536"
+ 37. Port Connectivity Checks: "DivisorClock:comb_9|fft:div_32768"
+ 38. Port Connectivity Checks: "DivisorClock:comb_9|fft:div_16384"
+ 39. Port Connectivity Checks: "DivisorClock:comb_9|fft:div_8192"
+ 40. Port Connectivity Checks: "DivisorClock:comb_9|fft:div_4096"
+ 41. Port Connectivity Checks: "DivisorClock:comb_9|fft:div_2048"
+ 42. Port Connectivity Checks: "DivisorClock:comb_9|fft:div_1024"
+ 43. Port Connectivity Checks: "DivisorClock:comb_9|fft:div_512"
+ 44. Port Connectivity Checks: "DivisorClock:comb_9|fft:div_256"
+ 45. Port Connectivity Checks: "DivisorClock:comb_9|fft:div_128"
+ 46. Port Connectivity Checks: "DivisorClock:comb_9|fft:div_64"
+ 47. Port Connectivity Checks: "DivisorClock:comb_9|fft:div_32"
+ 48. Port Connectivity Checks: "DivisorClock:comb_9|fft:div_16"
+ 49. Port Connectivity Checks: "DivisorClock:comb_9|fft:div_8"
+ 50. Port Connectivity Checks: "DivisorClock:comb_9|fft:div_4"
+ 51. Port Connectivity Checks: "DivisorClock:comb_9|fft:div_2"
+ 52. Analysis & Synthesis Messages
 
 
 
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2018  Intel Corporation. All rights reserved.
+Copyright (C) 2020  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
-and other software and tools, and its AMPP partner logic 
+and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
@@ -77,19 +76,20 @@ the Intel FPGA IP License Agreement, or other applicable license
 agreement, including, without limitation, that your use is for
 the sole purpose of programming logic devices manufactured by
 Intel and sold by Intel or its authorized distributors.  Please
-refer to the applicable agreement for further details.
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
 
 
 
 +---------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                              ;
 +-----------------------------+---------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Tue Jul 23 19:56:30 2024       ;
-; Quartus Prime Version       ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
+; Analysis & Synthesis Status ; Successful - Wed Jul 24 12:54:48 2024       ;
+; Quartus Prime Version       ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name               ; pbl3                                        ;
 ; Top-level Entity Name       ; main                                        ;
 ; Family                      ; MAX II                                      ;
-; Total logic elements        ; 89                                          ;
+; Total logic elements        ; 86                                          ;
 ; Total pins                  ; 27                                          ;
 ; Total virtual pins          ; 0                                           ;
 ; UFM blocks                  ; 0 / 1 ( 0 % )                               ;
@@ -172,8 +172,8 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 4           ;
-; Maximum allowed            ; 4           ;
+; Number detected on machine ; 6           ;
+; Maximum allowed            ; 6           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
 ; Maximum used               ; 1           ;
@@ -183,29 +183,29 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                ;
-+----------------------------------+-----------------+------------------------------+---------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                            ; Library ;
-+----------------------------------+-----------------+------------------------------+---------------------------------------------------------+---------+
-; Irrigacao.v                      ; yes             ; User Verilog HDL File        ; C:/Users/User/Desktop/RegaAutomaticav3/Irrigacao.v      ;         ;
-; mef_tiporega.v                   ; yes             ; User Verilog HDL File        ; C:/Users/User/Desktop/RegaAutomaticav3/mef_tiporega.v   ;         ;
-; main.v                           ; yes             ; User Verilog HDL File        ; C:/Users/User/Desktop/RegaAutomaticav3/main.v           ;         ;
-; cont_mod4.v                      ; yes             ; User Verilog HDL File        ; C:/Users/User/Desktop/RegaAutomaticav3/cont_mod4.v      ;         ;
-; flipflopJK.v                     ; yes             ; User Verilog HDL File        ; C:/Users/User/Desktop/RegaAutomaticav3/flipflopJK.v     ;         ;
-; cont_mod16.v                     ; yes             ; User Verilog HDL File        ; C:/Users/User/Desktop/RegaAutomaticav3/cont_mod16.v     ;         ;
-; DivisorClock.v                   ; yes             ; User Verilog HDL File        ; C:/Users/User/Desktop/RegaAutomaticav3/DivisorClock.v   ;         ;
-; fft.v                            ; yes             ; User Verilog HDL File        ; C:/Users/User/Desktop/RegaAutomaticav3/fft.v            ;         ;
-; decode.v                         ; yes             ; User Verilog HDL File        ; C:/Users/User/Desktop/RegaAutomaticav3/decode.v         ;         ;
-; Seletor_Imagem.v                 ; yes             ; User Verilog HDL File        ; C:/Users/User/Desktop/RegaAutomaticav3/Seletor_Imagem.v ;         ;
-; mef_adub_limp.v                  ; yes             ; User Verilog HDL File        ; C:/Users/User/Desktop/RegaAutomaticav3/mef_adub_limp.v  ;         ;
-; decode_cxa.v                     ; yes             ; User Verilog HDL File        ; C:/Users/User/Desktop/RegaAutomaticav3/decode_cxa.v     ;         ;
-; decode_simb.v                    ; yes             ; User Verilog HDL File        ; C:/Users/User/Desktop/RegaAutomaticav3/decode_simb.v    ;         ;
-; mux_1x4_normal.v                 ; yes             ; User Verilog HDL File        ; C:/Users/User/Desktop/RegaAutomaticav3/mux_1x4_normal.v ;         ;
-; cont_mod2.v                      ; yes             ; User Verilog HDL File        ; C:/Users/User/Desktop/RegaAutomaticav3/cont_mod2.v      ;         ;
-; fft_rst.v                        ; yes             ; User Verilog HDL File        ; C:/Users/User/Desktop/RegaAutomaticav3/fft_rst.v        ;         ;
-; demux_1x4.v                      ; yes             ; Auto-Found Verilog HDL File  ; C:/Users/User/Desktop/RegaAutomaticav3/demux_1x4.v      ;         ;
-+----------------------------------+-----------------+------------------------------+---------------------------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                      ;
++----------------------------------+-----------------+------------------------------+---------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                  ; Library ;
++----------------------------------+-----------------+------------------------------+---------------------------------------------------------------+---------+
+; Irrigacao.v                      ; yes             ; User Verilog HDL File        ; /home/aluno/Downloads/rega3/RegaAutomaticav3/Irrigacao.v      ;         ;
+; mef_tiporega.v                   ; yes             ; User Verilog HDL File        ; /home/aluno/Downloads/rega3/RegaAutomaticav3/mef_tiporega.v   ;         ;
+; main.v                           ; yes             ; User Verilog HDL File        ; /home/aluno/Downloads/rega3/RegaAutomaticav3/main.v           ;         ;
+; cont_mod4.v                      ; yes             ; User Verilog HDL File        ; /home/aluno/Downloads/rega3/RegaAutomaticav3/cont_mod4.v      ;         ;
+; cont_mod16.v                     ; yes             ; User Verilog HDL File        ; /home/aluno/Downloads/rega3/RegaAutomaticav3/cont_mod16.v     ;         ;
+; DivisorClock.v                   ; yes             ; User Verilog HDL File        ; /home/aluno/Downloads/rega3/RegaAutomaticav3/DivisorClock.v   ;         ;
+; fft.v                            ; yes             ; User Verilog HDL File        ; /home/aluno/Downloads/rega3/RegaAutomaticav3/fft.v            ;         ;
+; decode.v                         ; yes             ; User Verilog HDL File        ; /home/aluno/Downloads/rega3/RegaAutomaticav3/decode.v         ;         ;
+; Seletor_Imagem.v                 ; yes             ; User Verilog HDL File        ; /home/aluno/Downloads/rega3/RegaAutomaticav3/Seletor_Imagem.v ;         ;
+; mef_adub_limp.v                  ; yes             ; User Verilog HDL File        ; /home/aluno/Downloads/rega3/RegaAutomaticav3/mef_adub_limp.v  ;         ;
+; decode_cxa.v                     ; yes             ; User Verilog HDL File        ; /home/aluno/Downloads/rega3/RegaAutomaticav3/decode_cxa.v     ;         ;
+; decode_simb.v                    ; yes             ; User Verilog HDL File        ; /home/aluno/Downloads/rega3/RegaAutomaticav3/decode_simb.v    ;         ;
+; mux_1x4_normal.v                 ; yes             ; User Verilog HDL File        ; /home/aluno/Downloads/rega3/RegaAutomaticav3/mux_1x4_normal.v ;         ;
+; cont_mod2.v                      ; yes             ; User Verilog HDL File        ; /home/aluno/Downloads/rega3/RegaAutomaticav3/cont_mod2.v      ;         ;
+; fft_rst.v                        ; yes             ; User Verilog HDL File        ; /home/aluno/Downloads/rega3/RegaAutomaticav3/fft_rst.v        ;         ;
+; mux_1x2_normal.v                 ; yes             ; User Verilog HDL File        ; /home/aluno/Downloads/rega3/RegaAutomaticav3/mux_1x2_normal.v ;         ;
+; demux_1x4.v                      ; yes             ; Auto-Found Verilog HDL File  ; /home/aluno/Downloads/rega3/RegaAutomaticav3/demux_1x4.v      ;         ;
++----------------------------------+-----------------+------------------------------+---------------------------------------------------------------+---------+
 
 
 +------------------------------------------------------------------------------------+
@@ -213,32 +213,32 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+--------------------------------------+
 ; Resource                                    ; Usage                                ;
 +---------------------------------------------+--------------------------------------+
-; Total logic elements                        ; 89                                   ;
-;     -- Combinational with no register       ; 50                                   ;
+; Total logic elements                        ; 86                                   ;
+;     -- Combinational with no register       ; 48                                   ;
 ;     -- Register only                        ; 0                                    ;
-;     -- Combinational with a register        ; 39                                   ;
+;     -- Combinational with a register        ; 38                                   ;
 ;                                             ;                                      ;
 ; Logic element usage by number of LUT inputs ;                                      ;
-;     -- 4 input functions                    ; 44                                   ;
-;     -- 3 input functions                    ; 8                                    ;
-;     -- 2 input functions                    ; 12                                   ;
+;     -- 4 input functions                    ; 31                                   ;
+;     -- 3 input functions                    ; 16                                   ;
+;     -- 2 input functions                    ; 14                                   ;
 ;     -- 1 input functions                    ; 25                                   ;
 ;     -- 0 input functions                    ; 0                                    ;
 ;                                             ;                                      ;
 ; Logic elements by mode                      ;                                      ;
-;     -- normal mode                          ; 89                                   ;
+;     -- normal mode                          ; 86                                   ;
 ;     -- arithmetic mode                      ; 0                                    ;
 ;     -- qfbk mode                            ; 0                                    ;
 ;     -- register cascade mode                ; 0                                    ;
 ;     -- synchronous clear/load mode          ; 0                                    ;
-;     -- asynchronous clear/load mode         ; 7                                    ;
+;     -- asynchronous clear/load mode         ; 6                                    ;
 ;                                             ;                                      ;
-; Total registers                             ; 39                                   ;
+; Total registers                             ; 38                                   ;
 ; I/O pins                                    ; 27                                   ;
-; Maximum fan-out node                        ; cont_mod16:comb_20|fft_rst:comb_23|Q ;
-; Maximum fan-out                             ; 21                                   ;
-; Total fan-out                               ; 314                                  ;
-; Average fan-out                             ; 2.71                                 ;
+; Maximum fan-out node                        ; cont_mod16:comb_18|fft_rst:comb_23|Q ;
+; Maximum fan-out                             ; 16                                   ;
+; Total fan-out                               ; 288                                  ;
+; Average fan-out                             ; 2.55                                 ;
 +---------------------------------------------+--------------------------------------+
 
 
@@ -247,7 +247,7 @@ refer to the applicable agreement for further details.
 +-----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+----------------------------------------------------------+----------------+--------------+
 ; Compilation Hierarchy Node  ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name                                      ; Entity Name    ; Library Name ;
 +-----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+----------------------------------------------------------+----------------+--------------+
-; |main                       ; 89 (1)      ; 39           ; 0          ; 27   ; 0            ; 50 (1)       ; 0 (0)             ; 39 (0)           ; 0 (0)           ; 0 (0)      ; |main                                                    ; main           ; work         ;
+; |main                       ; 86 (0)      ; 38           ; 0          ; 27   ; 0            ; 48 (0)       ; 0 (0)             ; 38 (0)           ; 0 (0)           ; 0 (0)      ; |main                                                    ; main           ; work         ;
 ;    |DivisorClock:comb_9|    ; 24 (0)      ; 24           ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 24 (0)           ; 0 (0)           ; 0 (0)      ; |main|DivisorClock:comb_9                                ; DivisorClock   ; work         ;
 ;       |fft:comb_3|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|DivisorClock:comb_9|fft:comb_3                     ; fft            ; work         ;
 ;       |fft:comb_4|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|DivisorClock:comb_9|fft:comb_4                     ; fft            ; work         ;
@@ -273,31 +273,31 @@ refer to the applicable agreement for further details.
 ;       |fft:div_65536|       ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|DivisorClock:comb_9|fft:div_65536                  ; fft            ; work         ;
 ;       |fft:div_8192|        ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|DivisorClock:comb_9|fft:div_8192                   ; fft            ; work         ;
 ;       |fft:div_8|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|DivisorClock:comb_9|fft:div_8                      ; fft            ; work         ;
-;    |Seletor_Imagem:comb_22| ; 30 (22)     ; 2            ; 0          ; 0    ; 0            ; 28 (22)      ; 0 (0)             ; 2 (0)            ; 0 (0)           ; 0 (0)      ; |main|Seletor_Imagem:comb_22                             ; Seletor_Imagem ; work         ;
-;       |cont_mod4:comb_4|    ; 2 (0)       ; 2            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (0)            ; 0 (0)           ; 0 (0)      ; |main|Seletor_Imagem:comb_22|cont_mod4:comb_4            ; cont_mod4      ; work         ;
-;          |fft:comb_8|       ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|Seletor_Imagem:comb_22|cont_mod4:comb_4|fft:comb_8 ; fft            ; work         ;
-;          |fft:comb_9|       ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|Seletor_Imagem:comb_22|cont_mod4:comb_4|fft:comb_9 ; fft            ; work         ;
-;       |decode:comb_10|      ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|Seletor_Imagem:comb_22|decode:comb_10              ; decode         ; work         ;
-;       |demux_1x4:comb_3|    ; 4 (4)       ; 0            ; 0          ; 0    ; 0            ; 4 (4)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|Seletor_Imagem:comb_22|demux_1x4:comb_3            ; demux_1x4      ; work         ;
-;    |cont_mod16:comb_20|     ; 12 (8)      ; 4            ; 0          ; 0    ; 0            ; 8 (8)        ; 0 (0)             ; 4 (0)            ; 0 (0)           ; 0 (0)      ; |main|cont_mod16:comb_20                                 ; cont_mod16     ; work         ;
-;       |fft_rst:comb_21|     ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|cont_mod16:comb_20|fft_rst:comb_21                 ; fft_rst        ; work         ;
-;       |fft_rst:comb_22|     ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|cont_mod16:comb_20|fft_rst:comb_22                 ; fft_rst        ; work         ;
-;       |fft_rst:comb_23|     ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|cont_mod16:comb_20|fft_rst:comb_23                 ; fft_rst        ; work         ;
-;       |fft_rst:comb_24|     ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|cont_mod16:comb_20|fft_rst:comb_24                 ; fft_rst        ; work         ;
-;    |cont_mod2:comb_21|      ; 2 (0)       ; 2            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (0)            ; 0 (0)           ; 0 (0)      ; |main|cont_mod2:comb_21                                  ; cont_mod2      ; work         ;
-;       |fft_rst:comb_14|     ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|cont_mod2:comb_21|fft_rst:comb_14                  ; fft_rst        ; work         ;
-;       |fft_rst:comb_15|     ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|cont_mod2:comb_21|fft_rst:comb_15                  ; fft_rst        ; work         ;
-;    |flipflopJK:comb_17|     ; 2 (2)       ; 1            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|flipflopJK:comb_17                                 ; flipflopJK     ; work         ;
-;    |mef_adub_limp:comb_25|  ; 15 (15)     ; 4            ; 0          ; 0    ; 0            ; 11 (11)      ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |main|mef_adub_limp:comb_25                              ; mef_adub_limp  ; work         ;
-;    |mef_tiporega:comb_24|   ; 2 (2)       ; 2            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (2)            ; 0 (0)           ; 0 (0)      ; |main|mef_tiporega:comb_24                               ; mef_tiporega   ; work         ;
-;    |mux_1x4_normal:comb_19| ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|mux_1x4_normal:comb_19                             ; mux_1x4_normal ; work         ;
+;    |Seletor_Imagem:comb_21| ; 32 (24)     ; 2            ; 0          ; 0    ; 0            ; 30 (24)      ; 0 (0)             ; 2 (0)            ; 0 (0)           ; 0 (0)      ; |main|Seletor_Imagem:comb_21                             ; Seletor_Imagem ; work         ;
+;       |cont_mod4:comb_4|    ; 2 (0)       ; 2            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (0)            ; 0 (0)           ; 0 (0)      ; |main|Seletor_Imagem:comb_21|cont_mod4:comb_4            ; cont_mod4      ; work         ;
+;          |fft:comb_8|       ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|Seletor_Imagem:comb_21|cont_mod4:comb_4|fft:comb_8 ; fft            ; work         ;
+;          |fft:comb_9|       ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|Seletor_Imagem:comb_21|cont_mod4:comb_4|fft:comb_9 ; fft            ; work         ;
+;       |decode:comb_10|      ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|Seletor_Imagem:comb_21|decode:comb_10              ; decode         ; work         ;
+;       |demux_1x4:comb_3|    ; 4 (4)       ; 0            ; 0          ; 0    ; 0            ; 4 (4)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|Seletor_Imagem:comb_21|demux_1x4:comb_3            ; demux_1x4      ; work         ;
+;    |cont_mod16:comb_18|     ; 9 (3)       ; 4            ; 0          ; 0    ; 0            ; 5 (3)        ; 0 (0)             ; 4 (0)            ; 0 (0)           ; 0 (0)      ; |main|cont_mod16:comb_18                                 ; cont_mod16     ; work         ;
+;       |fft_rst:comb_21|     ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|cont_mod16:comb_18|fft_rst:comb_21                 ; fft_rst        ; work         ;
+;       |fft_rst:comb_22|     ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|cont_mod16:comb_18|fft_rst:comb_22                 ; fft_rst        ; work         ;
+;       |fft_rst:comb_23|     ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|cont_mod16:comb_18|fft_rst:comb_23                 ; fft_rst        ; work         ;
+;       |fft_rst:comb_24|     ; 3 (3)       ; 1            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|cont_mod16:comb_18|fft_rst:comb_24                 ; fft_rst        ; work         ;
+;    |cont_mod2:comb_20|      ; 2 (0)       ; 2            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (0)            ; 0 (0)           ; 0 (0)      ; |main|cont_mod2:comb_20                                  ; cont_mod2      ; work         ;
+;       |fft_rst:comb_14|     ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|cont_mod2:comb_20|fft_rst:comb_14                  ; fft_rst        ; work         ;
+;       |fft_rst:comb_15|     ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|cont_mod2:comb_20|fft_rst:comb_15                  ; fft_rst        ; work         ;
+;    |mef_adub_limp:comb_24|  ; 15 (15)     ; 4            ; 0          ; 0    ; 0            ; 11 (11)      ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |main|mef_adub_limp:comb_24                              ; mef_adub_limp  ; work         ;
+;    |mef_tiporega:comb_23|   ; 2 (2)       ; 2            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (2)            ; 0 (0)           ; 0 (0)      ; |main|mef_tiporega:comb_23                               ; mef_tiporega   ; work         ;
+;    |mux_1x2_normal:comb_19| ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|mux_1x2_normal:comb_19                             ; mux_1x2_normal ; work         ;
+;    |mux_1x4_normal:comb_17| ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|mux_1x4_normal:comb_17                             ; mux_1x4_normal ; work         ;
 +-----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+----------------------------------------------------------+----------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
 Encoding Type:  One-Hot
 +---------------------------------------------------+
-; State Machine - |main|mef_adub_limp:comb_25|state ;
+; State Machine - |main|mef_adub_limp:comb_24|state ;
 +---------+---------+---------+---------+-----------+
 ; Name    ; state.D ; state.C ; state.B ; state.A   ;
 +---------+---------+---------+---------+-----------+
@@ -310,7 +310,7 @@ Encoding Type:  One-Hot
 
 Encoding Type:  One-Hot
 +--------------------------------------------------+
-; State Machine - |main|mef_tiporega:comb_24|state ;
+; State Machine - |main|mef_tiporega:comb_23|state ;
 +---------+---------+---------+---------+----------+
 ; Name    ; state.D ; state.C ; state.B ; state.A  ;
 +---------+---------+---------+---------+----------+
@@ -326,14 +326,14 @@ Encoding Type:  One-Hot
 +---------------------------------------+--------------------+
 ; Register name                         ; Reason for Removal ;
 +---------------------------------------+--------------------+
-; mef_tiporega:comb_24|state.A          ; Lost fanout        ;
-; mef_tiporega:comb_24|state.B          ; Lost fanout        ;
-; mef_adub_limp:comb_25|state~4         ; Lost fanout        ;
-; mef_adub_limp:comb_25|state~5         ; Lost fanout        ;
-; mef_adub_limp:comb_25|state~6         ; Lost fanout        ;
-; mef_tiporega:comb_24|state~4          ; Lost fanout        ;
-; mef_tiporega:comb_24|state~5          ; Lost fanout        ;
-; mef_tiporega:comb_24|state~6          ; Lost fanout        ;
+; mef_tiporega:comb_23|state.A          ; Lost fanout        ;
+; mef_tiporega:comb_23|state.B          ; Lost fanout        ;
+; mef_adub_limp:comb_24|state~4         ; Lost fanout        ;
+; mef_adub_limp:comb_24|state~5         ; Lost fanout        ;
+; mef_adub_limp:comb_24|state~6         ; Lost fanout        ;
+; mef_tiporega:comb_23|state~4          ; Lost fanout        ;
+; mef_tiporega:comb_23|state~5          ; Lost fanout        ;
+; mef_tiporega:comb_23|state~6          ; Lost fanout        ;
 ; Total Number of Removed Registers = 8 ;                    ;
 +---------------------------------------+--------------------+
 
@@ -343,10 +343,10 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 39    ;
+; Total registers                              ; 38    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 7     ;
+; Number of registers using Asynchronous Clear ; 6     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
@@ -358,12 +358,12 @@ Encoding Type:  One-Hot
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output           ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------+
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; No         ; |main|mef_tiporega:comb_24|nextstate ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; No         ; |main|mef_tiporega:comb_23|nextstate ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------+
 
 
 +-------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: mef_tiporega:comb_24 ;
+; Parameter Settings for User Entity Instance: mef_tiporega:comb_23 ;
 +----------------+-------+------------------------------------------+
 ; Parameter Name ; Value ; Type                                     ;
 +----------------+-------+------------------------------------------+
@@ -376,7 +376,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +--------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: mef_adub_limp:comb_25 ;
+; Parameter Settings for User Entity Instance: mef_adub_limp:comb_24 ;
 +----------------+-------+-------------------------------------------+
 ; Parameter Name ; Value ; Type                                      ;
 +----------------+-------+-------------------------------------------+
@@ -389,7 +389,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +-----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "Seletor_Imagem:comb_22|decode_simb:comb_13"                                          ;
+; Port Connectivity Checks: "Seletor_Imagem:comb_21|decode_simb:comb_13"                                          ;
 +-------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port  ; Type   ; Severity ; Details                                                                             ;
 +-------+--------+----------+-------------------------------------------------------------------------------------+
@@ -398,7 +398,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +-----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "Seletor_Imagem:comb_22|decode_cxa:comb_12"                                           ;
+; Port Connectivity Checks: "Seletor_Imagem:comb_21|decode_cxa:comb_12"                                           ;
 +-------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port  ; Type   ; Severity ; Details                                                                             ;
 +-------+--------+----------+-------------------------------------------------------------------------------------+
@@ -407,7 +407,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "Seletor_Imagem:comb_22|decode:comb_11"                                                                                                                                               ;
+; Port Connectivity Checks: "Seletor_Imagem:comb_21|decode:comb_11"                                                                                                                                               ;
 +--------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port   ; Type   ; Severity ; Details                                                                                                                                                                            ;
 +--------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -420,7 +420,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +-----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "Seletor_Imagem:comb_22|decode:comb_10"                                               ;
+; Port Connectivity Checks: "Seletor_Imagem:comb_21|decode:comb_10"                                               ;
 +-------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port  ; Type   ; Severity ; Details                                                                             ;
 +-------+--------+----------+-------------------------------------------------------------------------------------+
@@ -429,7 +429,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "Seletor_Imagem:comb_22|cont_mod4:comb_4|fft:comb_8"                                                                                                                                ;
+; Port Connectivity Checks: "Seletor_Imagem:comb_21|cont_mod4:comb_4|fft:comb_8"                                                                                                                                ;
 +-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
 +-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -439,7 +439,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "Seletor_Imagem:comb_22|cont_mod4:comb_4"                                                                                                                                           ;
+; Port Connectivity Checks: "Seletor_Imagem:comb_21|cont_mod4:comb_4"                                                                                                                                           ;
 +-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
 +-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -449,7 +449,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "Seletor_Imagem:comb_22|demux_1x4:comb_3"                                                                                                                                            ;
+; Port Connectivity Checks: "Seletor_Imagem:comb_21|demux_1x4:comb_3"                                                                                                                                            ;
 +--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port   ; Type  ; Severity ; Details                                                                                                                                                                            ;
 +--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -459,7 +459,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "cont_mod2:comb_21|fft_rst:comb_15"                                                                                                                                                   ;
+; Port Connectivity Checks: "cont_mod2:comb_20|fft_rst:comb_15"                                                                                                                                                   ;
 +---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port    ; Type  ; Severity ; Details                                                                                                                                                                            ;
 +---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -469,7 +469,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "cont_mod2:comb_21|fft_rst:comb_14"                                                                                                                                                    ;
+; Port Connectivity Checks: "cont_mod2:comb_20|fft_rst:comb_14"                                                                                                                                                    ;
 +----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port     ; Type  ; Severity ; Details                                                                                                                                                                            ;
 +----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -479,7 +479,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "cont_mod16:comb_20|fft_rst:comb_24"                                                                                                                                                  ;
+; Port Connectivity Checks: "cont_mod16:comb_18|fft_rst:comb_24"                                                                                                                                                  ;
 +---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port    ; Type  ; Severity ; Details                                                                                                                                                                            ;
 +---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -489,7 +489,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "cont_mod16:comb_20|fft_rst:comb_23"                                                                                                                                                   ;
+; Port Connectivity Checks: "cont_mod16:comb_18|fft_rst:comb_23"                                                                                                                                                   ;
 +----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port     ; Type  ; Severity ; Details                                                                                                                                                                            ;
 +----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -499,7 +499,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "cont_mod16:comb_20|fft_rst:comb_22"                                                                                                                                                   ;
+; Port Connectivity Checks: "cont_mod16:comb_18|fft_rst:comb_22"                                                                                                                                                   ;
 +----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port     ; Type  ; Severity ; Details                                                                                                                                                                            ;
 +----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -509,7 +509,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "cont_mod16:comb_20|fft_rst:comb_21"                                                                                                                                                  ;
+; Port Connectivity Checks: "cont_mod16:comb_18|fft_rst:comb_21"                                                                                                                                                  ;
 +---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port    ; Type  ; Severity ; Details                                                                                                                                                                            ;
 +---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -518,16 +518,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; T       ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
 ; T[-1]   ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
 +---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-
-
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "flipflopJK:comb_17"                                                                                                                                                                     ;
-+------------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port       ; Type  ; Severity ; Details                                                                                                                                                                            ;
-+------------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Preset     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
-; Preset[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
-+------------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -753,119 +743,125 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
-    Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Tue Jul 23 19:56:08 2024
+    Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+    Info: Processing started: Wed Jul 24 12:54:42 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off pbl3 -c pbl3
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
-Info (12021): Found 1 design units, including 1 entities, in source file irrigacao.v
-    Info (12023): Found entity 1: Irrigacao File: C:/Users/User/Desktop/RegaAutomaticav3/Irrigacao.v Line: 2
+Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file Irrigacao.v
+    Info (12023): Found entity 1: Irrigacao File: /home/aluno/Downloads/rega3/RegaAutomaticav3/Irrigacao.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file mef_tiporega.v
-    Info (12023): Found entity 1: mef_tiporega File: C:/Users/User/Desktop/RegaAutomaticav3/mef_tiporega.v Line: 1
+    Info (12023): Found entity 1: mef_tiporega File: /home/aluno/Downloads/rega3/RegaAutomaticav3/mef_tiporega.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file main.v
-    Info (12023): Found entity 1: main File: C:/Users/User/Desktop/RegaAutomaticav3/main.v Line: 5
+    Info (12023): Found entity 1: main File: /home/aluno/Downloads/rega3/RegaAutomaticav3/main.v Line: 5
 Info (12021): Found 1 design units, including 1 entities, in source file cont_mod4.v
-    Info (12023): Found entity 1: cont_mod4 File: C:/Users/User/Desktop/RegaAutomaticav3/cont_mod4.v Line: 2
-Info (12021): Found 1 design units, including 1 entities, in source file flipflopjk.v
-    Info (12023): Found entity 1: flipflopJK File: C:/Users/User/Desktop/RegaAutomaticav3/flipflopJK.v Line: 3
+    Info (12023): Found entity 1: cont_mod4 File: /home/aluno/Downloads/rega3/RegaAutomaticav3/cont_mod4.v Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file flipflopJK.v
+    Info (12023): Found entity 1: flipflopJK File: /home/aluno/Downloads/rega3/RegaAutomaticav3/flipflopJK.v Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file cont_mod16.v
-    Info (12023): Found entity 1: cont_mod16 File: C:/Users/User/Desktop/RegaAutomaticav3/cont_mod16.v Line: 3
-Info (12021): Found 1 design units, including 1 entities, in source file divisorclock.v
-    Info (12023): Found entity 1: DivisorClock File: C:/Users/User/Desktop/RegaAutomaticav3/DivisorClock.v Line: 2
+    Info (12023): Found entity 1: cont_mod16 File: /home/aluno/Downloads/rega3/RegaAutomaticav3/cont_mod16.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file DivisorClock.v
+    Info (12023): Found entity 1: DivisorClock File: /home/aluno/Downloads/rega3/RegaAutomaticav3/DivisorClock.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file fft.v
-    Info (12023): Found entity 1: fft File: C:/Users/User/Desktop/RegaAutomaticav3/fft.v Line: 2
+    Info (12023): Found entity 1: fft File: /home/aluno/Downloads/rega3/RegaAutomaticav3/fft.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file decode.v
-    Info (12023): Found entity 1: decode File: C:/Users/User/Desktop/RegaAutomaticav3/decode.v Line: 3
-Info (12021): Found 1 design units, including 1 entities, in source file seletor_imagem.v
-    Info (12023): Found entity 1: Seletor_Imagem File: C:/Users/User/Desktop/RegaAutomaticav3/Seletor_Imagem.v Line: 1
+    Info (12023): Found entity 1: decode File: /home/aluno/Downloads/rega3/RegaAutomaticav3/decode.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file Seletor_Imagem.v
+    Info (12023): Found entity 1: Seletor_Imagem File: /home/aluno/Downloads/rega3/RegaAutomaticav3/Seletor_Imagem.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file mef_adub_limp.v
-    Info (12023): Found entity 1: mef_adub_limp File: C:/Users/User/Desktop/RegaAutomaticav3/mef_adub_limp.v Line: 1
+    Info (12023): Found entity 1: mef_adub_limp File: /home/aluno/Downloads/rega3/RegaAutomaticav3/mef_adub_limp.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file decode_cxa.v
-    Info (12023): Found entity 1: decode_cxa File: C:/Users/User/Desktop/RegaAutomaticav3/decode_cxa.v Line: 3
+    Info (12023): Found entity 1: decode_cxa File: /home/aluno/Downloads/rega3/RegaAutomaticav3/decode_cxa.v Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file decode_simb.v
-    Info (12023): Found entity 1: decode_simb File: C:/Users/User/Desktop/RegaAutomaticav3/decode_simb.v Line: 3
+    Info (12023): Found entity 1: decode_simb File: /home/aluno/Downloads/rega3/RegaAutomaticav3/decode_simb.v Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file mux_1x4_normal.v
-    Info (12023): Found entity 1: mux_1x4_normal File: C:/Users/User/Desktop/RegaAutomaticav3/mux_1x4_normal.v Line: 2
+    Info (12023): Found entity 1: mux_1x4_normal File: /home/aluno/Downloads/rega3/RegaAutomaticav3/mux_1x4_normal.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file cont_mod2.v
-    Info (12023): Found entity 1: cont_mod2 File: C:/Users/User/Desktop/RegaAutomaticav3/cont_mod2.v Line: 2
+    Info (12023): Found entity 1: cont_mod2 File: /home/aluno/Downloads/rega3/RegaAutomaticav3/cont_mod2.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file fft_rst.v
-    Info (12023): Found entity 1: fft_rst File: C:/Users/User/Desktop/RegaAutomaticav3/fft_rst.v Line: 2
-Warning (10236): Verilog HDL Implicit Net warning at main.v(33): created implicit net for "CRn" File: C:/Users/User/Desktop/RegaAutomaticav3/main.v Line: 33
-Warning (10236): Verilog HDL Implicit Net warning at cont_mod4.v(12): created implicit net for "Yn" File: C:/Users/User/Desktop/RegaAutomaticav3/cont_mod4.v Line: 12
-Warning (10236): Verilog HDL Implicit Net warning at cont_mod16.v(18): created implicit net for "Yn" File: C:/Users/User/Desktop/RegaAutomaticav3/cont_mod16.v Line: 18
-Warning (10236): Verilog HDL Implicit Net warning at cont_mod16.v(20): created implicit net for "Wire0" File: C:/Users/User/Desktop/RegaAutomaticav3/cont_mod16.v Line: 20
-Warning (10236): Verilog HDL Implicit Net warning at Seletor_Imagem.v(30): created implicit net for "notA2" File: C:/Users/User/Desktop/RegaAutomaticav3/Seletor_Imagem.v Line: 30
-Warning (10236): Verilog HDL Implicit Net warning at Seletor_Imagem.v(31): created implicit net for "notA3" File: C:/Users/User/Desktop/RegaAutomaticav3/Seletor_Imagem.v Line: 31
-Warning (10236): Verilog HDL Implicit Net warning at mef_adub_limp.v(17): created implicit net for "notNv2" File: C:/Users/User/Desktop/RegaAutomaticav3/mef_adub_limp.v Line: 17
-Warning (10236): Verilog HDL Implicit Net warning at cont_mod2.v(12): created implicit net for "Yn" File: C:/Users/User/Desktop/RegaAutomaticav3/cont_mod2.v Line: 12
-Critical Warning (10846): Verilog HDL Instantiation warning at DivisorClock.v(34): instance has no name File: C:/Users/User/Desktop/RegaAutomaticav3/DivisorClock.v Line: 34
-Critical Warning (10846): Verilog HDL Instantiation warning at DivisorClock.v(35): instance has no name File: C:/Users/User/Desktop/RegaAutomaticav3/DivisorClock.v Line: 35
-Critical Warning (10846): Verilog HDL Instantiation warning at main.v(27): instance has no name File: C:/Users/User/Desktop/RegaAutomaticav3/main.v Line: 27
-Critical Warning (10846): Verilog HDL Instantiation warning at main.v(38): instance has no name File: C:/Users/User/Desktop/RegaAutomaticav3/main.v Line: 38
-Critical Warning (10846): Verilog HDL Instantiation warning at main.v(46): instance has no name File: C:/Users/User/Desktop/RegaAutomaticav3/main.v Line: 46
-Critical Warning (10846): Verilog HDL Instantiation warning at cont_mod16.v(41): instance has no name File: C:/Users/User/Desktop/RegaAutomaticav3/cont_mod16.v Line: 41
-Critical Warning (10846): Verilog HDL Instantiation warning at cont_mod16.v(42): instance has no name File: C:/Users/User/Desktop/RegaAutomaticav3/cont_mod16.v Line: 42
-Critical Warning (10846): Verilog HDL Instantiation warning at cont_mod16.v(43): instance has no name File: C:/Users/User/Desktop/RegaAutomaticav3/cont_mod16.v Line: 43
-Critical Warning (10846): Verilog HDL Instantiation warning at cont_mod16.v(44): instance has no name File: C:/Users/User/Desktop/RegaAutomaticav3/cont_mod16.v Line: 44
-Critical Warning (10846): Verilog HDL Instantiation warning at main.v(47): instance has no name File: C:/Users/User/Desktop/RegaAutomaticav3/main.v Line: 47
-Critical Warning (10846): Verilog HDL Instantiation warning at cont_mod2.v(29): instance has no name File: C:/Users/User/Desktop/RegaAutomaticav3/cont_mod2.v Line: 29
-Critical Warning (10846): Verilog HDL Instantiation warning at cont_mod2.v(31): instance has no name File: C:/Users/User/Desktop/RegaAutomaticav3/cont_mod2.v Line: 31
-Critical Warning (10846): Verilog HDL Instantiation warning at main.v(48): instance has no name File: C:/Users/User/Desktop/RegaAutomaticav3/main.v Line: 48
-Critical Warning (10846): Verilog HDL Instantiation warning at Seletor_Imagem.v(21): instance has no name File: C:/Users/User/Desktop/RegaAutomaticav3/Seletor_Imagem.v Line: 21
-Critical Warning (10846): Verilog HDL Instantiation warning at cont_mod4.v(21): instance has no name File: C:/Users/User/Desktop/RegaAutomaticav3/cont_mod4.v Line: 21
-Critical Warning (10846): Verilog HDL Instantiation warning at cont_mod4.v(23): instance has no name File: C:/Users/User/Desktop/RegaAutomaticav3/cont_mod4.v Line: 23
-Critical Warning (10846): Verilog HDL Instantiation warning at Seletor_Imagem.v(24): instance has no name File: C:/Users/User/Desktop/RegaAutomaticav3/Seletor_Imagem.v Line: 24
-Critical Warning (10846): Verilog HDL Instantiation warning at Seletor_Imagem.v(36): instance has no name File: C:/Users/User/Desktop/RegaAutomaticav3/Seletor_Imagem.v Line: 36
-Critical Warning (10846): Verilog HDL Instantiation warning at Seletor_Imagem.v(37): instance has no name File: C:/Users/User/Desktop/RegaAutomaticav3/Seletor_Imagem.v Line: 37
-Critical Warning (10846): Verilog HDL Instantiation warning at Seletor_Imagem.v(38): instance has no name File: C:/Users/User/Desktop/RegaAutomaticav3/Seletor_Imagem.v Line: 38
-Critical Warning (10846): Verilog HDL Instantiation warning at Seletor_Imagem.v(39): instance has no name File: C:/Users/User/Desktop/RegaAutomaticav3/Seletor_Imagem.v Line: 39
-Critical Warning (10846): Verilog HDL Instantiation warning at main.v(51): instance has no name File: C:/Users/User/Desktop/RegaAutomaticav3/main.v Line: 51
-Critical Warning (10846): Verilog HDL Instantiation warning at main.v(54): instance has no name File: C:/Users/User/Desktop/RegaAutomaticav3/main.v Line: 54
-Critical Warning (10846): Verilog HDL Instantiation warning at main.v(57): instance has no name File: C:/Users/User/Desktop/RegaAutomaticav3/main.v Line: 57
-Critical Warning (10846): Verilog HDL Instantiation warning at main.v(58): instance has no name File: C:/Users/User/Desktop/RegaAutomaticav3/main.v Line: 58
+    Info (12023): Found entity 1: fft_rst File: /home/aluno/Downloads/rega3/RegaAutomaticav3/fft_rst.v Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file mux_1x2_normal.v
+    Info (12023): Found entity 1: mux_1x2_normal File: /home/aluno/Downloads/rega3/RegaAutomaticav3/mux_1x2_normal.v Line: 2
+Warning (10236): Verilog HDL Implicit Net warning at main.v(33): created implicit net for "CRn" File: /home/aluno/Downloads/rega3/RegaAutomaticav3/main.v Line: 33
+Warning (10236): Verilog HDL Implicit Net warning at main.v(34): created implicit net for "ContA3n" File: /home/aluno/Downloads/rega3/RegaAutomaticav3/main.v Line: 34
+Warning (10236): Verilog HDL Implicit Net warning at cont_mod4.v(12): created implicit net for "Yn" File: /home/aluno/Downloads/rega3/RegaAutomaticav3/cont_mod4.v Line: 12
+Warning (10236): Verilog HDL Implicit Net warning at cont_mod16.v(18): created implicit net for "Yn" File: /home/aluno/Downloads/rega3/RegaAutomaticav3/cont_mod16.v Line: 18
+Warning (10236): Verilog HDL Implicit Net warning at cont_mod16.v(20): created implicit net for "Wire0" File: /home/aluno/Downloads/rega3/RegaAutomaticav3/cont_mod16.v Line: 20
+Warning (10236): Verilog HDL Implicit Net warning at Seletor_Imagem.v(30): created implicit net for "notA2" File: /home/aluno/Downloads/rega3/RegaAutomaticav3/Seletor_Imagem.v Line: 30
+Warning (10236): Verilog HDL Implicit Net warning at Seletor_Imagem.v(31): created implicit net for "notA3" File: /home/aluno/Downloads/rega3/RegaAutomaticav3/Seletor_Imagem.v Line: 31
+Warning (10236): Verilog HDL Implicit Net warning at mef_adub_limp.v(17): created implicit net for "notNv2" File: /home/aluno/Downloads/rega3/RegaAutomaticav3/mef_adub_limp.v Line: 17
+Warning (10236): Verilog HDL Implicit Net warning at cont_mod2.v(12): created implicit net for "Yn" File: /home/aluno/Downloads/rega3/RegaAutomaticav3/cont_mod2.v Line: 12
+Warning (10236): Verilog HDL Implicit Net warning at mux_1x2_normal.v(13): created implicit net for "notY" File: /home/aluno/Downloads/rega3/RegaAutomaticav3/mux_1x2_normal.v Line: 13
+Critical Warning (10846): Verilog HDL Instantiation warning at DivisorClock.v(34): instance has no name File: /home/aluno/Downloads/rega3/RegaAutomaticav3/DivisorClock.v Line: 34
+Critical Warning (10846): Verilog HDL Instantiation warning at DivisorClock.v(35): instance has no name File: /home/aluno/Downloads/rega3/RegaAutomaticav3/DivisorClock.v Line: 35
+Critical Warning (10846): Verilog HDL Instantiation warning at main.v(27): instance has no name File: /home/aluno/Downloads/rega3/RegaAutomaticav3/main.v Line: 27
+Critical Warning (10846): Verilog HDL Instantiation warning at main.v(45): instance has no name File: /home/aluno/Downloads/rega3/RegaAutomaticav3/main.v Line: 45
+Critical Warning (10846): Verilog HDL Instantiation warning at cont_mod16.v(41): instance has no name File: /home/aluno/Downloads/rega3/RegaAutomaticav3/cont_mod16.v Line: 41
+Critical Warning (10846): Verilog HDL Instantiation warning at cont_mod16.v(42): instance has no name File: /home/aluno/Downloads/rega3/RegaAutomaticav3/cont_mod16.v Line: 42
+Critical Warning (10846): Verilog HDL Instantiation warning at cont_mod16.v(43): instance has no name File: /home/aluno/Downloads/rega3/RegaAutomaticav3/cont_mod16.v Line: 43
+Critical Warning (10846): Verilog HDL Instantiation warning at cont_mod16.v(44): instance has no name File: /home/aluno/Downloads/rega3/RegaAutomaticav3/cont_mod16.v Line: 44
+Critical Warning (10846): Verilog HDL Instantiation warning at main.v(46): instance has no name File: /home/aluno/Downloads/rega3/RegaAutomaticav3/main.v Line: 46
+Critical Warning (10846): Verilog HDL Instantiation warning at main.v(48): instance has no name File: /home/aluno/Downloads/rega3/RegaAutomaticav3/main.v Line: 48
+Critical Warning (10846): Verilog HDL Instantiation warning at cont_mod2.v(29): instance has no name File: /home/aluno/Downloads/rega3/RegaAutomaticav3/cont_mod2.v Line: 29
+Critical Warning (10846): Verilog HDL Instantiation warning at cont_mod2.v(31): instance has no name File: /home/aluno/Downloads/rega3/RegaAutomaticav3/cont_mod2.v Line: 31
+Critical Warning (10846): Verilog HDL Instantiation warning at main.v(49): instance has no name File: /home/aluno/Downloads/rega3/RegaAutomaticav3/main.v Line: 49
+Critical Warning (10846): Verilog HDL Instantiation warning at Seletor_Imagem.v(21): instance has no name File: /home/aluno/Downloads/rega3/RegaAutomaticav3/Seletor_Imagem.v Line: 21
+Critical Warning (10846): Verilog HDL Instantiation warning at cont_mod4.v(21): instance has no name File: /home/aluno/Downloads/rega3/RegaAutomaticav3/cont_mod4.v Line: 21
+Critical Warning (10846): Verilog HDL Instantiation warning at cont_mod4.v(23): instance has no name File: /home/aluno/Downloads/rega3/RegaAutomaticav3/cont_mod4.v Line: 23
+Critical Warning (10846): Verilog HDL Instantiation warning at Seletor_Imagem.v(24): instance has no name File: /home/aluno/Downloads/rega3/RegaAutomaticav3/Seletor_Imagem.v Line: 24
+Critical Warning (10846): Verilog HDL Instantiation warning at Seletor_Imagem.v(36): instance has no name File: /home/aluno/Downloads/rega3/RegaAutomaticav3/Seletor_Imagem.v Line: 36
+Critical Warning (10846): Verilog HDL Instantiation warning at Seletor_Imagem.v(37): instance has no name File: /home/aluno/Downloads/rega3/RegaAutomaticav3/Seletor_Imagem.v Line: 37
+Critical Warning (10846): Verilog HDL Instantiation warning at Seletor_Imagem.v(38): instance has no name File: /home/aluno/Downloads/rega3/RegaAutomaticav3/Seletor_Imagem.v Line: 38
+Critical Warning (10846): Verilog HDL Instantiation warning at Seletor_Imagem.v(39): instance has no name File: /home/aluno/Downloads/rega3/RegaAutomaticav3/Seletor_Imagem.v Line: 39
+Critical Warning (10846): Verilog HDL Instantiation warning at main.v(52): instance has no name File: /home/aluno/Downloads/rega3/RegaAutomaticav3/main.v Line: 52
+Critical Warning (10846): Verilog HDL Instantiation warning at main.v(55): instance has no name File: /home/aluno/Downloads/rega3/RegaAutomaticav3/main.v Line: 55
+Critical Warning (10846): Verilog HDL Instantiation warning at main.v(58): instance has no name File: /home/aluno/Downloads/rega3/RegaAutomaticav3/main.v Line: 58
+Critical Warning (10846): Verilog HDL Instantiation warning at main.v(59): instance has no name File: /home/aluno/Downloads/rega3/RegaAutomaticav3/main.v Line: 59
 Info (12127): Elaborating entity "main" for the top level hierarchy
-Warning (10739): Verilog HDL warning at main.v(20): actual bit length 32 differs from formal bit length 1 File: C:/Users/User/Desktop/RegaAutomaticav3/main.v Line: 20
-Warning (10739): Verilog HDL warning at main.v(21): actual bit length 32 differs from formal bit length 1 File: C:/Users/User/Desktop/RegaAutomaticav3/main.v Line: 21
-Info (12128): Elaborating entity "DivisorClock" for hierarchy "DivisorClock:comb_9" File: C:/Users/User/Desktop/RegaAutomaticav3/main.v Line: 27
-Info (12128): Elaborating entity "fft" for hierarchy "DivisorClock:comb_9|fft:div_2" File: C:/Users/User/Desktop/RegaAutomaticav3/DivisorClock.v Line: 12
-Info (12128): Elaborating entity "flipflopJK" for hierarchy "flipflopJK:comb_17" File: C:/Users/User/Desktop/RegaAutomaticav3/main.v Line: 38
-Info (12128): Elaborating entity "mux_1x4_normal" for hierarchy "mux_1x4_normal:comb_19" File: C:/Users/User/Desktop/RegaAutomaticav3/main.v Line: 46
-Info (12128): Elaborating entity "cont_mod16" for hierarchy "cont_mod16:comb_20" File: C:/Users/User/Desktop/RegaAutomaticav3/main.v Line: 47
-Info (12128): Elaborating entity "fft_rst" for hierarchy "cont_mod16:comb_20|fft_rst:comb_21" File: C:/Users/User/Desktop/RegaAutomaticav3/cont_mod16.v Line: 41
-Info (12128): Elaborating entity "cont_mod2" for hierarchy "cont_mod2:comb_21" File: C:/Users/User/Desktop/RegaAutomaticav3/main.v Line: 48
-Info (12128): Elaborating entity "Seletor_Imagem" for hierarchy "Seletor_Imagem:comb_22" File: C:/Users/User/Desktop/RegaAutomaticav3/main.v Line: 51
-Warning (10739): Verilog HDL warning at Seletor_Imagem.v(94): actual bit length 32 differs from formal bit length 1 File: C:/Users/User/Desktop/RegaAutomaticav3/Seletor_Imagem.v Line: 94
+Warning (10739): Verilog HDL warning at main.v(20): actual bit length 32 differs from formal bit length 1 File: /home/aluno/Downloads/rega3/RegaAutomaticav3/main.v Line: 20
+Warning (10739): Verilog HDL warning at main.v(21): actual bit length 32 differs from formal bit length 1 File: /home/aluno/Downloads/rega3/RegaAutomaticav3/main.v Line: 21
+Info (12128): Elaborating entity "DivisorClock" for hierarchy "DivisorClock:comb_9" File: /home/aluno/Downloads/rega3/RegaAutomaticav3/main.v Line: 27
+Info (12128): Elaborating entity "fft" for hierarchy "DivisorClock:comb_9|fft:div_2" File: /home/aluno/Downloads/rega3/RegaAutomaticav3/DivisorClock.v Line: 12
+Info (12128): Elaborating entity "mux_1x4_normal" for hierarchy "mux_1x4_normal:comb_17" File: /home/aluno/Downloads/rega3/RegaAutomaticav3/main.v Line: 45
+Info (12128): Elaborating entity "cont_mod16" for hierarchy "cont_mod16:comb_18" File: /home/aluno/Downloads/rega3/RegaAutomaticav3/main.v Line: 46
+Info (12128): Elaborating entity "fft_rst" for hierarchy "cont_mod16:comb_18|fft_rst:comb_21" File: /home/aluno/Downloads/rega3/RegaAutomaticav3/cont_mod16.v Line: 41
+Info (12128): Elaborating entity "mux_1x2_normal" for hierarchy "mux_1x2_normal:comb_19" File: /home/aluno/Downloads/rega3/RegaAutomaticav3/main.v Line: 48
+Info (12128): Elaborating entity "cont_mod2" for hierarchy "cont_mod2:comb_20" File: /home/aluno/Downloads/rega3/RegaAutomaticav3/main.v Line: 49
+Info (12128): Elaborating entity "Seletor_Imagem" for hierarchy "Seletor_Imagem:comb_21" File: /home/aluno/Downloads/rega3/RegaAutomaticav3/main.v Line: 52
+Warning (10739): Verilog HDL warning at Seletor_Imagem.v(94): actual bit length 32 differs from formal bit length 1 File: /home/aluno/Downloads/rega3/RegaAutomaticav3/Seletor_Imagem.v Line: 94
 Warning (12125): Using design file demux_1x4.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: demux_1x4 File: C:/Users/User/Desktop/RegaAutomaticav3/demux_1x4.v Line: 2
-Info (12128): Elaborating entity "demux_1x4" for hierarchy "Seletor_Imagem:comb_22|demux_1x4:comb_3" File: C:/Users/User/Desktop/RegaAutomaticav3/Seletor_Imagem.v Line: 21
-Info (12128): Elaborating entity "cont_mod4" for hierarchy "Seletor_Imagem:comb_22|cont_mod4:comb_4" File: C:/Users/User/Desktop/RegaAutomaticav3/Seletor_Imagem.v Line: 24
-Info (12128): Elaborating entity "decode" for hierarchy "Seletor_Imagem:comb_22|decode:comb_10" File: C:/Users/User/Desktop/RegaAutomaticav3/Seletor_Imagem.v Line: 36
-Warning (10739): Verilog HDL warning at decode.v(63): actual bit length 32 differs from formal bit length 1 File: C:/Users/User/Desktop/RegaAutomaticav3/decode.v Line: 63
-Info (12128): Elaborating entity "decode_cxa" for hierarchy "Seletor_Imagem:comb_22|decode_cxa:comb_12" File: C:/Users/User/Desktop/RegaAutomaticav3/Seletor_Imagem.v Line: 38
-Warning (10739): Verilog HDL warning at decode_cxa.v(20): actual bit length 32 differs from formal bit length 1 File: C:/Users/User/Desktop/RegaAutomaticav3/decode_cxa.v Line: 20
-Warning (10739): Verilog HDL warning at decode_cxa.v(24): actual bit length 32 differs from formal bit length 1 File: C:/Users/User/Desktop/RegaAutomaticav3/decode_cxa.v Line: 24
-Warning (10739): Verilog HDL warning at decode_cxa.v(28): actual bit length 32 differs from formal bit length 1 File: C:/Users/User/Desktop/RegaAutomaticav3/decode_cxa.v Line: 28
-Warning (10739): Verilog HDL warning at decode_cxa.v(36): actual bit length 32 differs from formal bit length 1 File: C:/Users/User/Desktop/RegaAutomaticav3/decode_cxa.v Line: 36
-Warning (10739): Verilog HDL warning at decode_cxa.v(44): actual bit length 32 differs from formal bit length 1 File: C:/Users/User/Desktop/RegaAutomaticav3/decode_cxa.v Line: 44
-Info (12128): Elaborating entity "decode_simb" for hierarchy "Seletor_Imagem:comb_22|decode_simb:comb_13" File: C:/Users/User/Desktop/RegaAutomaticav3/Seletor_Imagem.v Line: 39
-Warning (10739): Verilog HDL warning at decode_simb.v(47): actual bit length 32 differs from formal bit length 1 File: C:/Users/User/Desktop/RegaAutomaticav3/decode_simb.v Line: 47
-Info (12128): Elaborating entity "Irrigacao" for hierarchy "Irrigacao:comb_23" File: C:/Users/User/Desktop/RegaAutomaticav3/main.v Line: 54
-Info (12128): Elaborating entity "mef_tiporega" for hierarchy "mef_tiporega:comb_24" File: C:/Users/User/Desktop/RegaAutomaticav3/main.v Line: 57
-Info (12128): Elaborating entity "mef_adub_limp" for hierarchy "mef_adub_limp:comb_25" File: C:/Users/User/Desktop/RegaAutomaticav3/main.v Line: 58
-Warning (12241): 13 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+    Info (12023): Found entity 1: demux_1x4 File: /home/aluno/Downloads/rega3/RegaAutomaticav3/demux_1x4.v Line: 2
+Info (12128): Elaborating entity "demux_1x4" for hierarchy "Seletor_Imagem:comb_21|demux_1x4:comb_3" File: /home/aluno/Downloads/rega3/RegaAutomaticav3/Seletor_Imagem.v Line: 21
+Info (12128): Elaborating entity "cont_mod4" for hierarchy "Seletor_Imagem:comb_21|cont_mod4:comb_4" File: /home/aluno/Downloads/rega3/RegaAutomaticav3/Seletor_Imagem.v Line: 24
+Info (12128): Elaborating entity "decode" for hierarchy "Seletor_Imagem:comb_21|decode:comb_10" File: /home/aluno/Downloads/rega3/RegaAutomaticav3/Seletor_Imagem.v Line: 36
+Warning (10739): Verilog HDL warning at decode.v(63): actual bit length 32 differs from formal bit length 1 File: /home/aluno/Downloads/rega3/RegaAutomaticav3/decode.v Line: 63
+Info (12128): Elaborating entity "decode_cxa" for hierarchy "Seletor_Imagem:comb_21|decode_cxa:comb_12" File: /home/aluno/Downloads/rega3/RegaAutomaticav3/Seletor_Imagem.v Line: 38
+Warning (10739): Verilog HDL warning at decode_cxa.v(20): actual bit length 32 differs from formal bit length 1 File: /home/aluno/Downloads/rega3/RegaAutomaticav3/decode_cxa.v Line: 20
+Warning (10739): Verilog HDL warning at decode_cxa.v(24): actual bit length 32 differs from formal bit length 1 File: /home/aluno/Downloads/rega3/RegaAutomaticav3/decode_cxa.v Line: 24
+Warning (10739): Verilog HDL warning at decode_cxa.v(28): actual bit length 32 differs from formal bit length 1 File: /home/aluno/Downloads/rega3/RegaAutomaticav3/decode_cxa.v Line: 28
+Warning (10739): Verilog HDL warning at decode_cxa.v(36): actual bit length 32 differs from formal bit length 1 File: /home/aluno/Downloads/rega3/RegaAutomaticav3/decode_cxa.v Line: 36
+Warning (10739): Verilog HDL warning at decode_cxa.v(44): actual bit length 32 differs from formal bit length 1 File: /home/aluno/Downloads/rega3/RegaAutomaticav3/decode_cxa.v Line: 44
+Info (12128): Elaborating entity "decode_simb" for hierarchy "Seletor_Imagem:comb_21|decode_simb:comb_13" File: /home/aluno/Downloads/rega3/RegaAutomaticav3/Seletor_Imagem.v Line: 39
+Warning (10739): Verilog HDL warning at decode_simb.v(47): actual bit length 32 differs from formal bit length 1 File: /home/aluno/Downloads/rega3/RegaAutomaticav3/decode_simb.v Line: 47
+Info (12128): Elaborating entity "Irrigacao" for hierarchy "Irrigacao:comb_22" File: /home/aluno/Downloads/rega3/RegaAutomaticav3/main.v Line: 55
+Info (12128): Elaborating entity "mef_tiporega" for hierarchy "mef_tiporega:comb_23" File: /home/aluno/Downloads/rega3/RegaAutomaticav3/main.v Line: 58
+Info (12128): Elaborating entity "mef_adub_limp" for hierarchy "mef_adub_limp:comb_24" File: /home/aluno/Downloads/rega3/RegaAutomaticav3/main.v Line: 59
+Info (13014): Ignored 1 buffer(s)
+    Info (13019): Ignored 1 SOFT buffer(s)
+Warning (12241): 12 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "SEG_P" is stuck at VCC File: C:/Users/User/Desktop/RegaAutomaticav3/main.v Line: 9
+    Warning (13410): Pin "SEG_P" is stuck at VCC File: /home/aluno/Downloads/rega3/RegaAutomaticav3/main.v Line: 9
 Info (17049): 8 registers lost all their fanouts during netlist optimizations.
 Warning (21074): Design contains 1 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "T1" File: C:/Users/User/Desktop/RegaAutomaticav3/main.v Line: 8
-Info (21057): Implemented 116 device resources after synthesis - the final resource count might be different
+    Warning (15610): No output dependent on input pin "T1" File: /home/aluno/Downloads/rega3/RegaAutomaticav3/main.v Line: 8
+Info (21057): Implemented 113 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 7 input pins
     Info (21059): Implemented 20 output pins
-    Info (21061): Implemented 89 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 50 warnings
-    Info: Peak virtual memory: 4704 megabytes
-    Info: Processing ended: Tue Jul 23 19:56:30 2024
-    Info: Elapsed time: 00:00:22
-    Info: Total CPU time (on all processors): 00:00:21
+    Info (21061): Implemented 86 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 52 warnings
+    Info: Peak virtual memory: 341 megabytes
+    Info: Processing ended: Wed Jul 24 12:54:48 2024
+    Info: Elapsed time: 00:00:06
+    Info: Total CPU time (on all processors): 00:00:12
 
 
